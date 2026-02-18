@@ -2,7 +2,7 @@ import { useRef } from "react"
 import useSaveProvider from "../hooks/useSaveProvider"
 
 const SavePicker = () => {
-  const { setCurrentSave, uploadSave } = useSaveProvider()
+  const { uploadSave } = useSaveProvider()
   const fileInputRef = useRef(null)
 
   const handleUploadClick = () => {

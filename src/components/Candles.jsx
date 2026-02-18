@@ -1,26 +1,45 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 
-const CANDLE_INDICES = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 const CANDLES_MAX = 12
 
 const Candles = () => {
-  const { playerStats } = useSaveProvider()
+  const { playerStats, collectibles } = useSaveProvider()
   const candlesCount = playerStats?.candlesCount ?? 0
   const candlesAcquired = playerStats?.candlesAcquired ?? []
+  const candles = collectibles?.candles ?? {}
 
   return (
-    <div style={{ display: "inline-block" }}>
+    <div>
       <h3>Candles</h3>
       <p>
         {candlesCount}/{CANDLES_MAX} found
       </p>
-      <p style={{ fontSize: "0.9em", margin: "0.25rem 0" }}>
-        Slots:{" "}
-        {CANDLE_INDICES.map((i) =>
-          candlesAcquired.includes(i) ? "✅" : "❌",
-        ).join(" ")}{" "}
-        <span style={{ color: "#666" }}>(0–11)</span>
-      </p>
+      <ul>
+        {Array.from({ length: 12 }, (_, i) => {
+          const info = candles[String(i)] ?? {}
+          const description = info.description ?? ""
+          const url = info.url ?? ""
+          const acquired = candlesAcquired.includes(i)
+
+          return (
+            <li key={i} style={{ marginBottom: "0.25rem" }}>
+              {acquired ? "✅" : "❌"} {description}
+              {url ? (
+                <>
+                  {" "}
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    🔗
+                  </a>
+                </>
+              ) : null}
+            </li>
+          )
+        })}
+      </ul>
     </div>
   )
 }

@@ -56,6 +56,20 @@
     "WASHING_MACHINE",
     "ZANGY"
   ],
+  "candles": {
+    "0": { "description": "Candle 0", "url": "" },
+    "1": { "description": "Candle 1", "url": "" },
+    "2": { "description": "Candle 2", "url": "" },
+    "3": { "description": "Candle 3", "url": "" },
+    "4": { "description": "Candle 4", "url": "" },
+    "5": { "description": "Candle 5", "url": "" },
+    "6": { "description": "Candle 6", "url": "" },
+    "7": { "description": "Candle 7", "url": "" },
+    "8": { "description": "Candle 8", "url": "" },
+    "9": { "description": "Candle 9", "url": "" },
+    "10": { "description": "Candle 10", "url": "" },
+    "11": { "description": "Candle 11", "url": "" }
+  },
   "shield_fragments": {
     "0": { "description": "Purchase from Mel", "url": "" },
     "1": { "description": "Purchase from Mel", "url": "" },
