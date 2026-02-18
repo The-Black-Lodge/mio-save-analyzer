@@ -1,28 +1,56 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 
+const Stat = ({ label, value }) => {
+  return (
+    <div
+      style={{
+        border: "1px solid #444",
+        padding: "0.5rem",
+        borderRadius: "0.5rem",
+      }}
+    >
+      <span style={{ display: "inline-block", marginRight: "0.5rem" }}>
+        {label}:
+      </span>
+      <span>{value}</span>
+    </div>
+  )
+}
+
 const SaveStats = () => {
   const { playerStats } = useSaveProvider()
 
   return (
     <div
       style={{
-        display: "inline-flex",
-        flexDirection: "column",
-        alignItems: "flex-start",
-        height: "20rem",
-        padding: "1rem",
-        width: "23rem",
+        display: "flex",
+        gap: "0.5rem",
       }}
     >
-      <h3>Player Stats</h3>
-      <ul>
-        <li>Deaths: {playerStats.deaths}</li>
-        <li>Playtime: {playerStats.playtime}</li>
-        <li>Last Save Time: {playerStats.lastSaveTime}</li>
-        <li>Nacre: {playerStats.liquidNacresCount}</li>
-        <li>Solidified Nacre: {playerStats.solidifyNacreCount}</li>
-        <li>Nacre Lost: {playerStats.nacreLost}</li>
-      </ul>
+      <Stat
+        label="Deaths"
+        value={playerStats.deaths}
+      />
+      <Stat
+        label="Playtime"
+        value={playerStats.playtime}
+      />
+      <Stat
+        label="Last Save Time"
+        value={playerStats.lastSaveTime}
+      />
+      <Stat
+        label="Nacre"
+        value={playerStats.liquidNacresCount}
+      />
+      <Stat
+        label="Solidified Nacre"
+        value={playerStats.solidifyNacreCount}
+      />
+      <Stat
+        label="Nacre Lost"
+        value={playerStats.nacreLost}
+      />
     </div>
   )
 }
