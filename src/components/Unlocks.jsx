@@ -36,7 +36,7 @@ const Unlocks = () => {
           ({acquiredUnlocks.length}/{Object.keys(allUnlocks).length})
         </span>
       </h3>
-      <div style={{ display: "flex", gap: "0.5rem" }}>
+      <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", justifyContent: "center" }}>
         {Object.entries(allUnlocks).map(([key, value]) => (
           <Ability
             key={key}

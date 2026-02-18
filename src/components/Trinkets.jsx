@@ -16,22 +16,18 @@ const Trinkets = () => {
   const SLOT_INDICES = [0, 1, 2, 3, 4, 5, 6]
 
   return (
-    <div style={{ display: "inline-block" }}>
+    <div style={{ textAlign: "center" }}>
       <h3>
-        Trinkets ({acquiredTrinkets.length}/{Object.keys(allTrinkets).length})
+        Modifiers{" "}
+        <span style={{ color: "white" }}>
+          ({acquiredTrinkets.length}/{Object.keys(allTrinkets).length})
+        </span>
       </h3>
-      <p>{slotUpgradesCount}/7 slot upgrades found</p>
-      <p style={{ fontSize: "0.9em", margin: "0.25rem 0" }}>
-        Slots:{" "}
-        {SLOT_INDICES.map((i) =>
-          slotUpgradesAcquired.includes(i) ? "✅" : "❌",
-        ).join(" ")}{" "}
-        <span style={{ color: "#666" }}>(0–6)</span>
-      </p>
       <ul
         style={{
           display: "flex",
           flexWrap: "wrap",
+          justifyContent: "center",
           gap: "0.5rem 1rem",
           listStyle: "none",
           padding: 0,
@@ -54,6 +50,14 @@ const Trinkets = () => {
           </li>
         ))}
       </ul>
+      <p>{slotUpgradesCount}/7 slot upgrades found</p>
+      <p style={{ fontSize: "0.9em", margin: "0.25rem 0" }}>
+        Slots:{" "}
+        {SLOT_INDICES.map((i) =>
+          slotUpgradesAcquired.includes(i) ? "✅" : "❌",
+        ).join(" ")}{" "}
+        <span style={{ color: "#666" }}>(0–6)</span>
+      </p>
     </div>
   )
 }

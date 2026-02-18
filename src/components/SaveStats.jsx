@@ -24,7 +24,9 @@ const SaveStats = () => {
     <div
       style={{
         display: "flex",
+        flexWrap: "wrap",
         gap: "0.5rem",
+        justifyContent: "center",
       }}
     >
       <Stat
