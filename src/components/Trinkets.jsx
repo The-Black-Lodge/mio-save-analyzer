@@ -14,7 +14,7 @@ const Trinkets = () => {
   return (
     <>
       <h1>
-        Trinkets ({Object.keys(allTrinkets).length}/
+        Trinkets ({Object.keys(acquiredTrinkets).length}/
         {Object.keys(allTrinkets).length})
       </h1>
       <ul
