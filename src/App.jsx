@@ -12,14 +12,16 @@ import ShieldFragments from "./components/ShieldFragments"
 function App() {
   return (
     <SaveProvider>
-      <SavePicker />
-      <SaveStats />
-      <Unlocks />
-      <Bosses />
-      <Trinkets />
-      <Candles />
-      <ShieldFragments />
-      <Carcasses />
+      <div className="app-content">
+        <SavePicker />
+        <SaveStats />
+        <Unlocks />
+        <Bosses />
+        <Trinkets />
+        <Candles />
+        <ShieldFragments />
+        <Carcasses />
+      </div>
     </SaveProvider>
   )
 }
