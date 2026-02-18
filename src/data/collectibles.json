@@ -35,5 +35,25 @@
     "Carcass_security_glide_P1",
     "Carcass_security_glide_P3",
     "Carcass_trois_mouches"
+  ],
+  "bosses": [
+    "BAMBY",
+    "BLACKSMITH",
+    "CRABASH",
+    "DEVOURER",
+    "DOOR",
+    "PROJEKT",
+    "RAMBO",
+    "SASUKE",
+    "SAW_LONGUE",
+    "SCARECROW",
+    "SHII",
+    "SPIDY",
+    "TRAPU",
+    "TWIN",
+    "TWIN_CRABASH",
+    "VINE",
+    "WASHING_MACHINE",
+    "ZANGY"
   ]
 }

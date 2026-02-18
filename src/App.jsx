@@ -5,6 +5,7 @@ import SaveStats from "./components/SaveStats"
 import Trinkets from "./components/Trinkets"
 import Unlocks from "./components/Unlocks"
 import Carcasses from "./components/Carcasses"
+import Bosses from "./components/Bosses"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <SavePicker />
       <SaveStats />
       <Unlocks />
+      <Bosses />
       <Trinkets />
       <Carcasses />
     </SaveProvider>
