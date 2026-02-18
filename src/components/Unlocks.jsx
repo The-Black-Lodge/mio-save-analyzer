@@ -20,7 +20,7 @@ const Unlocks = () => {
       <ul>
         {Object.entries(allUnlocks).map(([key, value]) => (
           <li key={key}>
-            {value} {acquiredUnlocks.includes(key) ? "✅" : "❌"}
+            {acquiredUnlocks.includes(key) ? "✅" : "❌"} {value}
           </li>
         ))}
       </ul>

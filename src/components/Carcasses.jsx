@@ -17,7 +17,7 @@ const Carcasses = () => {
       <ul>
         {allCarcasses.map((id) => (
           <li key={id}>
-            {id} {acquiredCarcasses.includes(id) ? "✅" : "❌"}
+            {acquiredCarcasses.includes(id) ? "✅" : "❌"} {id}
           </li>
         ))}
       </ul>

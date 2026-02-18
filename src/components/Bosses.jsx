@@ -16,7 +16,7 @@ const Bosses = () => {
           const tried = playerStats.bossesTried?.[boss] ?? 0
           return (
             <li key={boss}>
-              {boss} {defeated > 0 ? "✅" : "❌"} {met} / {tried}
+              {defeated > 0 ? "✅" : "❌"} {boss} {met} / {tried}
             </li>
           )
         })}

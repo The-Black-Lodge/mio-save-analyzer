@@ -45,14 +45,11 @@ const Trinkets = () => {
               display: "inline-block",
               padding: "0.5rem",
               width: "13rem",
+              border: "1px solid #444",
               borderRadius: "0.5rem",
-              backgroundColor: acquiredTrinkets.includes(key)
-                ? "#4CAF50"
-                : "#f44336",
-              color: "#fff",
             }}
           >
-            {value} {acquiredTrinkets.includes(key) ? "✅" : "❌"}
+            {acquiredTrinkets.includes(key) ? "✅" : "❌"} {value}
             {equippedTrinkets.includes(key) ? " ✨" : ""}
           </li>
         ))}
