@@ -10,6 +10,7 @@ const Trinkets = () => {
     ),
   )
   const acquiredTrinkets = playerStats?.trinkets ?? []
+  const equippedTrinkets = playerStats?.equippedTrinkets ?? []
   const slotUpgradesCount = playerStats?.trinketSlotUpgradesCount ?? 0
   const slotUpgradesAcquired = playerStats?.trinketSlotUpgradesAcquired ?? []
   const SLOT_INDICES = [0, 1, 2, 3, 4, 5, 6]
@@ -52,6 +53,7 @@ const Trinkets = () => {
             }}
           >
             {value} {acquiredTrinkets.includes(key) ? "✅" : "❌"}
+            {equippedTrinkets.includes(key) ? " ✨" : ""}
           </li>
         ))}
       </ul>

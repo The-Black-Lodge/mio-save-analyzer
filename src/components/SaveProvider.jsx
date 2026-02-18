@@ -41,6 +41,9 @@ const SaveProvider = ({ children }) => {
     const trinkets = Object.entries(trinketObj)
       .filter(([, value]) => value?.flags?.includes("Acquired"))
       .map(([key]) => key)
+    const equippedTrinkets = Object.entries(trinketObj)
+      .filter(([, value]) => value?.flags?.includes("Equipped"))
+      .map(([key]) => key)
 
     const unlockObj = gameData?.Saved_entries?.UNLOCK ?? {}
     const unlocks = Object.entries(unlockObj)
@@ -62,6 +65,14 @@ const SaveProvider = ({ children }) => {
       .filter((n) => !Number.isNaN(n) && n >= 0 && n <= 11)
       .sort((a, b) => a - b)
     const candlesCount = candlesAcquired.length
+
+    const shieldFragmentObj = gameData?.Saved_entries?.SHIELD_FRAGMENT ?? {}
+    const shieldFragmentsAcquired = Object.entries(shieldFragmentObj)
+      .filter(([, value]) => value?.flags?.includes("Acquired"))
+      .map(([key]) => parseInt(key, 10))
+      .filter((n) => !Number.isNaN(n) && n >= 0 && n <= 23)
+      .sort((a, b) => a - b)
+    const shieldFragmentsCount = shieldFragmentsAcquired.length
 
     const carcassObj = gameData?.Saved_entries?.CARCASS ?? {}
     const carcasses = Object.entries(carcassObj)
@@ -94,11 +105,14 @@ const SaveProvider = ({ children }) => {
         gameData?.Saved_not_important?.solidify_nacre_count ?? 0,
       nacreLost: gameData?.Save?.nacre_in_hub_basin ?? 0,
       trinkets,
+      equippedTrinkets,
       unlocks,
       trinketSlotUpgradesCount,
       trinketSlotUpgradesAcquired,
       candlesCount,
       candlesAcquired,
+      shieldFragmentsCount,
+      shieldFragmentsAcquired,
       carcasses,
       bossesDefeated,
       bossesMet,
@@ -108,9 +122,27 @@ const SaveProvider = ({ children }) => {
 
   console.log(playerStats)
 
+  const uploadSave = (file) => {
+    if (!file) return
+    const reader = new FileReader()
+    reader.onload = (e) => {
+      const text = e.target?.result
+      if (typeof text === "string") {
+        try {
+          const parsed = parseSave(text)
+          setGameData(parsed)
+        } catch (err) {
+          console.error("Failed to parse save file:", err)
+        }
+      }
+    }
+    reader.readAsText(file)
+  }
+
   const value = {
     setCurrentSave,
     setGameData,
+    uploadSave,
     playerStats,
     localization,
     collectibles,

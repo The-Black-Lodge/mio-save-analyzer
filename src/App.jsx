@@ -7,6 +7,7 @@ import Unlocks from "./components/Unlocks"
 import Carcasses from "./components/Carcasses"
 import Bosses from "./components/Bosses"
 import Candles from "./components/Candles"
+import ShieldFragments from "./components/ShieldFragments"
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Bosses />
       <Trinkets />
       <Candles />
+      <ShieldFragments />
       <Carcasses />
     </SaveProvider>
   )
