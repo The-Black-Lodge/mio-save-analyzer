@@ -55,5 +55,85 @@
     "VINE",
     "WASHING_MACHINE",
     "ZANGY"
-  ]
+  ],
+  "shield_fragments": {
+    "0": { "description": "Purchase from Mel", "url": "" },
+    "1": { "description": "Purchase from Mel", "url": "" },
+    "2": { "description": "Purchase from Mel", "url": "" },
+    "3": { "description": "Purchase from Mel", "url": "" },
+    "4": { "description": "Purchase from Mel", "url": "" },
+    "5": { "description": "Purchase from Mel", "url": "" },
+    "6": {
+      "description": "top of belltower, pink bouncy area",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264231"
+    },
+    "7": {
+      "description": "dark green passage east of haven overseer",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264250"
+    },
+    "8": {
+      "description": "climb up the poop halfway through Sawlong path",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264365"
+    },
+    "9": {
+      "description": "platforming area to the east of the promenade overseer",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264535"
+    },
+    "10": {
+      "description": "area under crystallizer room to the right of the nexus save",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263980"
+    },
+    "11": {
+      "description": "southeast of crystallizer to the right of the nexus save",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263991"
+    },
+    "12": {
+      "description": "ledge in haven room right of nexus",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264058"
+    },
+    "13": {
+      "description": "drawer in top-right of vaults big room",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264129"
+    },
+    "14": {
+      "description": "pointy ledge in dwellings",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263945"
+    },
+    "15": {
+      "description": "beyond the dodge-slingshot room in vaults",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=266989"
+    },
+    "16": {
+      "description": "slingshot room to the left of haven room - jukebox",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264622"
+    },
+    "17": {
+      "description": "above the network gate in The Pit",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264721"
+    },
+    "18": {
+      "description": "gauntlet at bottom of dwellings",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264621"
+    },
+    "19": {
+      "description": "under the passage to the right of the Spine",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263950"
+    },
+    "20": {
+      "description": "platforming area to the left of the peacock",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264348"
+    },
+    "21": {
+      "description": "area to the right of the nacre basin to the right of the nexus save",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264007"
+    },
+    "22": {
+      "description": "area to the southeast of the lotus thing",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264272"
+    },
+    "23": {
+      "description": "top room of manufactory",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264636"
+    }
+  }
 }
