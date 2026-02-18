@@ -9,22 +9,20 @@ const Trinket = ({ label, acquired, equipped }) => {
         padding: "0.5rem",
         borderRadius: "0.5rem",
         textAlign: "center",
-        minWidth: "12.5rem",
+        minWidth: "14rem",
       }}
     >
       <h4>{label}</h4>
-      <p style={{ fontSize: "0.8rem" }}>
-        {acquired ? "acquired" : "not acquired"}
-      </p>
       {equipped && (
         <span
           style={{
             position: "absolute",
             bottom: "0.25rem",
             right: "0.25rem",
+            color: "#ffc",
           }}
         >
-          ✨
+          <i className="fa-solid fa-gears" />
         </span>
       )}
     </div>
@@ -54,7 +52,19 @@ const Trinkets = () => {
           ({acquiredTrinkets.length}/{Object.keys(allTrinkets).length})
         </span>
       </h3>
-      <p style={{ margin: "0", textAlign: "center" }}>✨ = equipped</p>
+      <p
+        style={{
+          margin: "0 0 0.25rem",
+          textAlign: "center",
+          fontSize: "0.8rem",
+        }}
+      >
+        <i
+          className="fa-solid fa-gears"
+          style={{ color: "#ffc" }}
+        />{" "}
+        = equipped
+      </p>
       <div
         style={{
           display: "flex",

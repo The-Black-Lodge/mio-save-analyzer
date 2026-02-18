@@ -16,10 +16,7 @@ const SavePicker = () => {
   }
 
   return (
-    <div>
-      <h1>MIO: Memories in Orbit</h1>
-      <h2>Save Analyzer</h2>
-      <p>STILL IN PROGRESS!</p>
+    <>
       <input
         ref={fileInputRef}
         type="file"
@@ -33,7 +30,7 @@ const SavePicker = () => {
       >
         Upload Save
       </button>
-    </div>
+    </>
   )
 }
 

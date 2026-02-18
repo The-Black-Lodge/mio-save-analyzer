@@ -8,11 +8,14 @@ import Carcasses from "./components/Carcasses"
 import Bosses from "./components/Bosses"
 import Candles from "./components/Candles"
 import ShieldFragments from "./components/ShieldFragments"
+import Footer from "./components/Footer"
 
 function App() {
   return (
     <SaveProvider>
       <div className="app-content">
+        <h1>MIO: Memories in Orbit</h1>
+        <h2>Save Analyzer</h2>
         <SavePicker />
         <SaveStats />
         <Unlocks />
@@ -21,6 +24,7 @@ function App() {
         <Candles />
         <ShieldFragments />
         <Carcasses />
+        <Footer />
       </div>
     </SaveProvider>
   )

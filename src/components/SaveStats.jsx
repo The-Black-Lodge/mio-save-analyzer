@@ -7,12 +7,12 @@ const Stat = ({ label, value }) => {
         border: "1px solid #444",
         padding: "0.5rem",
         borderRadius: "0.5rem",
+        marginTop: "1rem",
       }}
     >
-      <span style={{ display: "inline-block", marginRight: "0.5rem" }}>
-        {label}:
-      </span>
-      <span>{value}</span>
+      <h4>{label}</h4>
+      <hr style={{ border: "none", borderBottom: "1px solid #666" }} />
+      <p style={{ fontSize: "0.8rem", textAlign: "center" }}>{value}</p>
     </div>
   )
 }

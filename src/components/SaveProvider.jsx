@@ -47,6 +47,7 @@ const SaveProvider = ({ children }) => {
 
     const unlockObj = gameData?.Saved_entries?.UNLOCK ?? {}
     const unlocks = Object.entries(unlockObj)
+      .filter(([key]) => key !== "SLASH")
       .filter(([, value]) => value?.flags?.includes("Acquired"))
       .map(([key]) => key)
 
