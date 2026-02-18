@@ -1,5 +1,36 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 
+const Trinket = ({ label, acquired, equipped }) => {
+  return (
+    <div
+      style={{
+        position: "relative",
+        border: acquired ? "1px solid #ffc" : "1px solid #666",
+        padding: "0.5rem",
+        borderRadius: "0.5rem",
+        textAlign: "center",
+        minWidth: "12.5rem",
+      }}
+    >
+      <h4>{label}</h4>
+      <p style={{ fontSize: "0.8rem" }}>
+        {acquired ? "acquired" : "not acquired"}
+      </p>
+      {equipped && (
+        <span
+          style={{
+            position: "absolute",
+            bottom: "0.25rem",
+            right: "0.25rem",
+          }}
+        >
+          ✨
+        </span>
+      )}
+    </div>
+  )
+}
+
 const Trinkets = () => {
   const { playerStats, localization } = useSaveProvider()
 
@@ -16,41 +47,34 @@ const Trinkets = () => {
   const SLOT_INDICES = [0, 1, 2, 3, 4, 5, 6]
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div style={{ padding: "1rem" }}>
       <h3>
         Modifiers{" "}
         <span style={{ color: "white" }}>
           ({acquiredTrinkets.length}/{Object.keys(allTrinkets).length})
         </span>
       </h3>
-      <ul
+      <p style={{ margin: "0", textAlign: "center" }}>✨ = equipped</p>
+      <div
         style={{
           display: "flex",
           flexWrap: "wrap",
+          gap: "0.5rem",
           justifyContent: "center",
-          gap: "0.5rem 1rem",
-          listStyle: "none",
-          padding: 0,
-          margin: 0,
         }}
       >
         {Object.entries(allTrinkets).map(([key, value]) => (
-          <li
+          <Trinket
             key={key}
-            style={{
-              display: "inline-block",
-              padding: "0.5rem",
-              width: "13rem",
-              border: "1px solid #444",
-              borderRadius: "0.5rem",
-            }}
-          >
-            {acquiredTrinkets.includes(key) ? "✅" : "❌"} {value}
-            {equippedTrinkets.includes(key) ? " ✨" : ""}
-          </li>
+            label={value}
+            acquired={acquiredTrinkets.includes(key)}
+            equipped={equippedTrinkets.includes(key)}
+          />
         ))}
-      </ul>
-      <p>{slotUpgradesCount}/7 slot upgrades found</p>
+      </div>
+      <p style={{ margin: "0.5rem 0 0.25rem 0" }}>
+        {slotUpgradesCount}/7 slot upgrades found
+      </p>
       <p style={{ fontSize: "0.9em", margin: "0.25rem 0" }}>
         Slots:{" "}
         {SLOT_INDICES.map((i) =>
