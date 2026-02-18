@@ -7,6 +7,7 @@ const SavePicker = () => {
     <>
       <button onClick={() => setCurrentSave(0)}>Empty Save</button>
       <button onClick={() => setCurrentSave(1)}>My Save</button>
+      <button onClick={() => setCurrentSave(2)}>100%ish</button>
       <p>Save file is located in (update this later)</p>
     </>
   )

@@ -1,10 +1,12 @@
 import raw0 from "../data/empty.save?raw"
 import raw1 from "../data/mine.save?raw"
+import raw2 from "../data/highest_known.save?raw"
+import localization from "../data/localization.en.json"
 import { useState, useEffect } from "react"
 import { parseSave } from "../saveParser"
 import { SaveContext } from "./SaveContext"
 
-const testSaves = [parseSave(raw0), parseSave(raw1)]
+const testSaves = [parseSave(raw0), parseSave(raw1), parseSave(raw2)]
 
 const SaveProvider = ({ children }) => {
   const [currentSave, setCurrentSave] = useState(0)
@@ -29,6 +31,13 @@ const SaveProvider = ({ children }) => {
     return date.toLocaleString()
   }
 
+  const parseTrinkets = () => {
+    const trinketObj = gameData?.Saved_entries?.TRINKET ?? {}
+    return Object.entries(trinketObj)
+      .filter(([, value]) => value?.flags?.includes("Acquired"))
+      .map(([key]) => key)
+  }
+
   const playerStats = {
     deaths: gameData?.Saved_entries?.STATS?.DEATH?.count ?? 0,
     playtime: parsePlaytime(gameData?.Saved_not_important?.playtime ?? 0),
@@ -38,12 +47,16 @@ const SaveProvider = ({ children }) => {
     liquidNacresCount: gameData?.Saved_not_important?.liquid_nacres_count ?? 0,
     solidifyNacreCount:
       gameData?.Saved_not_important?.solidify_nacre_count ?? 0,
+    trinkets: parseTrinkets(),
   }
+
+  console.log(playerStats)
 
   const value = {
     setCurrentSave,
     setGameData,
     playerStats,
+    localization,
   }
 
   // console.log(value)
