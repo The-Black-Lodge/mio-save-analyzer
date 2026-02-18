@@ -11,7 +11,9 @@ const Ability = ({ label, acquired }) => {
       }}
     >
       <h4>{label}</h4>
-      <p>{acquired ? "acquired" : "not acquired"}</p>
+      <p style={{ fontSize: "0.8rem" }}>
+        {acquired ? "acquired" : "not acquired"}
+      </p>
     </div>
   )
 }
@@ -28,7 +30,12 @@ const Unlocks = () => {
         padding: "1rem",
       }}
     >
-      <h3>Abilities</h3>
+      <h3>
+        Abilities{" "}
+        <span style={{ color: "white" }}>
+          ({acquiredUnlocks.length}/{Object.keys(allUnlocks).length})
+        </span>
+      </h3>
       <div style={{ display: "flex", gap: "0.5rem" }}>
         {Object.entries(allUnlocks).map(([key, value]) => (
           <Ability

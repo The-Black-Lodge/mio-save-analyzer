@@ -16,8 +16,8 @@ function App() {
         <SavePicker />
         <SaveStats />
         <Unlocks />
-        <Bosses />
         <Trinkets />
+        <Bosses />
         <Candles />
         <ShieldFragments />
         <Carcasses />
