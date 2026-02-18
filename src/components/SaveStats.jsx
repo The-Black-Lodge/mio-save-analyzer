@@ -4,14 +4,26 @@ const SaveStats = () => {
   const { playerStats } = useSaveProvider()
 
   return (
-    <>
-      <h1>Player Stats</h1>
-      <p>Deaths: {playerStats.deaths}</p>
-      <p>Playtime: {playerStats.playtime}</p>
-      <p>Last Save Time: {playerStats.lastSaveTime}</p>
-      <p>Nacre: {playerStats.liquidNacresCount}</p>
-      <p>Solidified Nacre: {playerStats.solidifyNacreCount}</p>
-    </>
+    <div
+      style={{
+        display: "inline-flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        height: "20rem",
+        padding: "1rem",
+        width: "23rem",
+      }}
+    >
+      <h2>Player Stats</h2>
+      <ul>
+        <li>Deaths: {playerStats.deaths}</li>
+        <li>Playtime: {playerStats.playtime}</li>
+        <li>Last Save Time: {playerStats.lastSaveTime}</li>
+        <li>Nacre: {playerStats.liquidNacresCount}</li>
+        <li>Solidified Nacre: {playerStats.solidifyNacreCount}</li>
+        <li>Nacre Lost: {playerStats.nacreLost}</li>
+      </ul>
+    </div>
   )
 }
 

@@ -7,8 +7,16 @@ const Unlocks = () => {
   const acquiredUnlocks = playerStats?.unlocks ?? []
 
   return (
-    <>
-      <h1>Unlocks</h1>
+    <div
+      style={{
+        display: "inline-flex",
+        flexDirection: "column",
+        alignItems: "flex-start",
+        height: "20rem",
+        padding: "1rem",
+      }}
+    >
+      <h2>Unlocks</h2>
       <ul>
         {Object.entries(allUnlocks).map(([key, value]) => (
           <li key={key}>
@@ -16,7 +24,7 @@ const Unlocks = () => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   )
 }
 

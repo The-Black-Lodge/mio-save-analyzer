@@ -10,13 +10,14 @@ const Trinkets = () => {
     ),
   )
   const acquiredTrinkets = playerStats?.trinkets ?? []
+  const slotUpgradesCount = playerStats?.trinketSlotUpgradesCount ?? 0
 
   return (
-    <>
-      <h1>
-        Trinkets ({Object.keys(acquiredTrinkets).length}/
-        {Object.keys(allTrinkets).length})
-      </h1>
+    <div style={{ display: "inline-block" }}>
+      <h2>
+        Trinkets ({acquiredTrinkets.length}/{Object.keys(allTrinkets).length})
+      </h2>
+      <p>{slotUpgradesCount}/7 slot upgrades found</p>
       <ul
         style={{
           display: "flex",
@@ -45,7 +46,7 @@ const Trinkets = () => {
           </li>
         ))}
       </ul>
-    </>
+    </div>
   )
 }
 
