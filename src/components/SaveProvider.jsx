@@ -55,6 +55,14 @@ const SaveProvider = ({ children }) => {
       .sort((a, b) => a - b)
     const trinketSlotUpgradesCount = trinketSlotUpgradesAcquired.length
 
+    const candleObj = gameData?.Saved_entries?.CANDLE ?? {}
+    const candlesAcquired = Object.entries(candleObj)
+      .filter(([, value]) => value?.flags?.includes("Acquired"))
+      .map(([key]) => parseInt(key, 10))
+      .filter((n) => !Number.isNaN(n) && n >= 0 && n <= 11)
+      .sort((a, b) => a - b)
+    const candlesCount = candlesAcquired.length
+
     const carcassObj = gameData?.Saved_entries?.CARCASS ?? {}
     const carcasses = Object.entries(carcassObj)
       .filter(([, value]) => value?.flags?.includes("Acquired"))
@@ -89,6 +97,8 @@ const SaveProvider = ({ children }) => {
       unlocks,
       trinketSlotUpgradesCount,
       trinketSlotUpgradesAcquired,
+      candlesCount,
+      candlesAcquired,
       carcasses,
       bossesDefeated,
       bossesMet,
