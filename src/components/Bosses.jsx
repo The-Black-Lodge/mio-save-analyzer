@@ -5,11 +5,11 @@ const Bosses = () => {
 
   return (
     <>
-      <h2>Bosses</h2>
+      <h3>Bosses</h3>
       <p style={{ fontSize: "0.85em", color: "#666", margin: "0 0 0.5rem 0" }}>
         met / tried
       </p>
-      <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
+      <ul>
         {collectibles.bosses.map((boss) => {
           const defeated = playerStats.bossesDefeated?.[boss] ?? 0
           const met = playerStats.bossesMet?.[boss] ?? 0

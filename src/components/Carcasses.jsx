@@ -10,8 +10,10 @@ const Carcasses = () => {
 
   return (
     <>
-      <h2>Old Cores</h2>
-      <p>{count}/{total} collected</p>
+      <h3>Old Cores</h3>
+      <p>
+        {count}/{total} collected
+      </p>
       <ul>
         {allCarcasses.map((id) => (
           <li key={id}>

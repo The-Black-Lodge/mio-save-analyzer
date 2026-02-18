@@ -16,7 +16,7 @@ const Unlocks = () => {
         padding: "1rem",
       }}
     >
-      <h2>Unlocks</h2>
+      <h3>Unlocks</h3>
       <ul>
         {Object.entries(allUnlocks).map(([key, value]) => (
           <li key={key}>

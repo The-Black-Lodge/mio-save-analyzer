@@ -14,7 +14,7 @@ const SaveStats = () => {
         width: "23rem",
       }}
     >
-      <h2>Player Stats</h2>
+      <h3>Player Stats</h3>
       <ul>
         <li>Deaths: {playerStats.deaths}</li>
         <li>Playtime: {playerStats.playtime}</li>

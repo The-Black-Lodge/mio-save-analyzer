@@ -16,11 +16,14 @@ const SavePicker = () => {
   }
 
   return (
-    <>
-      <button onClick={() => setCurrentSave(0)}>Empty Save</button>
+    <div>
+      <h1>MIO: Memories in Orbit</h1>
+      <h2>Save Analyzer</h2>
+      <p>STILL IN PROGRESS!</p>
+      {/* <button onClick={() => setCurrentSave(0)}>Empty Save</button>
       <button onClick={() => setCurrentSave(1)}>My Save</button>
       <button onClick={() => setCurrentSave(2)}>100%ish</button>
-      <button onClick={() => setCurrentSave(3)}>Luna</button>
+      <button onClick={() => setCurrentSave(3)}>Luna</button> */}
       <input
         ref={fileInputRef}
         type="file"
@@ -29,8 +32,7 @@ const SavePicker = () => {
         onChange={handleFileChange}
       />
       <button onClick={handleUploadClick}>Upload Save</button>
-      <p>Save file is located in (update this later)</p>
-    </>
+    </div>
   )
 }
 

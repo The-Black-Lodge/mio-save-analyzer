@@ -17,9 +17,9 @@ const Trinkets = () => {
 
   return (
     <div style={{ display: "inline-block" }}>
-      <h2>
+      <h3>
         Trinkets ({acquiredTrinkets.length}/{Object.keys(allTrinkets).length})
-      </h2>
+      </h3>
       <p>{slotUpgradesCount}/7 slot upgrades found</p>
       <p style={{ fontSize: "0.9em", margin: "0.25rem 0" }}>
         Slots:{" "}

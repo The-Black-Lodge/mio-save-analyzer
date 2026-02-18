@@ -10,7 +10,7 @@ const ShieldFragments = () => {
 
   return (
     <div style={{ display: "inline-block" }}>
-      <h2>Coating Components</h2>
+      <h3>Coating Components</h3>
       <p>
         {shieldFragmentsCount}/{SHIELD_FRAGMENTS_MAX} found
       </p>

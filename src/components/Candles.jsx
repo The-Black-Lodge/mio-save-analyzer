@@ -10,8 +10,10 @@ const Candles = () => {
 
   return (
     <div style={{ display: "inline-block" }}>
-      <h2>Candles</h2>
-      <p>{candlesCount}/{CANDLES_MAX} found</p>
+      <h3>Candles</h3>
+      <p>
+        {candlesCount}/{CANDLES_MAX} found
+      </p>
       <p style={{ fontSize: "0.9em", margin: "0.25rem 0" }}>
         Slots:{" "}
         {CANDLE_INDICES.map((i) =>
