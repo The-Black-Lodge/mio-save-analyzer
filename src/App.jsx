@@ -21,9 +21,19 @@ function App() {
         <Unlocks />
         <Trinkets />
         <Bosses />
-        <Candles />
-        <ShieldFragments />
-        <Carcasses />
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "1.5rem",
+            justifyContent: "center",
+            width: "100%",
+          }}
+        >
+          <Candles />
+          <ShieldFragments />
+          <Carcasses />
+        </div>
         <Footer />
       </div>
     </SaveProvider>

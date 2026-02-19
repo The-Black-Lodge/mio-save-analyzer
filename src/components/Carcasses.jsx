@@ -40,7 +40,7 @@ const Carcasses = () => {
   const acquiredCarcasses = playerStats?.carcasses ?? []
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={{ padding: "1rem", flex: 1, minWidth: "14rem" }}>
       <h3>
         Old Cores{" "}
         <span style={{ color: "white" }}>
@@ -49,11 +49,9 @@ const Carcasses = () => {
       </h3>
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
+          display: "flex",
+          flexDirection: "column",
           gap: "0.5rem",
-          maxWidth: "32rem",
-          margin: "0 auto",
         }}
       >
         {carcassIds.map((id) => {

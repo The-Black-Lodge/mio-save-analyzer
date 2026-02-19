@@ -45,7 +45,7 @@ const ShieldFragments = () => {
   const shieldFragments = collectibles?.shield_fragments ?? {}
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={{ padding: "1rem", flex: 1, minWidth: "14rem" }}>
       <h3>
         Coating Components{" "}
         <span style={{ color: "white" }}>
@@ -54,11 +54,9 @@ const ShieldFragments = () => {
       </h3>
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1fr",
+          display: "flex",
+          flexDirection: "column",
           gap: "0.5rem",
-          maxWidth: "32rem",
-          margin: "0 auto",
         }}
       >
         {SHIELD_FRAGMENT_INDICES.map((i) => {

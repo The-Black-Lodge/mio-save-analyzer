@@ -14,7 +14,7 @@ const CandleCard = ({ label, acquired, url }) => {
         textAlign: "center",
       }}
     >
-      <h4>{label}</h4>
+      <p style={{ textAlign: "left", fontSize: "0.8rem" }}>{label}</p>
       {url ? (
         <a
           href={url}
@@ -42,7 +42,7 @@ const Candles = () => {
   const candles = collectibles?.candles ?? {}
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div style={{ padding: "1rem", flex: 1, minWidth: "14rem" }}>
       <h3>
         Candles{" "}
         <span style={{ color: "white" }}>
@@ -52,9 +52,8 @@ const Candles = () => {
       <div
         style={{
           display: "flex",
-          flexWrap: "wrap",
+          flexDirection: "column",
           gap: "0.5rem",
-          justifyContent: "center",
         }}
       >
         {CANDLE_INDICES.map((i) => {
