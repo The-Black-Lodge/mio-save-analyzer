@@ -56,6 +56,32 @@
     "WASHING_MACHINE",
     "ZANGY"
   ],
+  "boss": {
+    "BAMBY": { "name": "Nabuu", "description": "Keeper of the Breath" },
+    "BLACKSMITH": { "name": "ACAT", "description": "Nacre Engraver" },
+    "CRABASH": { "name": "Egis", "description": "Worn Out Sentinel" },
+    "DEVOURER": { "name": "Lombre", "description": "Intrusive Fertilizer" },
+    "DOOR": {
+      "name": "Poltergates",
+      "description": "Dr. Halyn's experiment #223"
+    },
+    "PROJEKT": { "name": "PROJEKT", "description": "" },
+    "RAMBO": { "name": "RAMBO", "description": "" },
+    "SASUKE": { "name": "Ati", "description": "" },
+    "SAW_LONGUE": { "name": "Sawlong", "description": "" },
+    "SCARECROW": { "name": "Crow", "description": "Automated Reaper" },
+    "SHII": { "name": "Shii", "description": "" },
+    "SPIDY": {
+      "name": "Friends :)",
+      "description": "-- nothing to worry about --"
+    },
+    "TRAPU": { "name": "Atmos", "description": "Weather Control Unit" },
+    "TWIN": { "name": "Sol & Vin", "description": "The Last Embedders" },
+    "TWIN_CRABASH": { "name": "Ancile & Targa", "description": "" },
+    "VINE": { "name": "VINE", "description": "" },
+    "WASHING_MACHINE": { "name": "Vlad", "description": "Exiled Sycophant" },
+    "ZANGY": { "name": "Calderon", "description": "Unyielding Furnace" }
+  },
   "candles": {
     "0": { "description": "Candle 0", "url": "" },
     "1": { "description": "Candle 1", "url": "" },

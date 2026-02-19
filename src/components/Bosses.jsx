@@ -1,27 +1,70 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 
+const BossCard = ({ label, description, acquired }) => {
+  return (
+    <div
+      style={{
+        border: acquired ? "1px solid #ffc" : "1px solid #666",
+        padding: "0.5rem",
+        borderRadius: "0.5rem",
+        textAlign: "center",
+      }}
+    >
+      <h4 style={{ textTransform: "uppercase" }}>{label}</h4>
+      {description && (
+        <>
+          <hr style={{ border: "none", borderBottom: "1px solid #666" }} />
+          <p style={{ fontSize: "0.8rem", textAlign: "center" }}>
+            {description}
+          </p>
+        </>
+      )}
+    </div>
+  )
+}
+
 const Bosses = () => {
   const { playerStats, collectibles } = useSaveProvider()
+  const bossesList = collectibles?.bosses ?? []
+  const bossDetails = collectibles?.boss ?? {}
+  const bossesDefeated = playerStats?.bossesDefeated ?? {}
+
+  const defeatedCount = bossesList.filter(
+    (id) => (bossesDefeated[id] ?? 0) > 0,
+  ).length
 
   return (
-    <>
-      <h3>Bosses</h3>
-      <p style={{ fontSize: "0.85em", color: "#666", margin: "0 0 0.5rem 0" }}>
-        met / tried
-      </p>
-      <ul>
-        {collectibles.bosses.map((boss) => {
-          const defeated = playerStats.bossesDefeated?.[boss] ?? 0
-          const met = playerStats.bossesMet?.[boss] ?? 0
-          const tried = playerStats.bossesTried?.[boss] ?? 0
+    <div style={{ padding: "1rem" }}>
+      <h3>
+        Bosses{" "}
+        <span style={{ color: "white" }}>
+          ({defeatedCount}/{bossesList.length})
+        </span>
+      </h3>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "0.5rem",
+          justifyContent: "center",
+        }}
+      >
+        {bossesList.map((bossId) => {
+          const info = bossDetails[bossId] ?? {}
+          const name = info.name ?? bossId
+          const description = info.description ?? ""
+          const acquired = (bossesDefeated[bossId] ?? 0) > 0
           return (
-            <li key={boss}>
-              {defeated > 0 ? "✅" : "❌"} {boss} {met} / {tried}
-            </li>
+            <BossCard
+              key={bossId}
+              label={name}
+              description={description}
+              acquired={acquired}
+            />
           )
         })}
-      </ul>
-    </>
+      </div>
+    </div>
   )
 }
 

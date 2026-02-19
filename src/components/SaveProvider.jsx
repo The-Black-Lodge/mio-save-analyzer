@@ -101,9 +101,9 @@ const SaveProvider = ({ children }) => {
         gameData?.Saved_not_important?.last_save_time ?? 0,
       ),
       liquidNacresCount:
-        gameData?.Saved_not_important?.liquid_nacres_count ?? 0,
+        gameData?.Saved_entries?.RESOURCE?.PEARL_SHARDS?.count ?? 0,
       solidifyNacreCount:
-        gameData?.Saved_not_important?.solidify_nacre_count ?? 0,
+        gameData?.Saved_entries?.RESOURCE?.SOLID_DROPLETS?.count ?? 0,
       nacreLost: gameData?.Save?.nacre_in_hub_basin ?? 0,
       trinkets,
       equippedTrinkets,
