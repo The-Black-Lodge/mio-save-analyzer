@@ -7,6 +7,7 @@ const CandleCard = ({ label, acquired, url }) => {
   return (
     <div
       style={{
+        position: "relative",
         border: acquired ? "1px solid #ffc" : "1px solid #666",
         padding: "0.5rem",
         borderRadius: "0.5rem",
@@ -19,8 +20,16 @@ const CandleCard = ({ label, acquired, url }) => {
           href={url}
           target="_blank"
           rel="noopener noreferrer"
+          style={{
+            position: "absolute",
+            bottom: "0.25rem",
+            right: "0.25rem",
+            color: "#ffc",
+            fontSize: "0.8rem",
+          }}
+          aria-label="View location"
         >
-          🔗
+          <i className="fa-solid fa-link" />
         </a>
       ) : null}
     </div>

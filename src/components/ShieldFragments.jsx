@@ -1,47 +1,81 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 
 const SHIELD_FRAGMENTS_MAX = 24
+const SHIELD_FRAGMENT_INDICES = Array.from(
+  { length: SHIELD_FRAGMENTS_MAX },
+  (_, i) => i,
+)
+
+const ShieldFragmentCard = ({ label, acquired, url }) => {
+  return (
+    <div
+      style={{
+        position: "relative",
+        border: acquired ? "1px solid #ffc" : "1px solid #666",
+        padding: "0.5rem",
+        borderRadius: "0.5rem",
+        textAlign: "center",
+      }}
+    >
+      <p style={{ textAlign: "left", fontSize: "0.8rem" }}>{label}</p>
+      {url ? (
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            position: "absolute",
+            bottom: "0.25rem",
+            right: "0.25rem",
+            color: "#ffc",
+            fontSize: "0.8rem",
+          }}
+          aria-label="View location"
+        >
+          <i className="fa-solid fa-link" />
+        </a>
+      ) : null}
+    </div>
+  )
+}
 
 const ShieldFragments = () => {
   const { playerStats, collectibles } = useSaveProvider()
-  const shieldFragmentsCount = playerStats?.shieldFragmentsCount ?? 0
   const shieldFragmentsAcquired = playerStats?.shieldFragmentsAcquired ?? []
   const shieldFragments = collectibles?.shield_fragments ?? {}
 
   return (
-    <div>
-      <h3>Coating Components</h3>
-      <p>
-        {shieldFragmentsCount}/{SHIELD_FRAGMENTS_MAX} found
-      </p>
-      <ul>
-        {Array.from({ length: 24 }, (_, i) => {
+    <div style={{ padding: "1rem" }}>
+      <h3>
+        Coating Components{" "}
+        <span style={{ color: "white" }}>
+          ({shieldFragmentsAcquired.length}/{SHIELD_FRAGMENTS_MAX})
+        </span>
+      </h3>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "0.5rem",
+          maxWidth: "32rem",
+          margin: "0 auto",
+        }}
+      >
+        {SHIELD_FRAGMENT_INDICES.map((i) => {
           const info = shieldFragments[String(i)] ?? {}
-          const description = info.description ?? ""
+          const description = info.description ?? `Fragment ${i}`
           const url = info.url ?? ""
           const acquired = shieldFragmentsAcquired.includes(i)
           return (
-            <li
+            <ShieldFragmentCard
               key={i}
-              style={{ marginBottom: "0.25rem" }}
-            >
-              {acquired ? "✅" : "❌"} {description}
-              {url ? (
-                <>
-                  {" "}
-                  <a
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    🔗
-                  </a>
-                </>
-              ) : null}
-            </li>
+              label={description}
+              acquired={acquired}
+              url={url}
+            />
           )
         })}
-      </ul>
+      </div>
     </div>
   )
 }
