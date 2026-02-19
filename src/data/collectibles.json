@@ -65,20 +65,26 @@
       "name": "Poltergates",
       "description": "Dr. Halyn's experiment #223"
     },
-    "PROJEKT": { "name": "PROJEKT", "description": "" },
-    "RAMBO": { "name": "RAMBO", "description": "" },
-    "SASUKE": { "name": "Ati", "description": "" },
-    "SAW_LONGUE": { "name": "Sawlong", "description": "" },
+    "PROJEKT": { "name": "AnRa", "description": "Anti-Rat Weapon" },
+    "RAMBO": { "name": "Debby", "description": "Dr. Halyn's Collector" },
+    "SASUKE": { "name": "Ati", "description": "Keeper of the Heart" },
+    "SAW_LONGUE": {
+      "name": "Sawlong",
+      "description": "-- and thanks for all the Nacre --"
+    },
     "SCARECROW": { "name": "Crow", "description": "Automated Reaper" },
-    "SHII": { "name": "Shii", "description": "" },
+    "SHII": { "name": "Shii", "description": "Keeper of the Spine" },
     "SPIDY": {
       "name": "Friends :)",
       "description": "-- nothing to worry about --"
     },
     "TRAPU": { "name": "Atmos", "description": "Weather Control Unit" },
     "TWIN": { "name": "Sol & Vin", "description": "The Last Embedders" },
-    "TWIN_CRABASH": { "name": "Ancile & Targa", "description": "" },
-    "VINE": { "name": "VINE", "description": "" },
+    "TWIN_CRABASH": {
+      "name": "Ancile & Targa",
+      "description": "Pristine Sentinels"
+    },
+    "VINE": { "name": "Flora", "description": "Sentient Pearltrap" },
     "WASHING_MACHINE": { "name": "Vlad", "description": "Exiled Sycophant" },
     "ZANGY": { "name": "Calderon", "description": "Unyielding Furnace" }
   },
