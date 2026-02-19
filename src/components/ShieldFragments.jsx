@@ -52,6 +52,7 @@ const ShieldFragments = () => {
           ({shieldFragmentsAcquired.length}/{SHIELD_FRAGMENTS_MAX})
         </span>
       </h3>
+      <p style={{color: "#f99"}}>Some of these locations are mixed up - still working on it. -Jowday</p>
       <div
         style={{
           display: "flex",
