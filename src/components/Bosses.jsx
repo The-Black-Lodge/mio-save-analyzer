@@ -1,6 +1,6 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 
-const BossCard = ({ label, description, acquired, tried }) => {
+const BossCard = ({ label, description, acquired, attempts }) => {
   return (
     <div
       style={{
@@ -20,7 +20,7 @@ const BossCard = ({ label, description, acquired, tried }) => {
           </p>
         </>
       )}
-      {tried > 0 && (
+      {attempts > 0 && (
         <>
           <br />
           <span
@@ -32,7 +32,7 @@ const BossCard = ({ label, description, acquired, tried }) => {
               fontSize: "0.8rem",
             }}
           >
-            {tried} <i className="fa-solid fa-skull" />
+            {attempts} <i className="fa-solid fa-skull" />
           </span>
         </>
       )}
@@ -45,7 +45,7 @@ const Bosses = () => {
   const bossesList = collectibles?.bosses ?? []
   const bossDetails = collectibles?.boss ?? {}
   const bossesDefeated = playerStats?.bossesDefeated ?? {}
-  const bossesTried = playerStats?.bossesTried ?? {}
+  const bossAttempts = playerStats?.bossAttempts ?? {}
 
   const defeatedCount = bossesList.filter(
     (id) => (bossesDefeated[id] ?? 0) > 0,
@@ -72,14 +72,14 @@ const Bosses = () => {
           const name = info.name ?? bossId
           const description = info.description ?? ""
           const acquired = (bossesDefeated[bossId] ?? 0) > 0
-          const tried = bossesTried[bossId] ?? 0
+          const attempts = bossAttempts[bossId] ?? 0
           return (
             <BossCard
               key={bossId}
               label={name}
               description={description}
               acquired={acquired}
-              tried={tried}
+              attempts={attempts}
             />
           )
         })}

@@ -87,11 +87,13 @@ const SaveProvider = ({ children }) => {
     const bossesDefeated = Object.fromEntries(
       collectibles.bosses.map((id) => [id, bossObj[id]?.count ?? 0]),
     )
-    const bossesMet = Object.fromEntries(
-      collectibles.bosses.map((id) => [id, bossMeetObj[id]?.count ?? 0]),
-    )
-    const bossesTried = Object.fromEntries(
-      collectibles.bosses.map((id) => [id, bossTryObj[id]?.count ?? 0]),
+    const bossAttempts = Object.fromEntries(
+      collectibles.bosses.map((id) => {
+        const met = bossMeetObj[id]?.count ?? 0
+        const tried = bossTryObj[id]?.count ?? 0
+        const value = met > tried ? Math.max(0, met - 1) : tried
+        return [id, value]
+      }),
     )
 
     return {
@@ -116,8 +118,7 @@ const SaveProvider = ({ children }) => {
       shieldFragmentsAcquired,
       carcasses,
       bossesDefeated,
-      bossesMet,
-      bossesTried,
+      bossAttempts,
     }
   }, [gameData])
 
