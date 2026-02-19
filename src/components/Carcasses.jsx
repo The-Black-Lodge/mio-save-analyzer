@@ -3,27 +3,17 @@ import useSaveProvider from "../hooks/useSaveProvider"
 const CarcassCard = ({ label, acquired, url }) => {
   return (
     <div
-      style={{
-        position: "relative",
-        border: acquired ? "1px solid #ffc" : "1px solid #666",
-        padding: "0.5rem",
-        borderRadius: "0.5rem",
-        textAlign: "center",
-      }}
+      className={`card card--relative ${
+        acquired ? "card--acquired" : "card--unacquired"
+      }`}
     >
-      <p style={{ textAlign: "left", fontSize: "0.8rem" }}>{label}</p>
+      <p className="text-left text-small">{label}</p>
       {url ? (
         <a
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            position: "absolute",
-            bottom: "0.25rem",
-            right: "0.25rem",
-            color: "#ffc",
-            fontSize: "0.8rem",
-          }}
+          className="corner-badge"
           aria-label="View location"
         >
           <i className="fa-solid fa-link" />
@@ -40,20 +30,14 @@ const Carcasses = () => {
   const acquiredCarcasses = playerStats?.carcasses ?? []
 
   return (
-    <div style={{ padding: "1rem", flex: 1, minWidth: "14rem" }}>
+    <div className="section-flex">
       <h3>
         Old Cores{" "}
-        <span style={{ color: "white" }}>
+        <span className="count">
           ({acquiredCarcasses.length}/{carcassIds.length})
         </span>
       </h3>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "0.5rem",
-        }}
-      >
+      <div className="flex-column">
         {carcassIds.map((id) => {
           const info = carcassDetails[id] ?? {}
           const description = info.description ?? id

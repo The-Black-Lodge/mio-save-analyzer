@@ -3,12 +3,7 @@ import useSaveProvider from "../hooks/useSaveProvider"
 const Ability = ({ label, acquired }) => {
   return (
     <div
-      style={{
-        border: acquired ? "1px solid #ffc" : "1px solid #666",
-        padding: "0.5rem",
-        borderRadius: "0.5rem",
-        textAlign: "center",
-      }}
+      className={`card ${acquired ? "card--acquired" : "card--unacquired"}`}
     >
       <h4>{label}</h4>
     </div>
@@ -22,25 +17,14 @@ const Unlocks = () => {
   const acquiredUnlocks = playerStats?.unlocks ?? []
 
   return (
-    <div
-      style={{
-        padding: "1rem",
-      }}
-    >
+    <div className="section">
       <h3>
         Abilities{" "}
-        <span style={{ color: "white" }}>
+        <span className="count">
           ({acquiredUnlocks.length}/{Object.keys(allUnlocks).length})
         </span>
       </h3>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "0.5rem",
-          justifyContent: "center",
-        }}
-      >
+      <div className="flex-grid">
         {Object.entries(allUnlocks).map(([key, value]) => (
           <Ability
             key={key}

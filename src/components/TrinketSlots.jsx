@@ -5,12 +5,7 @@ const SLOT_INDICES = [0, 1, 2, 3, 4, 5, 6]
 const SlotCard = ({ label, acquired, url }) => {
   return (
     <div
-      style={{
-        border: acquired ? "1px solid #ffc" : "1px solid #666",
-        padding: "0.5rem",
-        borderRadius: "0.5rem",
-        textAlign: "center",
-      }}
+      className={`card ${acquired ? "card--acquired" : "card--unacquired"}`}
     >
       <h4>{label}</h4>
       {url ? (
@@ -32,21 +27,14 @@ const TrinketSlots = () => {
   const trinketSlots = collectibles?.trinket_slots ?? {}
 
   return (
-    <div style={{ padding: "1rem 0 0 0" }}>
+    <div className="section-top">
       <h3>
         Modifier Slot Upgrades{" "}
-        <span style={{ color: "white" }}>
+        <span className="count">
           ({slotUpgradesAcquired.length}/7)
         </span>
       </h3>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "0.5rem",
-          justifyContent: "center",
-        }}
-      >
+      <div className="flex-grid">
         {SLOT_INDICES.map((i) => {
           const info = trinketSlots[String(i)] ?? {}
           const description = info.description ?? `Slot ${i}`

@@ -14,3 +14,126 @@
   width: 100%;
   min-height: 100vh;
 }
+
+/* Layout */
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Sections */
+.section {
+  padding: 1rem;
+}
+
+.section-flex {
+  padding: 1rem;
+  flex: 1;
+  min-width: 14rem;
+}
+
+.section-top {
+  padding: 1rem 0 0 0;
+}
+
+/* Card components */
+.card {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.card--relative {
+  position: relative;
+}
+
+.card--acquired {
+  border: var(--border-accent);
+  background-color: var(--accent-dark);
+}
+
+.card--unacquired {
+  border: var(--border-default);
+  background-color: var(--accent-darker);
+}
+
+.card--stat {
+  border: var(--border-muted);
+  margin-top: 1rem;
+}
+
+.card--wide {
+  min-width: 14rem;
+}
+
+/* Utilities */
+.count {
+  color: white;
+}
+
+.text-small {
+  font-size: var(--text-muted);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.corner-badge {
+  position: absolute;
+  bottom: 0.25rem;
+  right: 0.25rem;
+  color: var(--accent);
+  font-size: var(--text-muted);
+}
+
+.corner-badge--centered {
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+}
+
+.footer {
+  margin-top: auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--accent);
+}
+
+.footer i {
+  font-size: 1.5rem;
+}
+
+.legend {
+  margin: 0 0 0.25rem;
+  text-align: center;
+}
+
+.legend i {
+  color: var(--accent);
+}
+
+.upload-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}

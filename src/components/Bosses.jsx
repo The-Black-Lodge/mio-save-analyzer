@@ -3,19 +3,15 @@ import useSaveProvider from "../hooks/useSaveProvider"
 const BossCard = ({ label, description, acquired, attempts }) => {
   return (
     <div
-      style={{
-        position: "relative",
-        border: acquired ? "1px solid #ffc" : "1px solid #666",
-        padding: "0.5rem",
-        borderRadius: "0.5rem",
-        textAlign: "center",
-      }}
+      className={`card card--relative ${
+        acquired ? "card--acquired" : "card--unacquired"
+      }`}
     >
-      <h4 style={{ textTransform: "uppercase" }}>{label}</h4>
+      <h4 className="text-uppercase">{label}</h4>
       {description && (
         <>
-          <hr style={{ border: "none", borderBottom: "1px solid #666" }} />
-          <p style={{ fontSize: "0.8rem", textAlign: "center" }}>
+          <hr className="divider" />
+          <p className="text-small">
             {description}
           </p>
         </>
@@ -23,15 +19,7 @@ const BossCard = ({ label, description, acquired, attempts }) => {
       {attempts > 0 && (
         <>
           <br />
-          <span
-            style={{
-              position: "absolute",
-              bottom: "0.25rem",
-              right: "0.25rem",
-              color: "#ffc",
-              fontSize: "0.8rem",
-            }}
-          >
+          <span className="corner-badge">
             {attempts} <i className="fa-solid fa-skull" />
           </span>
         </>
@@ -52,21 +40,14 @@ const Bosses = () => {
   ).length
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div className="section">
       <h3>
         Bosses{" "}
-        <span style={{ color: "white" }}>
+        <span className="count">
           ({defeatedCount}/{bossesList.length})
         </span>
       </h3>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "0.5rem",
-          justifyContent: "center",
-        }}
-      >
+      <div className="flex-grid">
         {bossesList.map((bossId) => {
           const info = bossDetails[bossId] ?? {}
           const name = info.name ?? bossId

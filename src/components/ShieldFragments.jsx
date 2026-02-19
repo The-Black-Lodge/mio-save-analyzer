@@ -9,27 +9,17 @@ const SHIELD_FRAGMENT_INDICES = Array.from(
 const ShieldFragmentCard = ({ label, acquired, url }) => {
   return (
     <div
-      style={{
-        position: "relative",
-        border: acquired ? "1px solid #ffc" : "1px solid #666",
-        padding: "0.5rem",
-        borderRadius: "0.5rem",
-        textAlign: "center",
-      }}
+      className={`card card--relative ${
+        acquired ? "card--acquired" : "card--unacquired"
+      }`}
     >
-      <p style={{ textAlign: "left", fontSize: "0.8rem" }}>{label}</p>
+      <p className="text-left text-small">{label}</p>
       {url ? (
         <a
           href={url}
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            position: "absolute",
-            bottom: "0.25rem",
-            right: "0.25rem",
-            color: "#ffc",
-            fontSize: "0.8rem",
-          }}
+          className="corner-badge"
           aria-label="View location"
         >
           <i className="fa-solid fa-link" />
@@ -45,21 +35,15 @@ const ShieldFragments = () => {
   const shieldFragments = collectibles?.shield_fragments ?? {}
 
   return (
-    <div style={{ padding: "1rem", flex: 1, minWidth: "14rem" }}>
+    <div className="section-flex">
       <h3>
         Coating Components{" "}
-        <span style={{ color: "white" }}>
+        <span className="count">
           ({shieldFragmentsAcquired.length}/{SHIELD_FRAGMENTS_MAX})
         </span>
       </h3>
-      <p style={{color: "#f99"}}>Some of these locations are mixed up - still working on it. -Jowday</p>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: "0.5rem",
-        }}
-      >
+      <p className="text-warning">Some of these locations are mixed up - still working on it. -Jowday</p>
+      <div className="flex-column">
         {SHIELD_FRAGMENT_INDICES.map((i) => {
           const info = shieldFragments[String(i)] ?? {}
           const description = info.description ?? `Fragment ${i}`

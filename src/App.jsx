@@ -21,15 +21,7 @@ function App() {
         <Unlocks />
         <Trinkets />
         <Bosses />
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "1.5rem",
-            justifyContent: "center",
-            width: "100%",
-          }}
-        >
+        <div className="cards-row">
           <Candles />
           <ShieldFragments />
           <Carcasses />

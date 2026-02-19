@@ -2,17 +2,10 @@ import useSaveProvider from "../hooks/useSaveProvider"
 
 const Stat = ({ label, value }) => {
   return (
-    <div
-      style={{
-        border: "1px solid #444",
-        padding: "0.5rem",
-        borderRadius: "0.5rem",
-        marginTop: "1rem",
-      }}
-    >
+    <div className="card card--stat">
       <h4>{label}</h4>
-      <hr style={{ border: "none", borderBottom: "1px solid #666" }} />
-      <p style={{ fontSize: "0.8rem", textAlign: "center" }}>{value}</p>
+      <hr className="divider" />
+      <p className="text-small">{value}</p>
     </div>
   )
 }
@@ -21,14 +14,7 @@ const SaveStats = () => {
   const { playerStats } = useSaveProvider()
 
   return (
-    <div
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "0.5rem",
-        justifyContent: "center",
-      }}
-    >
+    <div className="flex-grid">
       <Stat
         label="Deaths"
         value={playerStats.deaths}

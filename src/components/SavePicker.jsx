@@ -21,13 +21,10 @@ const SavePicker = () => {
         ref={fileInputRef}
         type="file"
         accept=".save"
-        style={{ display: "none" }}
+        className="hidden"
         onChange={handleFileChange}
       />
-      <button
-        onClick={handleUploadClick}
-        style={{ position: "absolute", top: "1rem", right: "1rem" }}
-      >
+      <button onClick={handleUploadClick} className="upload-btn">
         Upload Save
       </button>
     </>

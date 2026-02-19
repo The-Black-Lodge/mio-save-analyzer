@@ -4,27 +4,13 @@ import TrinketSlots from "./TrinketSlots"
 const Trinket = ({ label, acquired, equipped }) => {
   return (
     <div
-      style={{
-        position: "relative",
-        border: acquired ? "1px solid #ffc" : "1px solid #666",
-        padding: "0.5rem",
-        borderRadius: "0.5rem",
-        textAlign: "center",
-        minWidth: "14rem",
-      }}
+      className={`card card--relative card--wide ${
+        acquired ? "card--acquired" : "card--unacquired"
+      }`}
     >
       <h4>{label}</h4>
       {equipped && (
-        <span
-          style={{
-            position: "absolute",
-            top: "50%",
-            right: "0.25rem",
-            transform: "translateY(-50%)",
-            color: "#ffc",
-            fontSize: "0.8rem",
-          }}
-        >
+        <span className="corner-badge corner-badge--centered">
           <i className="fa-solid fa-gears" />
         </span>
       )}
@@ -45,34 +31,17 @@ const Trinkets = () => {
   const equippedTrinkets = playerStats?.equippedTrinkets ?? []
 
   return (
-    <div style={{ padding: "1rem" }}>
+    <div className="section">
       <h3>
         Modifiers{" "}
-        <span style={{ color: "white" }}>
+        <span className="count">
           ({acquiredTrinkets.length}/{Object.keys(allTrinkets).length})
         </span>
       </h3>
-      <p
-        style={{
-          margin: "0 0 0.25rem",
-          textAlign: "center",
-          fontSize: "0.8rem",
-        }}
-      >
-        <i
-          className="fa-solid fa-gears"
-          style={{ color: "#ffc" }}
-        />{" "}
-        = equipped
+      <p className="text-small legend">
+        <i className="fa-solid fa-gears" /> = equipped
       </p>
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: "0.5rem",
-          justifyContent: "center",
-        }}
-      >
+      <div className="flex-grid">
         {Object.entries(allTrinkets).map(([key, value]) => (
           <Trinket
             key={key}
