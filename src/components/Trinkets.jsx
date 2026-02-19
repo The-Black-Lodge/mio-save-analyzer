@@ -17,9 +17,11 @@ const Trinket = ({ label, acquired, equipped }) => {
         <span
           style={{
             position: "absolute",
-            bottom: "0.25rem",
+            top: "50%",
             right: "0.25rem",
+            transform: "translateY(-50%)",
             color: "#ffc",
+            fontSize: "0.8rem",
           }}
         >
           <i className="fa-solid fa-gears" />
