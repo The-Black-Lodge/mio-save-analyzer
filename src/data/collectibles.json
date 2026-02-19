@@ -70,6 +70,15 @@
     "10": { "description": "Candle 10", "url": "" },
     "11": { "description": "Candle 11", "url": "" }
   },
+  "trinket_slots": {
+    "0": { "description": "Slot 0", "url": "" },
+    "1": { "description": "Slot 1", "url": "" },
+    "2": { "description": "Slot 2", "url": "" },
+    "3": { "description": "Slot 3", "url": "" },
+    "4": { "description": "Slot 4", "url": "" },
+    "5": { "description": "Slot 5", "url": "" },
+    "6": { "description": "Slot 6", "url": "" }
+  },
   "shield_fragments": {
     "0": { "description": "Purchase from Mel", "url": "" },
     "1": { "description": "Purchase from Mel", "url": "" },
