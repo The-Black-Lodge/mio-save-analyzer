@@ -24,9 +24,25 @@ const SavePicker = () => {
         className="hidden"
         onChange={handleFileChange}
       />
-      <button onClick={handleUploadClick} className="upload-btn">
-        Upload Save
-      </button>
+      <div className="upload-section">
+        <button
+          onClick={handleUploadClick}
+          className="upload-btn"
+        >
+          Upload Save
+        </button>
+        <span
+          className="save-path-tooltip"
+          tabIndex={0}
+        >
+          Where is my save?
+          <p className="save-path-tooltip-content">
+            Save files are usually stored in
+            <br />
+            C:\Users\(Username)\AppData\Local\MIO\Saves\Steam\(Steam64ID)\slot_(0-2).save
+          </p>
+        </span>
+      </div>
     </>
   )
 }

@@ -42,7 +42,6 @@ const ShieldFragments = () => {
           ({shieldFragmentsAcquired.length}/{SHIELD_FRAGMENTS_MAX})
         </span>
       </h3>
-      <p className="text-warning">Some of these locations are mixed up - still working on it. -Jowday</p>
       <div className="flex-column">
         {SHIELD_FRAGMENT_INDICES.map((i) => {
           const info = shieldFragments[String(i)] ?? {}
