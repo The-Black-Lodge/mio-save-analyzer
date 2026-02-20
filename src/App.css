@@ -1,3 +1,29 @@
+.todo-fixed {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent-darker);
+  border: var(--border-default);
+  border-radius: 4px;
+  font-size: var(--text-muted);
+  z-index: 100;
+}
+
+.todo-fixed h4,
+.todo-fixed p {
+  margin: 0 0 0.25rem 0;
+}
+
+.todo-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+
+.todo-fixed p:last-child {
+  margin-bottom: 0;
+}
+
 #root {
   width: 100%;
   max-width: 1280px;
@@ -89,6 +115,10 @@
 
 .text-small {
   font-size: var(--text-muted);
+}
+
+.text-extra-small {
+  font-size: 0.6rem;
 }
 
 .text-left {

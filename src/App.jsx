@@ -9,10 +9,12 @@ import Bosses from "./components/Bosses"
 import Candles from "./components/Candles"
 import ShieldFragments from "./components/ShieldFragments"
 import Footer from "./components/Footer"
+import Todo from "./components/Todo"
 
 function App() {
   return (
     <SaveProvider>
+      <Todo />
       <div className="app-content">
         <h1>MIO: Memories in Orbit</h1>
         <h2>Save Analyzer</h2>
