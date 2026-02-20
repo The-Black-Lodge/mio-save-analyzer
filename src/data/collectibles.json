@@ -228,18 +228,18 @@
     "ZANGY": { "name": "Calderon", "description": "Unyielding Furnace" }
   },
   "candles": {
-    "0": { "description": "Candle 0", "url": "" },
-    "1": { "description": "Candle 1", "url": "" },
-    "2": { "description": "Candle 2", "url": "" },
-    "3": { "description": "Candle 3", "url": "" },
-    "4": { "description": "Candle 4", "url": "" },
-    "5": { "description": "Candle 5", "url": "" },
-    "6": { "description": "Candle 6", "url": "" },
-    "7": { "description": "Candle 7", "url": "" },
-    "8": { "description": "Candle 8", "url": "" },
-    "9": { "description": "Candle 9", "url": "" },
-    "10": { "description": "Candle 10", "url": "" },
-    "11": { "description": "Candle 11", "url": "" }
+    "0": { "description": "East of Severed Spine, in a Combat Room.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264091" },
+    "1": { "description": "Bell Tower, west of Haven, platforming area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264111" },
+    "2": { "description": "West Metropolis, above and to the left of the Nacre Basin.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264035" },
+    "3": { "description": "Manufactory, bottom-right exit after defeating Vlad.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264655" },
+    "4": { "description": "Foundations, bottom of area after wind jets.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264008" },
+    "5": { "description": "Soothing Refuge pipe to the east of Goliath.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264174" },
+    "6": { "description": "Bell Tower, east of Haven, above the Breath entrance.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264299" },
+    "7": { "description": "East of Severed Spine, drop through the floor.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264296" },
+    "8": { "description": "Foundations, east of Hall elevator, speak to Elesin to receive it.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263959" },
+    "9": { "description": "West of the Lab, in a small cavern in the side of the wall.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264308" },
+    "10": { "description": "<redacted>, top of save room.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264184" },
+    "11": { "description": "Foundations, through the hidden path to the west of the City Gates Network Gate", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264602" }
   },
   "trinket_slots": {
     "0": { "description": "Slot 0", "url": "" },

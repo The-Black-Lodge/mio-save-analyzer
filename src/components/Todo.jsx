@@ -20,7 +20,7 @@ const Todo = () => {
           <li>Network Gates</li>
           <li>Overseers</li>
           <li>Old Core locations</li>
-          <li>Candle locations</li>
+          <li><s>Candle locations</s></li>
           <li>Lore items</li>
           <li>% progress (maybe)</li>
           <li>Map uncovered (maybe)</li>
