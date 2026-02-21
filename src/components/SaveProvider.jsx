@@ -1,19 +1,8 @@
-import raw0 from "../data/empty.save?raw"
-import raw1 from "../data/mine.save?raw"
-import raw2 from "../data/highest_known.save?raw"
-import raw3 from "../data/luna.save?raw"
 import localization from "../data/localization.en.json"
 import collectibles from "../data/collectibles.json"
-import { useState, useEffect, useMemo } from "react"
+import { useState, useMemo } from "react"
 import { parseSave } from "../saveParser"
 import { SaveContext } from "./SaveContext"
-
-const testSaves = [
-  parseSave(raw0),
-  parseSave(raw1),
-  parseSave(raw2),
-  parseSave(raw3),
-]
 
 const parsePlaytime = (totalSeconds) => {
   const hours = Math.floor(totalSeconds / 3600)
@@ -22,6 +11,7 @@ const parsePlaytime = (totalSeconds) => {
 }
 
 const parseLastSaveTime = (lastSaveTime) => {
+  if (!lastSaveTime) return "—"
   const date = new Date(lastSaveTime * 1000)
   return date.toLocaleString()
 }
@@ -117,12 +107,7 @@ function computePlayerStats(gameData, collectibles) {
 }
 
 const SaveProvider = ({ children }) => {
-  const [currentSave, setCurrentSave] = useState(0)
-  const [gameData, setGameData] = useState(testSaves[currentSave])
-
-  useEffect(() => {
-    setGameData(testSaves[currentSave])
-  }, [currentSave])
+  const [gameData, setGameData] = useState(null)
 
   const playerStats = useMemo(
     () => computePlayerStats(gameData, collectibles),
@@ -147,7 +132,6 @@ const SaveProvider = ({ children }) => {
   }
 
   const value = {
-    setCurrentSave,
     setGameData,
     uploadSave,
     playerStats,
