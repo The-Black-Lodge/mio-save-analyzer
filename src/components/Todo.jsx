@@ -16,7 +16,7 @@ const Todo = () => {
       </h4>
       {isOpen && (
         <ul>
-          <li>Damage Upgrades</li>
+          <li><s>Damage Upgrades</s></li>
           <li><s>Network Gates</s></li>
           <li><s>Overseers</s></li>
           <li>Old Core locations</li>
