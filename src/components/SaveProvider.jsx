@@ -75,6 +75,13 @@ const SaveProvider = ({ children }) => {
       .sort((a, b) => a - b)
     const shieldFragmentsCount = shieldFragmentsAcquired.length
 
+    const chestKeyObj = gameData?.Saved_entries?.CHEST_KEY ?? {}
+    const chestKeysAcquired = Object.entries(chestKeyObj)
+      .filter(([, value]) => value?.flags?.includes("Acquired"))
+      .map(([key]) => parseInt(key, 10))
+      .filter((n) => !Number.isNaN(n) && n >= 0 && n <= 5)
+      .sort((a, b) => a - b)
+
     const carcassObj = gameData?.Saved_entries?.CARCASS ?? {}
     const carcasses = Object.entries(carcassObj)
       .filter(([, value]) => value?.flags?.includes("Acquired"))
@@ -116,6 +123,7 @@ const SaveProvider = ({ children }) => {
       candlesAcquired,
       shieldFragmentsCount,
       shieldFragmentsAcquired,
+      chestKeysAcquired,
       carcasses,
       bossesDefeated,
       bossAttempts,

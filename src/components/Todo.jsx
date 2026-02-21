@@ -21,6 +21,7 @@ const Todo = () => {
           <li>Overseers</li>
           <li>Old Core locations</li>
           <li><s>Candle locations</s></li>
+          <li><s>Fragmented Serial Number locations</s></li>
           <li>Lore items</li>
           <li>% progress (maybe)</li>
           <li>Map uncovered (maybe)</li>

@@ -250,6 +250,14 @@
     "5": { "description": "Slot 5", "url": "" },
     "6": { "description": "Slot 6", "url": "" }
   },
+  "chest_keys": {
+    "0": { "flavor": "find us", "description": "#0 Southeast section of room west of <redacted> Network Gate (via Promenade).", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264169" },
+    "1": { "flavor": "we are waiting", "description": "#1 Below <redacted> Network Gate (via Promenade), eastern platforming area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264505" },
+    "2": { "flavor": "in the deepest parts", "description": "#2 <redacted> (via Foundations), hidden passage near Nacre Basin.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264508" },
+    "3": { "flavor": "of the vaults", "description": "#3 <redacted> Network Gate (via Foundations), lower west section.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264064" },
+    "4": { "flavor": "where our existence", "description": "#4 Below <redacted> Network Gate (via Promenade), western platforming area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264573" },
+    "5": { "flavor": "comes to an end", "description": "#5 Directly below <redacted> Network Gate (via Foundations).", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264055" }
+  },
   "shield_fragments": {
     "0": { "description": "Purchase from Mel", "url": "" },
     "1": { "description": "Purchase from Mel", "url": "" },

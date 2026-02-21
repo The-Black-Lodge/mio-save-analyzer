@@ -6,6 +6,7 @@ import Trinkets from "./components/Trinkets"
 import Unlocks from "./components/Unlocks"
 import Carcasses from "./components/Carcasses"
 import Bosses from "./components/Bosses"
+import ChestKey from "./components/ChestKey"
 import Candles from "./components/Candles"
 import ShieldFragments from "./components/ShieldFragments"
 import Footer from "./components/Footer"
@@ -23,6 +24,7 @@ function App() {
         <Unlocks />
         <Trinkets />
         <Bosses />
+        <ChestKey />
         <div className="cards-row">
           <Candles />
           <ShieldFragments />

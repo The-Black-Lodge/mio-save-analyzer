@@ -121,6 +121,10 @@
   font-size: 0.6rem;
 }
 
+.text-dim {
+  color: #888;
+}
+
 .text-left {
   text-align: left;
 }
