@@ -108,6 +108,17 @@
   min-width: 14rem;
 }
 
+.flex-grid--bosses {
+  width: 100%;
+  max-width: calc(6 * 12rem + 5 * 0.5rem);
+}
+
+.card--boss {
+  width: 11rem;
+  min-height: 3rem;
+  padding-bottom: 1.25rem;
+}
+
 /* Utilities */
 .count {
   color: white;
@@ -123,6 +134,10 @@
 
 .text-dim {
   color: #888;
+}
+
+.text-accent {
+  color: var(--accent);
 }
 
 .text-left {

@@ -139,36 +139,24 @@
     }
   },
   "bosses": {
-    "BAMBY": { "name": "Nabuu", "description": "Keeper of the Breath" },
-    "BLACKSMITH": { "name": "ACAT", "description": "Nacre Engraver" },
-    "CRABASH": { "name": "Egis", "description": "Worn Out Sentinel" },
-    "DEVOURER": { "name": "Lombre", "description": "Intrusive Fertilizer" },
-    "DOOR": {
-      "name": "Poltergates",
-      "description": "Dr. Halyn's experiment #223"
-    },
-    "PROJEKT": { "name": "AnRa", "description": "Anti-Rat Weapon" },
-    "RAMBO": { "name": "Debby", "description": "Dr. Halyn's Collector" },
-    "SASUKE": { "name": "Ati", "description": "Keeper of the Heart" },
-    "SAW_LONGUE": {
-      "name": "Sawlong",
-      "description": "-- and thanks for all the Nacre --"
-    },
-    "SCARECROW": { "name": "Crow", "description": "Automated Reaper" },
-    "SHII": { "name": "Shii", "description": "Keeper of the Spine" },
-    "SPIDY": {
-      "name": "Friends :)",
-      "description": "-- nothing to worry about --"
-    },
-    "TRAPU": { "name": "Atmos", "description": "Weather Control Unit" },
-    "TWIN": { "name": "Sol & Vin", "description": "The Last Embedders" },
-    "TWIN_CRABASH": {
-      "name": "Ancile & Targa",
-      "description": "Pristine Sentinels"
-    },
-    "VINE": { "name": "Flora", "description": "Sentient Pearltrap" },
-    "WASHING_MACHINE": { "name": "Vlad", "description": "Exiled Sycophant" },
-    "ZANGY": { "name": "Calderon", "description": "Unyielding Furnace" }
+    "CRABASH": { "order": 1, "name": "Egis", "description": "Worn Out Sentinel" },
+    "BLACKSMITH": { "order": 2, "name": "ACAT", "description": "Nacre Engraver" },
+    "VINE": { "order": 3, "name": "Flora", "description": "Sentient Pearltrap" },
+    "SCARECROW": { "order": 4, "name": "Crow", "description": "Automated Reaper" },
+    "ZANGY": { "order": 5, "name": "Calderon", "description": "Unyielding Furnace" },
+    "TRAPU": { "order": 6, "name": "Atmos", "description": "Weather Control Unit" },
+    "BAMBY": { "order": 7, "name": "Nabuu", "description": "Keeper of the Breath" },
+    "DEVOURER": { "order": 8, "name": "Lombre", "description": "Intrusive Fertilizer" },
+    "DOOR": { "order": 9, "name": "Poltergates", "description": "Dr. Halyn's experiment #223" },
+    "SAW_LONGUE": { "order": 10, "name": "Sawlong", "description": "-- and thanks for all the Nacre --" },
+    "RAMBO": { "order": 11, "name": "Debby", "description": "Dr. Halyn's Collector" },
+    "PROJEKT": { "order": 12, "name": "AnRa", "description": "Anti-Rat Weapon" },
+    "SPIDY": { "order": 13, "name": "Friends :)", "description": "-- nothing to worry about --" },
+    "TWIN_CRABASH": { "order": 14, "name": "Ancile & Targa", "description": "Pristine Sentinels" },
+    "SASUKE": { "order": 15, "name": "Ati", "description": "Keeper of the Heart" },
+    "WASHING_MACHINE": { "order": 16, "name": "Vlad", "description": "Exiled Sycophant" },
+    "TWIN": { "order": 17, "name": "Sol & Vin", "description": "The Last Embedders" },
+    "SHII": { "order": 18, "name": "Shii", "description": "Keeper of the Spine" }
   },
   "candles": {
     "0": {
