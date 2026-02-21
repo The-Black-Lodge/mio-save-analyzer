@@ -83,8 +83,7 @@ function computePlayerStats(gameData, collectibles) {
     bossIds.map((id) => {
       const met = bossMeetObj[id]?.count ?? 0
       const tried = bossTryObj[id]?.count ?? 0
-      const value = met > tried ? Math.max(0, met - 1) : tried
-      return [id, value]
+      return [id, Math.max(Math.max(0, met - 1), tried)]
     }),
   )
 
