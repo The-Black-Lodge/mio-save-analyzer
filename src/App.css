@@ -108,6 +108,76 @@
   min-width: 14rem;
 }
 
+/* Trinkets grid view */
+.trinkets-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.legend--inline {
+  margin: 0;
+}
+
+.trinkets-view-toggle {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.view-toggle-btn {
+  background: var(--accent-darker);
+  border: var(--border-default);
+  border-radius: 4px;
+  color: #888;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  font-size: var(--font-size-muted);
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.view-toggle-btn:hover {
+  color: white;
+}
+
+.view-toggle-btn--active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.trinket-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0.5rem;
+}
+
+.card--trinket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trinket-grid .card--trinket,
+.trinket-grid-bottom .card--trinket {
+  height: 3.5rem;
+}
+
+.card--grid-trinket {
+  width: 100%;
+}
+
+.trinket-grid-gap {
+  pointer-events: none;
+}
+
+.trinket-grid-bottom {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: space-around;
+}
+
 .flex-grid--bosses {
   width: 100%;
   max-width: calc(6 * 12rem + 5 * 0.5rem);
