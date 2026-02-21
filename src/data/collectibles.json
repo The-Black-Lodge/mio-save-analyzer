@@ -1,42 +1,5 @@
 {
-  "CARCASS": [
-    "Carcass_GA_bou_build_F4",
-    "Carcass_GA_bou_chill_S1",
-    "Carcass_GA_bou_crop_P2",
-    "Carcass_GA_bou_door_C1",
-    "Carcass_GA_bou_glide_P2",
-    "Carcass_GA_bou_intro_F6",
-    "Carcass_GA_bou_up_F1",
-    "Carcass_GA_roof_lakedark",
-    "Carcass_GA_roof_leaves_C2",
-    "Carcass_GA_root_center_P1",
-    "Carcass_GA_root_conex_P1",
-    "Carcass_GA_vin_aromatic_4",
-    "Carcass_GA_vin_bridge_S1",
-    "Carcass_GA_vin_dusk_S1",
-    "Carcass_GA_vin_hall_S2",
-    "Carcass_LQ_city_lobby_C2",
-    "Carcass_LQ_city_lobby_secret",
-    "Carcass_LQ_ruins_intro_C2",
-    "Carcass_LQ_ruins_intro_S1",
-    "Carcass_LQ_under_chall_C3",
-    "Carcass_LQ_under_chall_P3",
-    "Carcass_LQ_under_hub_P4",
-    "Carcass_LQ_under_tuto_C2",
-    "Carcass_ST_pearl_lab_P3",
-    "Carcass_ST_pearl_lab_P7",
-    "Carcass_ST_pearl_lab_S1",
-    "Carcass_ST_pearl_lab_sommet",
-    "Carcass_ST_tube_hub_P2",
-    "Carcass_ST_tube_liquids_C4",
-    "Carcass_ST_tube_top",
-    "Carcass_TW_common_right",
-    "Carcass_TW_mid_data_S1",
-    "Carcass_security_glide_P1",
-    "Carcass_security_glide_P3",
-    "Carcass_trois_mouches"
-  ],
-  "carcass": {
+  "carcasses": {
     "Carcass_GA_bou_build_F4": {
       "description": "Carcass_GA_bou_build_F4",
       "url": ""
@@ -175,27 +138,7 @@
       "url": ""
     }
   },
-  "bosses": [
-    "BAMBY",
-    "BLACKSMITH",
-    "CRABASH",
-    "DEVOURER",
-    "DOOR",
-    "PROJEKT",
-    "RAMBO",
-    "SASUKE",
-    "SAW_LONGUE",
-    "SCARECROW",
-    "SHII",
-    "SPIDY",
-    "TRAPU",
-    "TWIN",
-    "TWIN_CRABASH",
-    "VINE",
-    "WASHING_MACHINE",
-    "ZANGY"
-  ],
-  "boss": {
+  "bosses": {
     "BAMBY": { "name": "Nabuu", "description": "Keeper of the Breath" },
     "BLACKSMITH": { "name": "ACAT", "description": "Nacre Engraver" },
     "CRABASH": { "name": "Egis", "description": "Worn Out Sentinel" },
@@ -228,18 +171,54 @@
     "ZANGY": { "name": "Calderon", "description": "Unyielding Furnace" }
   },
   "candles": {
-    "0": { "description": "East of Severed Spine, in a Combat Room.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264091" },
-    "1": { "description": "Bell Tower, west of Haven, platforming area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264111" },
-    "2": { "description": "West Metropolis, above and to the left of the Nacre Basin.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264035" },
-    "3": { "description": "Manufactory, bottom-right exit after defeating Vlad.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264655" },
-    "4": { "description": "Foundations, bottom of area after wind jets.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264008" },
-    "5": { "description": "Soothing Refuge pipe to the east of Goliath.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264174" },
-    "6": { "description": "Bell Tower, east of Haven, above the Breath entrance.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264299" },
-    "7": { "description": "East of Severed Spine, drop through the floor.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264296" },
-    "8": { "description": "Foundations, east of Hall elevator, speak to Elesin to receive it.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263959" },
-    "9": { "description": "West of the Lab, in a small cavern in the side of the wall.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264308" },
-    "10": { "description": "<redacted>, top of save room.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264184" },
-    "11": { "description": "Foundations, through the hidden path to the west of the City Gates Network Gate", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264602" }
+    "0": {
+      "description": "East of Severed Spine, in a Combat Room.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264091"
+    },
+    "1": {
+      "description": "Bell Tower, west of Haven, platforming area.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264111"
+    },
+    "2": {
+      "description": "West Metropolis, above and to the left of the Nacre Basin.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264035"
+    },
+    "3": {
+      "description": "Manufactory, bottom-right exit after defeating Vlad.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264655"
+    },
+    "4": {
+      "description": "Foundations, bottom of area after wind jets.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264008"
+    },
+    "5": {
+      "description": "Soothing Refuge pipe to the east of Goliath.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264174"
+    },
+    "6": {
+      "description": "Bell Tower, east of Haven, above the Breath entrance.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264299"
+    },
+    "7": {
+      "description": "East of Severed Spine, northeast path after elevator, to a downward path.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264296"
+    },
+    "8": {
+      "description": "Foundations, east of Hall elevator L2, speak to Elesin to receive it.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263959"
+    },
+    "9": {
+      "description": "West of the Lab, in a small cavern in the side of the wall.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264308"
+    },
+    "10": {
+      "description": "<redacted>, top of save room.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264184"
+    },
+    "11": {
+      "description": "Foundations, through the hidden path to the west of the City Gates Network Gate",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264602"
+    }
   },
   "trinket_slots": {
     "0": { "description": "Slot 0", "url": "" },

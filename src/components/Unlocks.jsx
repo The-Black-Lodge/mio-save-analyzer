@@ -29,7 +29,7 @@ const Unlocks = () => {
           <Ability
             key={key}
             label={value}
-            acquired={acquiredUnlocks.includes(key) ? true : false}
+            acquired={acquiredUnlocks.includes(key)}
           />
         ))}
       </div>
