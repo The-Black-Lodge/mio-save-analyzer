@@ -25,9 +25,24 @@ const NetworkGates = () => {
   const overseersAcquired = playerStats?.overseersAcquired ?? new Set()
 
   const checkpointIds = Object.keys(checkpointDetails)
+  const upperIds = checkpointIds.filter((id) => checkpointDetails[id]?.upper)
+  const lowerIds = checkpointIds.filter((id) => !checkpointDetails[id]?.upper)
   const acquiredCount = checkpointIds.filter((id) =>
     checkpointsAcquired.has(id),
   ).length
+
+  const renderCard = (id) => {
+    const info = checkpointDetails[id] ?? {}
+    const name = info.name ?? id
+    return (
+      <NetworkGateCard
+        key={id}
+        name={name}
+        checkpointAcquired={checkpointsAcquired.has(id)}
+        overseerAcquired={id in overseerDetails && overseersAcquired.has(id)}
+      />
+    )
+  }
 
   return (
     <div className="section">
@@ -40,19 +55,13 @@ const NetworkGates = () => {
       <p className="text-small legend">
         <i className="fa-solid fa-water" /> = Overseer found
       </p>
-      <div className="flex-grid flex-grid--bosses">
-        {checkpointIds.map((id) => {
-          const info = checkpointDetails[id] ?? {}
-          const name = info.name ?? id
-          return (
-            <NetworkGateCard
-              key={id}
-              name={name}
-              checkpointAcquired={checkpointsAcquired.has(id)}
-              overseerAcquired={id in overseerDetails && overseersAcquired.has(id)}
-            />
-          )
-        })}
+      <div className="flex-column" style={{ gap: "1.5rem" }}>
+        <div className="flex-grid flex-grid--bosses">
+          {upperIds.map(renderCard)}
+        </div>
+        <div className="flex-grid flex-grid--bosses">
+          {lowerIds.map(renderCard)}
+        </div>
       </div>
     </div>
   )
