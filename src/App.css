@@ -130,7 +130,7 @@
   background: var(--accent-darker);
   border: var(--border-default);
   border-radius: 4px;
-  color: #888;
+  color: var(--color-muted);
   cursor: pointer;
   padding: 0.3rem 0.6rem;
   font-size: var(--font-size-muted);
@@ -142,8 +142,8 @@
 }
 
 .view-toggle-btn--active {
-  color: var(--accent);
-  border-color: var(--accent);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
 }
 
 .trinket-grid {
@@ -203,11 +203,11 @@
 }
 
 .text-dim {
-  color: #888;
+  color: var(--color-muted);
 }
 
 .text-accent {
-  color: var(--accent);
+  color: var(--color-accent);
 }
 
 .text-left {
@@ -218,7 +218,7 @@
   position: absolute;
   bottom: 0.25rem;
   right: 0.25rem;
-  color: var(--accent);
+  color: var(--color-accent);
   font-size: var(--font-size-muted);
 }
 
@@ -235,7 +235,7 @@
 }
 
 .footer a {
-  color: var(--accent);
+  color: var(--color-accent);
 }
 
 .footer i {
@@ -248,7 +248,7 @@
 }
 
 .legend i {
-  color: var(--accent);
+  color: var(--color-accent);
 }
 
 .upload-section {

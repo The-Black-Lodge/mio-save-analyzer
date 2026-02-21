@@ -19,30 +19,41 @@
 
   color-scheme: light dark;
   color: white;
-  background-color: #242424;
+  background-color: var(--color-bg);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --accent: rgb(255, 255, 163);
-  --accent-dark: rgb(44, 44, 42);
-  --accent-darker: rgb(33, 33, 31);
-  --border-default: 1px solid #4b4b3f;
-  --border-accent: 1px solid rgb(168, 168, 138);
-  --border-muted: 1px solid #47463f;
+  --color-accent: rgb(255, 255, 163);
+  --color-accent-hover: #ff0;
+  --color-accent-dark: rgb(44, 44, 42);
+  --color-accent-darker: rgb(33, 33, 31);
+  --color-bg: #242424;
+  --color-btn-bg: #1a1a1a;
+  --color-muted: #888;
+  --color-border: #4b4b3f;
+  --color-border-accent: rgb(168, 168, 138);
+  --color-border-muted: #47463f;
+  --color-warning: #f99;
+
+  --accent-dark: var(--color-accent-dark);
+  --accent-darker: var(--color-accent-darker);
+  --border-default: 1px solid var(--color-border);
+  --border-accent: 1px solid var(--color-border-accent);
+  --border-muted: 1px solid var(--color-border-muted);
   --font-size-muted: 0.8rem;
-  --warning: #f99;
+  --warning: var(--color-warning);
 }
 
 a {
   font-weight: 500;
-  color: #ffc;
+  color: var(--color-accent);
   text-decoration: inherit;
 }
 a:hover {
-  color: #ff0;
+  color: var(--color-accent-hover);
 }
 
 html {
@@ -72,12 +83,12 @@ button {
   font-weight: 500;
   font-family: inherit;
   color: white;
-  background-color: #1a1a1a;
+  background-color: var(--color-btn-bg);
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #ffc;
+  border-color: var(--color-accent);
 }
 button:focus,
 button:focus-visible {
@@ -90,7 +101,7 @@ h1, h2, h3, h4 {
 }
 
 h2, h3, h4 {
-  color: #ffc;
+  color: var(--color-accent);
 }
 
 ul {
