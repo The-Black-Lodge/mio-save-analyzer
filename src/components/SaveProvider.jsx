@@ -87,6 +87,20 @@ function computePlayerStats(gameData, collectibles) {
     }),
   )
 
+  const checkpointObj = gameData?.Saved_entries?.CHECKPOINT ?? {}
+  const checkpointsAcquired = new Set(
+    Object.entries(checkpointObj)
+      .filter(([, value]) => value?.flags?.includes("Acquired"))
+      .map(([key]) => key),
+  )
+
+  const overseerObj = gameData?.Saved_entries?.OVERSEER ?? {}
+  const overseersAcquired = new Set(
+    Object.entries(overseerObj)
+      .filter(([, value]) => value?.flags?.includes("Acquired"))
+      .map(([key]) => key),
+  )
+
   return {
     deaths: gameData?.Saved_entries?.STATS?.DEATH?.count ?? 0,
     playtime: parsePlaytime(gameData?.Saved_not_important?.playtime ?? 0),
@@ -111,6 +125,8 @@ function computePlayerStats(gameData, collectibles) {
     carcasses,
     bossesDefeated,
     bossAttempts,
+    checkpointsAcquired,
+    overseersAcquired,
   }
 }
 

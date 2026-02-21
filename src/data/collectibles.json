@@ -218,12 +218,57 @@
     "6": { "description": "Slot 6", "url": "" }
   },
   "chest_keys": {
-    "0": { "flavor": "find us", "description": "#0 Southeast section of room west of <redacted> Network Gate (via Promenade).", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264169" },
-    "1": { "flavor": "we are waiting", "description": "#1 Below <redacted> Network Gate (via Promenade), eastern platforming area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264505" },
-    "2": { "flavor": "in the deepest parts", "description": "#2 <redacted> (via Foundations), hidden passage near Nacre Basin.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264508" },
-    "3": { "flavor": "of the vaults", "description": "#3 <redacted> Network Gate (via Foundations), lower west section.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264064" },
-    "4": { "flavor": "where our existence", "description": "#4 Below <redacted> Network Gate (via Promenade), western platforming area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264573" },
-    "5": { "flavor": "comes to an end", "description": "#5 Directly below <redacted> Network Gate (via Foundations).", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264055" }
+    "0": { "flavor": "find us", "description": "#0 Southeast section of room west of <redacted> Network Gate (Promenade).", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264169" },
+    "1": { "flavor": "we are waiting", "description": "#1 Below <redacted> Network Gate (Promenade), eastern platforming area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264505" },
+    "2": { "flavor": "in the deepest parts", "description": "#2 <redacted> (Foundations), hidden passage near Nacre Basin.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264508" },
+    "3": { "flavor": "of the vaults", "description": "#3 <redacted> Network Gate (Foundations), lower west section.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264064" },
+    "4": { "flavor": "where our existence", "description": "#4 Below <redacted> Network Gate (Promenade), western platforming area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264573" },
+    "5": { "flavor": "comes to an end", "description": "#5 Directly below <redacted> Network Gate (Foundations).", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264055" }
+  },
+  "checkpoints": {
+    "CP_LQ_SSX_tricky":        { "name": "Dwellings",        "description": "", "url": "" },
+    "CP_ST_pearl_hill":        { "name": "The Pit",        "description": "", "url": "" },
+    "CP_ST_security_asc_P1":   { "name": "Vault's Shuttle",   "description": "", "url": "" },
+    "CP_ST_security_glide_P1": { "name": "<redacted> (Foundations)", "description": "", "url": "" },
+    "CP_ST_tube_main_save":    { "name": "Vaults",    "description": "", "url": "" },
+    "CP_ST_tube_path1_P1":     { "name": "Manufactory",     "description": "", "url": "" },
+    "CP_city_entrance":        { "name": "City Gates",        "description": "", "url": "" },
+    "Cp_Entree_GA_Vin":        { "name": "Promenade Entrance",        "description": "", "url": "" },
+    "GA_taunting_save":        { "name": "Promenade Tower",        "description": "", "url": "" },
+    "cp_GA_bou_chill_S2":      { "name": "Bell Tower",      "description": "", "url": "" },
+    "cp_HUB_main_down_P1":     { "name": "Nexus",     "description": "Below the Shattered Spine.", "url": "" },
+    "cp_LQ_city_hall":         { "name": "City Hall",         "description": "", "url": "" },
+    "cp_Liho":                 { "name": "The Blood's Sanctum",                 "description": "", "url": "" },
+    "cp_ST_security_spider_P1":{ "name": "<redacted> (Promenade)","description": "", "url": "" },
+    "cp_TW_mid_core_P2":       { "name": "Celestial Bay",       "description": "", "url": "" },
+    "cp_cuves_main_P1":        { "name": "The Crucible",        "description": "", "url": "" },
+    "cp_de_la_honte":          { "name": "Library",          "description": "", "url": "" },
+    "cp_ga_roof_leaves_P3":    { "name": "Canopy",    "description": "", "url": "" },
+    "hacker_room_save":        { "name": "Lab",        "description": "", "url": "" }
+  },
+  "overseers": {
+    "CP_LQ_SSX_tricky":        { "description": "", "url": "" },
+    "CP_ST_security_asc_P1":   { "description": "", "url": "" },
+    "CP_ST_security_glide_P1": { "description": "", "url": "" },
+    "CP_ST_tube_main_save":    { "description": "", "url": "" },
+    "CP_ST_tube_path1_P1":     { "description": "", "url": "" },
+    "CP_city_entrance":        { "description": "", "url": "" },
+    "Cp_Entree_GA_Vin":        { "description": "", "url": "" },
+    "GA_taunting_save":        { "description": "", "url": "" },
+    "cp_GA_bou_chill_S2":      { "description": "", "url": "" },
+    "cp_HUB_main_down_P1":     { "description": "", "url": "" },
+    "cp_LQ_city_hall":         { "description": "", "url": "" },
+    "cp_Liho":                 { "description": "", "url": "" },
+    "cp_ST_security_spider_P1":{ "description": "", "url": "" },
+    "cp_TW_mid_core_P2":       { "description": "", "url": "" },
+    "cp_cuves_main_P1":        { "description": "", "url": "" },
+    "cp_ga_roof_leaves_P3":    { "description": "", "url": "" },
+    "hacker_room_save":        { "description": "", "url": "" }
+  },
+  "temporary_checkpoints": {
+    "cp_ga_bou_bell_top":      { "name": "cp_ga_bou_bell_top",      "description": "", "url": "" },
+    "cp_LQ_under_mast_P2":     { "name": "cp_LQ_under_mast_P2",     "description": "", "url": "" },
+    "cp_ST_saw_long":          { "name": "cp_ST_saw_long",          "description": "", "url": "" }
   },
   "shield_fragments": {
     "0": { "description": "Purchase from Mel", "url": "" },

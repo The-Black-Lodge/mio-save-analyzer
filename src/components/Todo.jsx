@@ -17,8 +17,8 @@ const Todo = () => {
       {isOpen && (
         <ul>
           <li>Damage Upgrades</li>
-          <li>Network Gates</li>
-          <li>Overseers</li>
+          <li><s>Network Gates</s></li>
+          <li><s>Overseers</s></li>
           <li>Old Core locations</li>
           <li><s>Candle locations</s></li>
           <li><s>Fragmented Serial Number locations</s></li>

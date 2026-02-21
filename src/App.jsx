@@ -6,6 +6,7 @@ import Trinkets from "./components/Trinkets"
 import Unlocks from "./components/Unlocks"
 import Carcasses from "./components/Carcasses"
 import Bosses from "./components/Bosses"
+import NetworkGates from "./components/NetworkGates"
 import ChestKey from "./components/ChestKey"
 import Candles from "./components/Candles"
 import ShieldFragments from "./components/ShieldFragments"
@@ -24,6 +25,7 @@ function App() {
         <Unlocks />
         <Trinkets />
         <Bosses />
+        <NetworkGates />
         <ChestKey />
         <div className="cards-row">
           <Candles />
