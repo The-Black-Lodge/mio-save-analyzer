@@ -225,6 +225,13 @@
     "4": { "flavor": "where our existence", "description": "#4 Below <redacted> Network Gate (Promenade), western platforming area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264573" },
     "5": { "flavor": "comes to an end", "description": "#5 Directly below <redacted> Network Gate (Foundations).", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264055" }
   },
+  "attack_power": {
+    "0": { "flavor": "Esi, Keeper of the Eye", "description": "#0 Dwellings, after some exploration.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263969" },
+    "1": { "flavor": "Gel, Keeper of the Eye", "description": "#1 The Shattered Spine, top eastern section.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264405" },
+    "2": { "flavor": "Pip, Keeper of the Eye", "description": "#2 Promenade, platforming area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264411" },
+    "3": { "flavor": "Nav, Keeper of the Eye", "description": "#3 Above The Blood's Sanctum, after a boss fight.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264547" },
+    "4": { "flavor": "Lou, Keeper of the Eye", "description": "#4 The Pit, east of the bottom elevator.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264758" }
+  },
   "checkpoints": {
     "CP_LQ_SSX_tricky":        { "name": "Dwellings",        "description": "", "url": "", "upper": true },
     "CP_ST_pearl_hill":        { "name": "The Pit",        "description": "", "url": "", "upper": false },

@@ -1,10 +1,13 @@
-const CollectibleCard = ({ label, acquired, url }) => (
+const CollectibleCard = ({ label, flavor, acquired, url }) => (
   <div
     className={`card card--relative ${
       acquired ? "card--acquired" : "card--unacquired"
     }`}
   >
     <p className="text-left text-small">{label}</p>
+    {flavor && (
+      <p className="text-left text-extra-small text-dim">{flavor}</p>
+    )}
     {url ? (
       <a
         href={url}
@@ -34,11 +37,13 @@ const CollectibleList = ({ title, items, acquiredKeys, fallbackLabel }) => {
           const info = items[key] ?? {}
           const description =
             info.description ?? (fallbackLabel ? fallbackLabel(key) : key)
+          const flavor = info.flavor ?? ""
           const url = info.url ?? ""
           return (
             <CollectibleCard
               key={key}
               label={description}
+              flavor={flavor}
               acquired={acquiredKeys.has(key)}
               url={url}
             />

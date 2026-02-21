@@ -40,6 +40,14 @@ function computePlayerStats(gameData, collectibles) {
     .sort((a, b) => a - b)
   const trinketSlotUpgradesCount = trinketSlotUpgradesAcquired.length
 
+  const validAttackPowerKeys = new Set(Object.keys(collectibles.attack_power))
+  const attackPowerObj = gameData?.Saved_entries?.ATTACK_POWER ?? {}
+  const attackPowerAcquired = Object.entries(attackPowerObj)
+    .filter(([, value]) => value?.flags?.includes("Acquired"))
+    .map(([key]) => parseInt(key, 10))
+    .filter((n) => !Number.isNaN(n) && validAttackPowerKeys.has(String(n)))
+    .sort((a, b) => a - b)
+
   const validCandleKeys = new Set(Object.keys(collectibles.candles))
   const candleObj = gameData?.Saved_entries?.CANDLE ?? {}
   const candlesAcquired = Object.entries(candleObj)
@@ -122,6 +130,7 @@ function computePlayerStats(gameData, collectibles) {
     shieldFragmentsCount,
     shieldFragmentsAcquired,
     chestKeysAcquired,
+    attackPowerAcquired,
     carcasses,
     bossesDefeated,
     bossAttempts,
