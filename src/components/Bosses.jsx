@@ -30,8 +30,8 @@ const BossCard = ({ label, description, acquired, attempts }) => {
 
 const Bosses = () => {
   const { playerStats, collectibles } = useSaveProvider()
-  const bossesList = collectibles?.bosses ?? []
-  const bossDetails = collectibles?.boss ?? {}
+  const bossDetails = collectibles?.bosses ?? {}
+  const bossesList = Object.keys(bossDetails)
   const bossesDefeated = playerStats?.bossesDefeated ?? {}
   const bossAttempts = playerStats?.bossAttempts ?? {}
 

@@ -6,7 +6,7 @@
   background: var(--accent-darker);
   border: var(--border-default);
   border-radius: 4px;
-  font-size: var(--text-muted);
+  font-size: var(--font-size-muted);
   z-index: 100;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .text-small {
-  font-size: var(--text-muted);
+  font-size: var(--font-size-muted);
 }
 
 .text-extra-small {
@@ -130,7 +130,7 @@
   bottom: 0.25rem;
   right: 0.25rem;
   color: var(--accent);
-  font-size: var(--text-muted);
+  font-size: var(--font-size-muted);
 }
 
 .corner-badge--centered {
@@ -174,7 +174,7 @@
 
 .save-path-tooltip {
   position: relative;
-  font-size: var(--text-muted);
+  font-size: var(--font-size-muted);
   cursor: help;
   color: white;
 }

@@ -1,7 +1,5 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 
-const SLOT_INDICES = [0, 1, 2, 3, 4, 5, 6]
-
 const SlotCard = ({ label, acquired, url }) => {
   return (
     <div
@@ -14,7 +12,7 @@ const SlotCard = ({ label, acquired, url }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          🔗
+          <i className="fa-solid fa-link" />
         </a>
       ) : null}
     </div>
@@ -25,24 +23,25 @@ const TrinketSlots = () => {
   const { playerStats, collectibles } = useSaveProvider()
   const slotUpgradesAcquired = playerStats?.trinketSlotUpgradesAcquired ?? []
   const trinketSlots = collectibles?.trinket_slots ?? {}
+  const slotKeys = Object.keys(trinketSlots)
 
   return (
     <div className="section-top">
       <h3>
         Modifier Slot Upgrades{" "}
         <span className="count">
-          ({slotUpgradesAcquired.length}/7)
+          ({slotUpgradesAcquired.length}/{slotKeys.length})
         </span>
       </h3>
       <div className="flex-grid">
-        {SLOT_INDICES.map((i) => {
-          const info = trinketSlots[String(i)] ?? {}
-          const description = info.description ?? `Slot ${i}`
+        {slotKeys.map((key) => {
+          const info = trinketSlots[key] ?? {}
+          const description = info.description ?? `Slot ${key}`
           const url = info.url ?? ""
-          const acquired = slotUpgradesAcquired.includes(i)
+          const acquired = slotUpgradesAcquired.includes(parseInt(key, 10))
           return (
             <SlotCard
-              key={i}
+              key={key}
               label={description}
               acquired={acquired}
               url={url}

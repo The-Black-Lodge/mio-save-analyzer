@@ -32,7 +32,7 @@
   --border-default: 1px solid #4b4b3f;
   --border-accent: 1px solid rgb(168, 168, 138);
   --border-muted: 1px solid #47463f;
-  --text-muted: 0.8rem;
+  --font-size-muted: 0.8rem;
   --warning: #f99;
 }
 
@@ -71,6 +71,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
+  color: white;
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
@@ -82,19 +83,6 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
 
 h1, h2, h3, h4 {
   margin: 0;
@@ -113,10 +101,6 @@ ul {
 
 p {
   margin: 0;
-}
-
-button {
-  color: white;
 }
 
 hr.divider {
