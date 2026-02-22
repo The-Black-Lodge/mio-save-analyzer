@@ -16,6 +16,15 @@ const parseLastSaveTime = (lastSaveTime) => {
   return date.toLocaleString()
 }
 
+function acquiredIntKeys(gameData, saveKey, validKeys) {
+  const obj = gameData?.Saved_entries?.[saveKey] ?? {}
+  return Object.entries(obj)
+    .filter(([, value]) => value?.flags?.includes("Acquired"))
+    .map(([key]) => parseInt(key, 10))
+    .filter((n) => !Number.isNaN(n) && validKeys.has(String(n)))
+    .sort((a, b) => a - b)
+}
+
 function computePlayerStats(gameData, collectibles) {
   const trinketObj = gameData?.Saved_entries?.TRINKET ?? {}
   const trinkets = Object.entries(trinketObj)
@@ -31,48 +40,21 @@ function computePlayerStats(gameData, collectibles) {
     .filter(([, value]) => value?.flags?.includes("Acquired"))
     .map(([key]) => key)
 
-  const validSlotKeys = new Set(Object.keys(collectibles.trinket_slots))
-  const slotUpgradeObj = gameData?.Saved_entries?.TRINKET_SLOT_UPGRADE ?? {}
-  const trinketSlotUpgradesAcquired = Object.entries(slotUpgradeObj)
-    .filter(([, value]) => value?.flags?.includes("Acquired"))
-    .map(([key]) => parseInt(key, 10))
-    .filter((n) => !Number.isNaN(n) && validSlotKeys.has(String(n)))
-    .sort((a, b) => a - b)
-  const trinketSlotUpgradesCount = trinketSlotUpgradesAcquired.length
-
-  const validAttackPowerKeys = new Set(Object.keys(collectibles.attack_power))
-  const attackPowerObj = gameData?.Saved_entries?.ATTACK_POWER ?? {}
-  const attackPowerAcquired = Object.entries(attackPowerObj)
-    .filter(([, value]) => value?.flags?.includes("Acquired"))
-    .map(([key]) => parseInt(key, 10))
-    .filter((n) => !Number.isNaN(n) && validAttackPowerKeys.has(String(n)))
-    .sort((a, b) => a - b)
-
-  const validCandleKeys = new Set(Object.keys(collectibles.candles))
-  const candleObj = gameData?.Saved_entries?.CANDLE ?? {}
-  const candlesAcquired = Object.entries(candleObj)
-    .filter(([, value]) => value?.flags?.includes("Acquired"))
-    .map(([key]) => parseInt(key, 10))
-    .filter((n) => !Number.isNaN(n) && validCandleKeys.has(String(n)))
-    .sort((a, b) => a - b)
-  const candlesCount = candlesAcquired.length
-
-  const validShieldKeys = new Set(Object.keys(collectibles.shield_fragments))
-  const shieldFragmentObj = gameData?.Saved_entries?.SHIELD_FRAGMENT ?? {}
-  const shieldFragmentsAcquired = Object.entries(shieldFragmentObj)
-    .filter(([, value]) => value?.flags?.includes("Acquired"))
-    .map(([key]) => parseInt(key, 10))
-    .filter((n) => !Number.isNaN(n) && validShieldKeys.has(String(n)))
-    .sort((a, b) => a - b)
-  const shieldFragmentsCount = shieldFragmentsAcquired.length
-
-  const validChestKeyKeys = new Set(Object.keys(collectibles.chest_keys))
-  const chestKeyObj = gameData?.Saved_entries?.CHEST_KEY ?? {}
-  const chestKeysAcquired = Object.entries(chestKeyObj)
-    .filter(([, value]) => value?.flags?.includes("Acquired"))
-    .map(([key]) => parseInt(key, 10))
-    .filter((n) => !Number.isNaN(n) && validChestKeyKeys.has(String(n)))
-    .sort((a, b) => a - b)
+  const trinketSlotUpgradesAcquired = acquiredIntKeys(
+    gameData, "TRINKET_SLOT_UPGRADE", new Set(Object.keys(collectibles.trinket_slots)),
+  )
+  const attackPowerAcquired = acquiredIntKeys(
+    gameData, "ATTACK_POWER", new Set(Object.keys(collectibles.attack_power)),
+  )
+  const candlesAcquired = acquiredIntKeys(
+    gameData, "CANDLE", new Set(Object.keys(collectibles.candles)),
+  )
+  const shieldFragmentsAcquired = acquiredIntKeys(
+    gameData, "SHIELD_FRAGMENT", new Set(Object.keys(collectibles.shield_fragments)),
+  )
+  const chestKeysAcquired = acquiredIntKeys(
+    gameData, "CHEST_KEY", new Set(Object.keys(collectibles.chest_keys)),
+  )
 
   const carcassObj = gameData?.Saved_entries?.CARCASS ?? {}
   const carcasses = Object.entries(carcassObj)
@@ -123,11 +105,8 @@ function computePlayerStats(gameData, collectibles) {
     trinkets,
     equippedTrinkets,
     unlocks,
-    trinketSlotUpgradesCount,
     trinketSlotUpgradesAcquired,
-    candlesCount,
     candlesAcquired,
-    shieldFragmentsCount,
     shieldFragmentsAcquired,
     chestKeysAcquired,
     attackPowerAcquired,
@@ -165,7 +144,6 @@ const SaveProvider = ({ children }) => {
   }
 
   const value = {
-    setGameData,
     uploadSave,
     playerStats,
     localization,

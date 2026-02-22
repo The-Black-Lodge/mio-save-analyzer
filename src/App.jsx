@@ -12,32 +12,35 @@ import ChestKey from "./components/ChestKey"
 import Candles from "./components/Candles"
 import ShieldFragments from "./components/ShieldFragments"
 import Footer from "./components/Footer"
+import ErrorBoundary from "./components/ErrorBoundary"
 import Todo from "./components/Todo"
 
 function App() {
   return (
     <SaveProvider>
-      <Todo />
-      <div className="app-content">
-        <h1>MIO: Memories in Orbit</h1>
-        <h2>Save Analyzer</h2>
-        <SavePicker />
-        <SaveStats />
-        <Unlocks />
-        <Trinkets />
-        <Bosses />
-        <NetworkGates />
-        <div className="cards-row">
-          <ChestKey />
-          <AttackPower />
+      {import.meta.env.DEV && <Todo />}
+      <ErrorBoundary>
+        <div className="app-content">
+          <h1>MIO: Memories in Orbit</h1>
+          <h2>Save Analyzer</h2>
+          <SavePicker />
+          <SaveStats />
+          <Unlocks />
+          <Trinkets />
+          <Bosses />
+          <NetworkGates />
+          <div className="cards-row">
+            <ChestKey />
+            <AttackPower />
+          </div>
+          <div className="cards-row">
+            <Candles />
+            <ShieldFragments />
+            <Carcasses />
+          </div>
+          <Footer />
         </div>
-        <div className="cards-row">
-          <Candles />
-          <ShieldFragments />
-          <Carcasses />
-        </div>
-        <Footer />
-      </div>
+      </ErrorBoundary>
     </SaveProvider>
   )
 }

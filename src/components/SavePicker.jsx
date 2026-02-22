@@ -1,9 +1,12 @@
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import useSaveProvider from "../hooks/useSaveProvider"
+
+const MAX_FILE_SIZE = 10 * 1024 * 1024
 
 const SavePicker = () => {
   const { uploadSave } = useSaveProvider()
   const fileInputRef = useRef(null)
+  const [error, setError] = useState(null)
 
   const handleUploadClick = () => {
     fileInputRef.current?.click()
@@ -11,7 +14,14 @@ const SavePicker = () => {
 
   const handleFileChange = (e) => {
     const file = e.target.files?.[0]
-    if (file) uploadSave(file)
+    setError(null)
+    if (file) {
+      if (file.size > MAX_FILE_SIZE) {
+        setError("File is too large (max 10 MB)")
+      } else {
+        uploadSave(file)
+      }
+    }
     e.target.value = ""
   }
 
@@ -31,6 +41,7 @@ const SavePicker = () => {
         >
           Upload Save
         </button>
+        {error && <p className="text-small text-warning">{error}</p>}
         <span
           className="save-path-tooltip"
           tabIndex={0}

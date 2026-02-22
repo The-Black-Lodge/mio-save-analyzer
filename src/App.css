@@ -63,6 +63,10 @@
   gap: 0.5rem;
 }
 
+.flex-column--spaced {
+  gap: 1.5rem;
+}
+
 /* Sections */
 .section {
   padding: 1rem;
@@ -294,4 +298,15 @@
   overflow-x: auto;
   z-index: 10;
   transition: opacity 0.15s ease;
+}
+
+.error-boundary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 3rem;
+  min-height: 50vh;
+  text-align: center;
 }

@@ -79,11 +79,12 @@ const Trinket = ({ label, acquired, equipped, grid }) => {
   )
 }
 
+const EXCLUDED_TRINKETS = ["EMBEDDING_BLADE", "SMALL_ENERGY_DRAIN", "TANGLES"]
+
 const Trinkets = () => {
   const { playerStats, localization } = useSaveProvider()
   const [gridView, setGridView] = useState(true)
 
-  const EXCLUDED_TRINKETS = ["EMBEDDING_BLADE", "SMALL_ENERGY_DRAIN", "TANGLES"]
   const allTrinkets = Object.fromEntries(
     Object.entries(localization?.ITEM_NAME_TRINKET ?? {}).filter(
       ([key]) => !EXCLUDED_TRINKETS.includes(key),

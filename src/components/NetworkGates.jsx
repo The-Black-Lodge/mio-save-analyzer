@@ -55,7 +55,7 @@ const NetworkGates = () => {
       <p className="text-small legend">
         <i className="fa-solid fa-water" /> = Overseer found
       </p>
-      <div className="flex-column" style={{ gap: "1.5rem" }}>
+      <div className="flex-column flex-column--spaced">
         <div className="flex-grid flex-grid--bosses">
           {upperIds.map(renderCard)}
         </div>
