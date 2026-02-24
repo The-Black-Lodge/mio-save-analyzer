@@ -66,7 +66,7 @@
     },
     "Carcass_LQ_city_lobby_secret": {
       "description": "Carcass_LQ_city_lobby_secret",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263946"
     },
     "Carcass_LQ_ruins_intro_C2": {
       "description": "Carcass_LQ_ruins_intro_C2",
@@ -74,7 +74,7 @@
     },
     "Carcass_LQ_ruins_intro_S1": {
       "description": "Carcass_LQ_ruins_intro_S1",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263979"
     },
     "Carcass_LQ_under_chall_C3": {
       "description": "Carcass_LQ_under_chall_C3",
@@ -119,11 +119,11 @@
     "Carcass_ST_tube_top": { "description": "Carcass_ST_tube_top", "url": "" },
     "Carcass_TW_common_right": {
       "description": "Carcass_TW_common_right",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264381"
     },
     "Carcass_TW_mid_data_S1": {
       "description": "Carcass_TW_mid_data_S1",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264977"
     },
     "Carcass_security_glide_P1": {
       "description": "Carcass_security_glide_P1",
@@ -144,9 +144,17 @@
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264468",
       "value": 80
     },
+    "0x3dc5a107d6cc531a":{
+      "description": "0x3dc5a107d6cc531a",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264185"
+    },
     "0x8bea9d5fcc0008cf": {
       "description": "0x8bea9d5fcc0008cf",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264494"
+    },
+    "0x92417b2fac9ff32d": {
+      "description": "0x92417b2fac9ff32d",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264183"
     },
     "0xa4bcfcad1d8b5439": {
       "description": "0xa4bcfcad1d8b5439",
