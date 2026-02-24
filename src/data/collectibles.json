@@ -70,7 +70,7 @@
     },
     "Carcass_LQ_ruins_intro_C2": {
       "description": "Carcass_LQ_ruins_intro_C2",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263920"
     },
     "Carcass_LQ_ruins_intro_S1": {
       "description": "Carcass_LQ_ruins_intro_S1",
@@ -144,7 +144,7 @@
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264468",
       "value": 80
     },
-    "0x3dc5a107d6cc531a":{
+    "0x3dc5a107d6cc531a": {
       "description": "0x3dc5a107d6cc531a",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264185"
     },
@@ -307,12 +307,32 @@
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264602"
     }
   },
+  "datapads": {
+    "MEM_PUPPET": {
+      "description": "Hidden path in starting area.",
+      "type": "Flash Memory",
+      "flavor": "-- Connection Lost --",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263868"
+    },
+    "TXT_TRAVELLER_LOG4_TRANSLATED": {
+      "description": "Foundations, eastern bottom area. Hairpin the enemy.",
+      "type": "Traveller's Log",
+      "flavor": "Grateful",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263938"
+    }
+  },
+  "keys": {
+    "ROOTS_CORRIDOR": {
+      "name": "Silo Access Badge",
+      "description": "Above Mel's shop."
+    }
+  },
   "trinket_slots": {
     "0": { "description": "Slot 0", "url": "" },
     "1": { "description": "Slot 1", "url": "" },
     "2": { "description": "Slot 2", "url": "" },
     "3": { "description": "Slot 3", "url": "" },
-    "4": { "description": "Slot 4", "url": "" },
+    "4": { "description": "Mel (no req)", "url": "" },
     "5": { "description": "Slot 5", "url": "" },
     "6": { "description": "Slot 6", "url": "" }
   },
