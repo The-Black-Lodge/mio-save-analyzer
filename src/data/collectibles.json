@@ -30,11 +30,11 @@
     },
     "Carcass_GA_roof_lakedark": {
       "description": "Carcass_GA_roof_lakedark",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=265174"
     },
     "Carcass_GA_roof_leaves_C2": {
       "description": "Carcass_GA_roof_leaves_C2",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264464"
     },
     "Carcass_GA_root_center_P1": {
       "description": "Carcass_GA_root_center_P1",
@@ -46,7 +46,7 @@
     },
     "Carcass_GA_vin_aromatic_4": {
       "description": "Carcass_GA_vin_aromatic_4",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264495"
     },
     "Carcass_GA_vin_bridge_S1": {
       "description": "Carcass_GA_vin_bridge_S1",
@@ -54,11 +54,11 @@
     },
     "Carcass_GA_vin_dusk_S1": {
       "description": "Carcass_GA_vin_dusk_S1",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264978"
     },
     "Carcass_GA_vin_hall_S2": {
       "description": "Carcass_GA_vin_hall_S2",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264549"
     },
     "Carcass_LQ_city_lobby_C2": {
       "description": "Carcass_LQ_city_lobby_C2",
@@ -136,6 +136,25 @@
     "Carcass_trois_mouches": {
       "description": "Carcass_trois_mouches",
       "url": ""
+    }
+  },
+  "carcassNacre": {
+    "0x276d06b361cd1b99": {
+      "description": "0x276d06b361cd1b99",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264468",
+      "value": 80
+    },
+    "0x8bea9d5fcc0008cf": {
+      "description": "0x8bea9d5fcc0008cf",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264494"
+    },
+    "0xa4bcfcad1d8b5439": {
+      "description": "0xa4bcfcad1d8b5439",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264466"
+    },
+    "0xacd78e727b346c39": {
+      "description": "0xacd78e727b346c39",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264476"
     }
   },
   "bosses": {
