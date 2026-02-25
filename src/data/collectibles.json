@@ -134,9 +134,9 @@
       "description": "Vaults, Soothing Refuge, east of Goliath's room.",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264171"
     },
-    "Carcass_ST_tube_top": { 
-      "description": "Vaults, west of Soothing Refuge, drop down from a gap in the tubes.", 
-      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264199" 
+    "Carcass_ST_tube_top": {
+      "description": "Vaults, west of Soothing Refuge, drop down from a gap in the tubes.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264199"
     },
     "Carcass_TW_common_right": {
       "description": "Celestial Bay, lower path.",
@@ -702,6 +702,302 @@
     "23": {
       "description": "#23 Vaults, drawer in top right of main room.",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264129"
+    }
+  },
+  "trinkets": {
+    "ANALYZER": {
+      "name": "Analyser",
+      "description": "",
+      "flavor": "",
+      "cost": "5",
+      "url": ""
+    },
+    "MAINTENANCE_EXPERT": {
+      "name": "Maintenance Hack",
+      "description": "",
+      "flavor": "",
+      "cost": "10",
+      "url": ""
+    },
+    "SHIELD_INC": {
+      "name": "Protective Overlay",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "BIG_ENERGY_DRAIN": {
+      "name": "Energy Leecher",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "ENERGY_EMPTY_ATTACK": {
+      "name": "Foolish Ideal",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "DECOY": {
+      "name": "Afterimage",
+      "description": "",
+      "flavor": "",
+      "cost": "30",
+      "url": ""
+    },
+    "CARLO_HOOK": {
+      "name": "Glitch Trail",
+      "description": "",
+      "flavor": "",
+      "cost": "30",
+      "url": ""
+    },
+    "GLIDE_STATIC": {
+      "name": "Firefly",
+      "description": "",
+      "flavor": "",
+      "cost": "40",
+      "url": ""
+    },
+    "FAST_RECOVERY": {
+      "name": "Reduced Latency",
+      "description": "",
+      "flavor": "",
+      "cost": "5",
+      "url": ""
+    },
+    "MORE_SCRAPS": {
+      "name": "Effective Dismantlement",
+      "description": "",
+      "flavor": "",
+      "cost": "10",
+      "url": ""
+    },
+    "COUNTER_ATTACK": {
+      "name": "Counter Measures",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "HEAVY_ATTACK": {
+      "name": "Kinetic Thrust",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "GOO_REVENGE": {
+      "name": "Defense Mechanism",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "ORB_BLOCK": {
+      "name": "Splintering Dodge",
+      "description": "",
+      "flavor": "",
+      "cost": "30",
+      "url": ""
+    },
+    "VAMPIRE": {
+      "name": "Extra-Coating Processor",
+      "description": "",
+      "flavor": "",
+      "cost": "30",
+      "url": ""
+    },
+    "HOOK_SLASH": {
+      "name": "Sharpened Hairpin",
+      "description": "",
+      "flavor": "",
+      "cost": "40",
+      "url": ""
+    },
+    "HUD": {
+      "name": "Self-Awareness",
+      "description": "",
+      "flavor": "",
+      "cost": "5",
+      "url": ""
+    },
+    "LOOT_SUPER_SCRAPS": {
+      "name": "Portable Crystalliser",
+      "description": "",
+      "flavor": "",
+      "cost": "10",
+      "url": ""
+    },
+    "STAGGER_ATTACK": {
+      "name": "High-voltage Discharge",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "BERSERKER": {
+      "name": "The Hand's Greed",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "LAST_CHANCE": {
+      "name": "Makeshift Recovery",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "ALEXANDERS_FATE": {
+      "name": "Alexander's Fate",
+      "description": "",
+      "flavor": "",
+      "cost": "30",
+      "url": ""
+    },
+    "PACIFIC": {
+      "name": "Asma's Will",
+      "description": "",
+      "flavor": "",
+      "cost": "30",
+      "url": ""
+    },
+    "HEAL_GROUND": {
+      "name": "Gratitude",
+      "description": "",
+      "flavor": "",
+      "cost": "40",
+      "url": ""
+    },
+    "KINETIC_CONVERSION": {
+      "name": "Pain Conversion",
+      "description": "",
+      "flavor": "",
+      "cost": "5",
+      "url": ""
+    },
+    "ORB_RECOVERY": {
+      "name": "Defragmentation",
+      "description": "",
+      "flavor": "",
+      "cost": "10",
+      "url": ""
+    },
+    "BETTER_DODGE": {
+      "name": "Enhanced Dodge",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "HOOK_BERSERKER": {
+      "name": "Wild Cat",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "SPIDER_BERSERKER": {
+      "name": "Black Widow",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "SCRAP_ATTACK": {
+      "name": "Nacre Overload",
+      "description": "",
+      "flavor": "",
+      "cost": "30",
+      "url": ""
+    },
+    "QUICK_RECHARGE": {
+      "name": "The Heart's Favourite",
+      "description": "",
+      "flavor": "",
+      "cost": "10",
+      "url": ""
+    },
+    "FOUNTAIN_OVERLOAD": {
+      "name": "High-Risk Voucher",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "DOUBLE_DAMAGES": {
+      "name": "Perfect State",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "GLIDE_BERSERKER": {
+      "name": "Bird of Prey",
+      "description": "",
+      "flavor": "",
+      "cost": "20",
+      "url": ""
+    },
+    "TURBO_GLIDE": {
+      "name": "Sunsail",
+      "description": "",
+      "flavor": "",
+      "cost": "30",
+      "url": ""
+    },
+    "DRY_FOUNTAINS": {
+      "name": "Nacre Drought",
+      "description": "",
+      "flavor": "",
+      "cost": "-5",
+      "url": ""
+    },
+    "KURO_CHARM": {
+      "name": "Imperfect Focus",
+      "description": "",
+      "flavor": "",
+      "cost": "-5",
+      "url": ""
+    },
+    "LESS_SCRAPS": {
+      "name": "Resources Shortage",
+      "description": "",
+      "flavor": "",
+      "cost": "-5",
+      "url": ""
+    },
+    "SHIELD_DEC": {
+      "name": "Thinner Frame",
+      "description": "",
+      "flavor": "",
+      "cost": "-15",
+      "url": ""
+    },
+    "SLOW_ENERGY": {
+      "name": "Split Process",
+      "description": "",
+      "flavor": "",
+      "cost": "-15",
+      "url": ""
+    },
+    "DAREDEVIL": {
+      "name": "Oath to Ember",
+      "description": "",
+      "flavor": "",
+      "cost": "-25",
+      "url": ""
+    },
+    "GLASS_CANNON": {
+      "name": "Defective Core",
+      "description": "",
+      "flavor": "",
+      "cost": "-25",
+      "url": ""
     }
   }
 }

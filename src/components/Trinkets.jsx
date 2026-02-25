@@ -62,7 +62,7 @@ const BOTTOM_ROW = [
   "GLASS_CANNON",
 ]
 
-const Trinket = ({ label, acquired, equipped, grid }) => {
+const Trinket = ({ label, cost, acquired, equipped, grid }) => {
   return (
     <div
       className={`card card--relative card--trinket ${grid ? "card--grid-trinket" : "card--wide"} ${
@@ -70,6 +70,7 @@ const Trinket = ({ label, acquired, equipped, grid }) => {
       }`}
     >
       <p className="text-small text-accent">{label}</p>
+      {cost && <span className="corner-badge corner-badge--left">{cost}</span>}
       {equipped && (
         <span className="corner-badge">
           <i className="fa-solid fa-gears" />
@@ -82,21 +83,18 @@ const Trinket = ({ label, acquired, equipped, grid }) => {
 const EXCLUDED_TRINKETS = ["EMBEDDING_BLADE", "SMALL_ENERGY_DRAIN", "TANGLES"]
 
 const Trinkets = () => {
-  const { playerStats, localization } = useSaveProvider()
+  const { playerStats, collectibles } = useSaveProvider()
   const [gridView, setGridView] = useState(true)
 
-  const allTrinkets = Object.fromEntries(
-    Object.entries(localization?.ITEM_NAME_TRINKET ?? {}).filter(
-      ([key]) => !EXCLUDED_TRINKETS.includes(key),
-    ),
-  )
+  const trinketData = collectibles?.trinkets ?? {}
   const acquiredTrinkets = playerStats?.trinkets ?? []
   const equippedTrinkets = playerStats?.equippedTrinkets ?? []
 
-  const getLabel = (key) => allTrinkets[key] ?? key
+  const getLabel = (key) => trinketData[key]?.name ?? key
+  const getCost = (key) => trinketData[key]?.cost ?? ""
 
-  const sortedTrinkets = Object.entries(allTrinkets).sort(([, a], [, b]) =>
-    a.localeCompare(b),
+  const sortedTrinkets = Object.entries(trinketData).sort(([, a], [, b]) =>
+    (a.name ?? "").localeCompare(b.name ?? ""),
   )
 
   return (
@@ -104,7 +102,7 @@ const Trinkets = () => {
       <h3>
         Modifiers{" "}
         <span className="count">
-          ({acquiredTrinkets.length}/{Object.keys(allTrinkets).length})
+          ({acquiredTrinkets.length}/{Object.keys(trinketData).length})
         </span>
       </h3>
       <div className="trinkets-controls">
@@ -140,6 +138,7 @@ const Trinkets = () => {
                 <Trinket
                   key={key}
                   label={getLabel(key)}
+                  cost={getCost(key)}
                   acquired={acquiredTrinkets.includes(key)}
                   equipped={equippedTrinkets.includes(key)}
                   grid
@@ -152,6 +151,7 @@ const Trinkets = () => {
               <Trinket
                 key={key}
                 label={getLabel(key)}
+                cost={getCost(key)}
                 acquired={acquiredTrinkets.includes(key)}
                 equipped={equippedTrinkets.includes(key)}
                 grid
@@ -161,10 +161,11 @@ const Trinkets = () => {
         </>
       ) : (
         <div className="flex-grid">
-          {sortedTrinkets.map(([key, value]) => (
+          {sortedTrinkets.map(([key, info]) => (
             <Trinket
               key={key}
-              label={value}
+              label={info.name ?? key}
+              cost={info.cost ?? ""}
               acquired={acquiredTrinkets.includes(key)}
               equipped={equippedTrinkets.includes(key)}
             />

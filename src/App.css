@@ -226,6 +226,11 @@
   font-size: var(--font-size-muted);
 }
 
+.corner-badge--left {
+  left: 0.25rem;
+  right: auto;
+}
+
 .corner-badge--centered {
   top: 50%;
   bottom: auto;
