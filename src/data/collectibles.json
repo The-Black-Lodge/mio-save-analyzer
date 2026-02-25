@@ -1,4 +1,10 @@
 {
+  "carcassDialog": {
+    "TXT_GA_BOU_MINDYOURSTEP": {
+      "description": "Speak to Ollanty.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264071"
+    }
+  },
   "carcasses": {
     "Carcass_GA_bou_build_F4": {
       "description": "Carcass_GA_bou_build_F4",
@@ -37,12 +43,12 @@
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264464"
     },
     "Carcass_GA_root_center_P1": {
-      "description": "Carcass_GA_root_center_P1",
-      "url": ""
+      "description": "East of the Nexus, Feral Undergrowth, under the Crystallizer room.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263975"
     },
     "Carcass_GA_root_conex_P1": {
-      "description": "Carcass_GA_root_conex_P1",
-      "url": ""
+      "description": "Feral Undergrowth, guarded by a scorpion.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263997"
     },
     "Carcass_GA_vin_aromatic_4": {
       "description": "Carcass_GA_vin_aromatic_4",
@@ -62,7 +68,7 @@
     },
     "Carcass_LQ_city_lobby_C2": {
       "description": "Carcass_LQ_city_lobby_C2",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264702"
     },
     "Carcass_LQ_city_lobby_secret": {
       "description": "Carcass_LQ_city_lobby_secret",
@@ -78,7 +84,7 @@
     },
     "Carcass_LQ_under_chall_C3": {
       "description": "Carcass_LQ_under_chall_C3",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264033"
     },
     "Carcass_LQ_under_chall_P3": {
       "description": "Carcass_LQ_under_chall_P3",
@@ -89,8 +95,8 @@
       "url": ""
     },
     "Carcass_LQ_under_tuto_C2": {
-      "description": "Carcass_LQ_under_tuto_C2",
-      "url": ""
+      "description": "Foundations via Metropolis air tunnel, east through the broken glass, Strider through an air tunnel.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264026"
     },
     "Carcass_ST_pearl_lab_P3": {
       "description": "Carcass_ST_pearl_lab_P3",
@@ -109,8 +115,8 @@
       "url": ""
     },
     "Carcass_ST_tube_hub_P2": {
-      "description": "Carcass_ST_tube_hub_P2",
-      "url": ""
+      "description": "Vaults tubes area, climb the wall near a pump.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264315"
     },
     "Carcass_ST_tube_liquids_C4": {
       "description": "Carcass_ST_tube_liquids_C4",
@@ -134,8 +140,8 @@
       "url": ""
     },
     "Carcass_trois_mouches": {
-      "description": "Carcass_trois_mouches",
-      "url": ""
+      "description": "Foundations, drop down the western elevator shaft to a broken passage on the left.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263972"
     }
   },
   "carcassNacre": {
@@ -144,9 +150,26 @@
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264468",
       "value": 80
     },
+    "0x2d60f749a63fc4a1": {
+      "description": "East of Severed Spine, Hairpin jump.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264045"
+    },
+    "0x349e61433e27fcc8": {
+      "description": "0x349e61433e27fcc8",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264017"
+    },
     "0x3dc5a107d6cc531a": {
       "description": "0x3dc5a107d6cc531a",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264185"
+    },
+    "0x62fe21dfc98bac1b": {
+      "description": "0x62fe21dfc98bac1b",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263983",
+      "value": 20
+    },
+    "0x6b3f738248ef960c": {
+      "description": "0x6b3f738248ef960c east of 0x349e61433e27fcc8",
+      "url": ""
     },
     "0x8bea9d5fcc0008cf": {
       "description": "0x8bea9d5fcc0008cf",
@@ -308,11 +331,38 @@
     }
   },
   "datapads": {
+    "CURIO_CEREAL_BAR": {
+      "type": "Curio",
+      "description": "Feral Undergrowth",
+      "url": ""
+    },
+    "CURIO_JOURNAL": {
+      "type": "Curio",
+      "description": "Lura's room, locked door.",
+      "url": ""
+    },
     "MEM_PUPPET": {
       "description": "Hidden path in starting area.",
       "type": "Flash Memory",
       "flavor": "-- Connection Lost --",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263868"
+    },
+    "LETTER_SPREAD": {
+      "description": "Above Crow's room.",
+      "type": "Letter from Tomo",
+      "flavor": "Hopeful Findings",
+      "url": ""
+    },
+    "LETTER_TRIGGER": {
+      "type": "Letter from Tomo",
+      "flavor": "Flawed Assumptions",
+      "url": ""
+    },
+    "TXT_TRAVELLER_LOG1_TRANSLATED": {
+      "description": "Feral Undergrowth",
+      "type": "Traveller's Log",
+      "flavor": "Stargazing",
+      "url": ""
     },
     "TXT_TRAVELLER_LOG4_TRANSLATED": {
       "description": "Foundations, eastern bottom area. Hairpin the enemy.",
@@ -322,13 +372,17 @@
     }
   },
   "keys": {
+    "GLASSHOUSE_KEY": {
+      "name": "Aviaries Passepartout",
+      "description": "Defeat Flora."
+    },
     "ROOTS_CORRIDOR": {
       "name": "Silo Access Badge",
       "description": "Above Mel's shop."
     }
   },
   "trinket_slots": {
-    "0": { "description": "Slot 0", "url": "" },
+    "0": { "description": "Mel (no req)", "url": "" },
     "1": { "description": "Slot 1", "url": "" },
     "2": { "description": "Slot 2", "url": "" },
     "3": { "description": "Slot 3", "url": "" },
@@ -544,8 +598,14 @@
     "cp_ST_saw_long": { "name": "cp_ST_saw_long", "description": "", "url": "" }
   },
   "shield_fragments": {
-    "0": { "description": "Purchase from Mel", "url": "" },
-    "1": { "description": "Purchase from Mel", "url": "" },
+    "0": {
+      "description": "Purchase from Mel (no req, 1 core 300 nacre)",
+      "url": ""
+    },
+    "1": {
+      "description": "Purchase from Mel (no req, 1 core 300 nacre)",
+      "url": ""
+    },
     "2": { "description": "Purchase from Mel", "url": "" },
     "3": { "description": "Purchase from Mel", "url": "" },
     "4": { "description": "Purchase from Mel", "url": "" },
@@ -571,7 +631,7 @@
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263980"
     },
     "11": {
-      "description": "#11 East of the Nexus, southeast of the Crystallizer room.",
+      "description": "#11 East of the Nexus, Flora room. Southeast of the Crystallizer room.",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263991"
     },
     "12": {
