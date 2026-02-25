@@ -1,6 +1,7 @@
 import { useState } from "react"
 import useSaveProvider from "../hooks/useSaveProvider"
 import TrinketSlots from "./TrinketSlots"
+import AllocationMatrix from "./AllocationMatrix"
 
 // Custom grid order. null = empty gap cell.
 const GRID_ORDER = [
@@ -73,7 +74,11 @@ const Trinket = ({ label, description, cost, acquired, equipped, grid }) => {
       {description && (
         <p className="text-left text-extra-small">{description}</p>
       )}
-      {cost && <span className="corner-badge corner-badge--left">{cost} <i className="fa-solid fa-diamond" /></span>}
+      {cost && (
+        <span className="corner-badge corner-badge--left">
+          {cost} <i className="fa-solid fa-diamond" />
+        </span>
+      )}
       {equipped && (
         <span className="corner-badge">
           <i className="fa-solid fa-gears" />
@@ -150,7 +155,12 @@ const Trinkets = () => {
           <div className="trinket-grid">
             {GRID_ORDER.map((key, i) => {
               if (key === null) {
-                return <div key={`gap-${i}`} className="trinket-grid-gap" />
+                return (
+                  <div
+                    key={`gap-${i}`}
+                    className="trinket-grid-gap"
+                  />
+                )
               }
               return (
                 <Trinket
@@ -194,7 +204,10 @@ const Trinkets = () => {
         </div>
       )}
 
-      <TrinketSlots />
+      <div className="trinket-bottom-row">
+        <TrinketSlots />
+        <AllocationMatrix />
+      </div>
     </div>
   )
 }
