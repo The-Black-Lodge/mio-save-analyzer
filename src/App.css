@@ -109,7 +109,7 @@
 }
 
 .card--wide {
-  min-width: 14rem;
+  width: 14rem;
 }
 
 /* Trinkets grid view */
@@ -152,14 +152,12 @@
 }
 
 .card--trinket {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-bottom: 1.25rem;
 }
 
 .trinket-grid .card--trinket,
 .trinket-grid-bottom .card--trinket {
-  height: 3.5rem;
+  min-height: 3.5rem;
 }
 
 .card--grid-trinket {

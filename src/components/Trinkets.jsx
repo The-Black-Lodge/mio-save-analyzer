@@ -62,14 +62,17 @@ const BOTTOM_ROW = [
   "GLASS_CANNON",
 ]
 
-const Trinket = ({ label, cost, acquired, equipped, grid }) => {
+const Trinket = ({ label, description, cost, acquired, equipped, grid }) => {
   return (
     <div
       className={`card card--relative card--trinket ${grid ? "card--grid-trinket" : "card--wide"} ${
         acquired ? "card--acquired" : "card--unacquired"
       }`}
     >
-      <p className="text-small text-accent">{label}</p>
+      <p className="text-left text-small text-accent">{label}</p>
+      {description && (
+        <p className="text-left text-extra-small">{description}</p>
+      )}
       {cost && <span className="corner-badge corner-badge--left">{cost} <i className="fa-solid fa-diamond" /></span>}
       {equipped && (
         <span className="corner-badge">
@@ -87,6 +90,7 @@ const Trinkets = () => {
   const [gridView, setGridView] = useState(true)
   const [showEquipped, setShowEquipped] = useState(false)
   const [showCost, setShowCost] = useState(false)
+  const [showDescription, setShowDescription] = useState(false)
 
   const trinketData = collectibles?.trinkets ?? {}
   const acquiredTrinkets = playerStats?.trinkets ?? []
@@ -94,6 +98,7 @@ const Trinkets = () => {
 
   const getLabel = (key) => trinketData[key]?.name ?? key
   const getCost = (key) => trinketData[key]?.cost ?? ""
+  const getDescription = (key) => trinketData[key]?.description ?? ""
 
   const sortedTrinkets = Object.entries(trinketData).sort(([, a], [, b]) =>
     (a.name ?? "").localeCompare(b.name ?? ""),
@@ -121,6 +126,12 @@ const Trinkets = () => {
           <i className="fa-solid fa-list" /> Alphabetical
         </button>
         <button
+          className={`view-toggle-btn ${showDescription ? "view-toggle-btn--active" : ""}`}
+          onClick={() => setShowDescription((v) => !v)}
+        >
+          <i className="fa-solid fa-circle-info" /> Description
+        </button>
+        <button
           className={`view-toggle-btn ${showCost ? "view-toggle-btn--active" : ""}`}
           onClick={() => setShowCost((v) => !v)}
         >
@@ -145,6 +156,7 @@ const Trinkets = () => {
                 <Trinket
                   key={key}
                   label={getLabel(key)}
+                  description={showDescription ? getDescription(key) : ""}
                   cost={showCost ? getCost(key) : ""}
                   acquired={acquiredTrinkets.includes(key)}
                   equipped={showEquipped && equippedTrinkets.includes(key)}
@@ -158,6 +170,7 @@ const Trinkets = () => {
               <Trinket
                 key={key}
                 label={getLabel(key)}
+                description={showDescription ? getDescription(key) : ""}
                 cost={showCost ? getCost(key) : ""}
                 acquired={acquiredTrinkets.includes(key)}
                 equipped={showEquipped && equippedTrinkets.includes(key)}
@@ -172,6 +185,7 @@ const Trinkets = () => {
             <Trinket
               key={key}
               label={info.name ?? key}
+              description={showDescription ? (info.description ?? "") : ""}
               cost={showCost ? (info.cost ?? "") : ""}
               acquired={acquiredTrinkets.includes(key)}
               equipped={showEquipped && equippedTrinkets.includes(key)}

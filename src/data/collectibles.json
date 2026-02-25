@@ -707,295 +707,295 @@
   "trinkets": {
     "ANALYZER": {
       "name": "Analyser",
-      "description": "",
-      "flavor": "",
+      "description": "Displays enemies' remaining health.",
+      "flavor": "Knowing your enemy is the first step to winning any battle.",
       "cost": "5",
       "url": ""
     },
     "MAINTENANCE_EXPERT": {
       "name": "Maintenance Hack",
-      "description": "",
-      "flavor": "",
+      "description": "The Protective Coat repair at Nacre Basins is free.",
+      "flavor": "If you spend less Nacre in those basins, then you can spend more Nacre here. --Mel",
       "cost": "10",
       "url": ""
     },
     "SHIELD_INC": {
       "name": "Protective Overlay",
-      "description": "",
-      "flavor": "",
+      "description": "Grants an additional layer of protection.",
+      "flavor": "-- WARNING -- External temperature under critical minimum. Reinforcement of defence systems recommended.",
       "cost": "20",
       "url": ""
     },
     "BIG_ENERGY_DRAIN": {
       "name": "Energy Leecher",
-      "description": "",
-      "flavor": "",
+      "description": "Large increase to energy recovered when attacking an enemy.",
+      "flavor": "I try not to dwell on the ethics of that functionality.",
       "cost": "20",
       "url": ""
     },
     "ENERGY_EMPTY_ATTACK": {
       "name": "Foolish Ideal",
-      "description": "",
-      "flavor": "",
+      "description": "Damage inflicted on enemies increases when energy is not fully charged.",
+      "flavor": "The Travellers were acoustic, while we are electric. If we can learn a lesson or two from them, then we can survive even the death of the Heart!",
       "cost": "20",
       "url": ""
     },
     "DECOY": {
       "name": "Afterimage",
-      "description": "",
-      "flavor": "",
+      "description": "Using the Hairpin with [Hairpin] generates a decoy that enemies will target first. The decoy explodes after a short delay.",
+      "flavor": "Experiment #21: Using Energy Outbursts as Sensory Hallucinations to Distract Machines when I Want to Steal Cake from the Kitchens. --Halyn, 7 years old",
       "cost": "30",
       "url": ""
     },
     "CARLO_HOOK": {
       "name": "Glitch Trail",
-      "description": "",
-      "flavor": "",
+      "description": "Leaves a trail that hurts enemies after using the Hairpin on any target.",
+      "flavor": "Experiment #146: Releasing an E.M.P. as a Means of Protection to Shake Off Pursuers when I Take a Peek in the Vaults --Dr Halyn, 17 years old",
       "cost": "30",
       "url": ""
     },
     "GLIDE_STATIC": {
       "name": "Firefly",
-      "description": "",
-      "flavor": "",
+      "description": "Using the Sail with [Sail] generates a static storm around Mio that deals damage to enemies over time.",
+      "flavor": "Some Travellers believed that, when night came, the Firefly units would fly up to the sky to recharge the suns and bring back the dawn.",
       "cost": "40",
       "url": ""
     },
     "FAST_RECOVERY": {
       "name": "Reduced Latency",
-      "description": "",
-      "flavor": "",
+      "description": "Quicker recovery after getting hit.",
+      "flavor": "Excessive latency is the number one cause of death for crisis-management units!",
       "cost": "5",
       "url": ""
     },
     "MORE_SCRAPS": {
       "name": "Effective Dismantlement",
-      "description": "",
-      "flavor": "",
+      "description": "Enemies leak a lot more Nacre Droplets when dying.",
+      "flavor": "We live in an enclosed world with limited resources. Recycling isn't preferable; it is vital.",
       "cost": "10",
       "url": ""
     },
     "COUNTER_ATTACK": {
       "name": "Counter Measures",
-      "description": "",
-      "flavor": "",
+      "description": "Dodging an attack with [Dodge] applies the \"targeted\" status to the enemy.",
+      "flavor": "As they did unto us, so they shall receive.",
       "cost": "20",
       "url": ""
     },
     "HEAVY_ATTACK": {
       "name": "Kinetic Thrust",
-      "description": "",
-      "flavor": "",
+      "description": "The last attack of the combo deals more damage.",
+      "flavor": "Just push your problems away.",
       "cost": "20",
       "url": ""
     },
     "GOO_REVENGE": {
       "name": "Defense Mechanism",
-      "description": "",
-      "flavor": "",
+      "description": "Creates an explosion around Mio when she takes a hit.",
+      "flavor": "Explosions have been reported all over the Vessel. Maybe we've gone a little overboard with this Modifier...",
       "cost": "20",
       "url": ""
     },
     "ORB_BLOCK": {
       "name": "Splintering Dodge",
-      "description": "",
-      "flavor": "",
+      "description": "Dodging an attack with [Dodge] generates an Energy Shard.",
+      "flavor": "Unfortunately, Energy Shards are very unstable by themselves. Fortunately, I have plans here for a device that should be able to trap it locally. Imagine, Energy Shards so common that we could use them as simple lamp posts...",
       "cost": "30",
       "url": ""
     },
     "VAMPIRE": {
       "name": "Extra-Coating Processor",
-      "description": "",
-      "flavor": "",
+      "description": "Creates an extra layer of protection (non-stackable) for every 3 enemies defeated.",
+      "flavor": "In the Vaults, you are just a tool for the Hand. Make sure to be the tool that outlasts the others.",
       "cost": "30",
       "url": ""
     },
     "HOOK_SLASH": {
       "name": "Sharpened Hairpin",
-      "description": "",
-      "flavor": "",
+      "description": "Grants the ability to slice enemies with [Attack] when using the Hairpin on them.",
+      "flavor": "Weave, thread, and cut.",
       "cost": "40",
       "url": ""
     },
     "HUD": {
       "name": "Self-Awareness",
-      "description": "",
-      "flavor": "",
+      "description": "Displays Mio's status on the screen.",
+      "flavor": "How could one even exist without being able to monitor their own condition? It would be like being a stranger to oneself.",
       "cost": "5",
       "url": ""
     },
     "LOOT_SUPER_SCRAPS": {
       "name": "Portable Crystalliser",
-      "description": "",
-      "flavor": "",
+      "description": "Converts some Nacre Droplets dropped by enemies into Crystallised Nacre.",
+      "flavor": "I'll make a pendant out of these crystals, and then I'll store my memories of you inside, so that you never forget that I love you.",
       "cost": "10",
       "url": ""
     },
     "STAGGER_ATTACK": {
       "name": "High-voltage Discharge",
-      "description": "",
-      "flavor": "",
+      "description": "After a short delay, the next attack will automatically stun the target.",
+      "flavor": "Experiment #97: Testing the Intake Capacity of Standard Vessel Units to Isolate their Breaking Point --Halyn, 13 years old",
       "cost": "20",
       "url": ""
     },
     "BERSERKER": {
       "name": "The Hand's Greed",
-      "description": "",
-      "flavor": "",
+      "description": "Damage inflicted on enemies increases for each layer of protection that Mio has already lost.",
+      "flavor": "What I give with the right hand, I take back with all the others.",
       "cost": "20",
       "url": ""
     },
     "LAST_CHANCE": {
       "name": "Makeshift Recovery",
-      "description": "",
-      "flavor": "",
+      "description": "Quickly defeating an enemy that has hit Mio restores one extra layer of protection (non-stackable).",
+      "flavor": "For something made on the spot, it's surprisingly handy.",
       "cost": "20",
       "url": ""
     },
     "ALEXANDERS_FATE": {
       "name": "Alexander's Fate",
-      "description": "",
-      "flavor": "",
+      "description": "Nacre Droplets are no longer lost upon death.",
+      "flavor": "Some will say it's a pragmatic choice, others might call it cowardly.",
       "cost": "30",
       "url": ""
     },
     "PACIFIC": {
       "name": "Asma's Will",
-      "description": "",
-      "flavor": "",
+      "description": "Enemies (bosses excluded) don't attack Mio as long as she doesn't strike first.",
+      "flavor": "I will never stop watching over you.",
       "cost": "30",
       "url": ""
     },
     "HEAL_GROUND": {
       "name": "Gratitude",
-      "description": "",
-      "flavor": "",
+      "description": "Restores an extra layer of protection (non-stackable) when Mio stays on the ground for a short time.",
+      "flavor": "Don't tell anyone. I have a reputation to uphold.",
       "cost": "40",
       "url": ""
     },
     "KINETIC_CONVERSION": {
       "name": "Pain Conversion",
-      "description": "",
-      "flavor": "",
+      "description": "Energy recharges when taking damage.",
+      "flavor": "You see a drawback. I see an opportunity.",
       "cost": "5",
       "url": ""
     },
     "ORB_RECOVERY": {
       "name": "Defragmentation",
-      "description": "",
-      "flavor": "",
+      "description": "Getting hit by an enemy generates an Energy Shard.",
+      "flavor": "Each drawback is an opportunity to gather yourself.",
       "cost": "10",
       "url": ""
     },
     "BETTER_DODGE": {
       "name": "Enhanced Dodge",
-      "description": "",
-      "flavor": "",
+      "description": "Dodging attacks with [Dodge] has an increased timing.",
+      "flavor": "We wanted to explore the 'dodge' space. Unfortunately, no one remembers what is on the other side.",
       "cost": "20",
       "url": ""
     },
     "HOOK_BERSERKER": {
       "name": "Wild Cat",
-      "description": "",
-      "flavor": "",
+      "description": "After using the Hairpin, the next attack will be a heavy strike that inflicts a lot more damage to enemies.",
+      "flavor": "They were monsters lurking in the shadows, with eyes glowing in the dark. When they lept, it was already too late for you. No wonder they tamed our ancestors...",
       "cost": "20",
       "url": ""
     },
     "SPIDER_BERSERKER": {
       "name": "Black Widow",
-      "description": "",
-      "flavor": "",
+      "description": "Damage inflicted on enemies temporarily increases while using the Striders.",
+      "flavor": "They clawed their ways into our worst nightmares centuries ago, and they still live there. Well, better in our heads than in the Vessel.",
       "cost": "20",
       "url": ""
     },
     "SCRAP_ATTACK": {
       "name": "Nacre Overload",
-      "description": "",
-      "flavor": "",
+      "description": "Damage inflicted on enemies increases for each Nacre Droplet carried. Each attack dealt to an enemy will use Droplets, but all Droplets will be recovered when the enemy dies.",
+      "flavor": "Money is power. Power is ephemeral.",
       "cost": "30",
       "url": ""
     },
     "QUICK_RECHARGE": {
       "name": "The Heart's Favourite",
-      "description": "",
-      "flavor": "",
+      "description": "Energy recharges quicker when on the ground.",
+      "flavor": "Usually, the Heart doesn't play favourite. But one unit in particular always was the exception.",
       "cost": "10",
       "url": ""
     },
     "FOUNTAIN_OVERLOAD": {
       "name": "High-Risk Voucher",
-      "description": "",
-      "flavor": "",
+      "description": "Allows to purchase an extra layer of protection (non-stackable) at the Nacre Basins.",
+      "flavor": "The Wearer of this voucher has been recognised as a high-risk worker and is therefore authorised to use the advanced functions of the Nacre Basins.",
       "cost": "20",
       "url": ""
     },
     "DOUBLE_DAMAGES": {
       "name": "Perfect State",
-      "description": "",
-      "flavor": "",
+      "description": "High increase of the damage inflicted on enemies when all layers of protection are active.",
+      "flavor": "When every system comes together, they become greater that the sum of all their parts.",
       "cost": "20",
       "url": ""
     },
     "GLIDE_BERSERKER": {
       "name": "Bird of Prey",
-      "description": "",
-      "flavor": "",
+      "description": "Damage inflicted on enemies temporarily increases while using the Sail.",
+      "flavor": "The sun was their biggest ally, masking their deadly descent onto their prey. A good thing that there aren't any aboard the Vessel, considering the number of suns we have hanging here.",
       "cost": "20",
       "url": ""
     },
     "TURBO_GLIDE": {
       "name": "Sunsail",
-      "description": "",
-      "flavor": "",
+      "description": "Increases gliding speed while using the Sail, but also increases its energy consumption.",
+      "flavor": "May the starlight push us in the right direction.",
       "cost": "30",
       "url": ""
     },
     "DRY_FOUNTAINS": {
       "name": "Nacre Drought",
-      "description": "",
-      "flavor": "",
+      "description": "Increases the number of modifier slots, but Nacre Basins stay dry.",
+      "flavor": "Fasting is an old Traveller's tradition. It's said to help you open your ports and expand your processes. As for me, I think it just favours computing hallucinations.",
       "cost": "-5",
       "url": ""
     },
     "KURO_CHARM": {
       "name": "Imperfect Focus",
-      "description": "",
-      "flavor": "",
+      "description": "Increases the number of modifier slots, but the timing for dodging attacks with [Dodge] is reduced.",
+      "flavor": "The more you know, the harder it becomes to escape the truth.",
       "cost": "-5",
       "url": ""
     },
     "LESS_SCRAPS": {
       "name": "Resources Shortage",
-      "description": "",
-      "flavor": "",
+      "description": "Increases the number of modifier slots, but enemies drop fewer Nacre Droplets when defeated.",
+      "flavor": "I may be poor in material goods, but I am rich in mind and skill.",
       "cost": "-5",
       "url": ""
     },
     "SHIELD_DEC": {
       "name": "Thinner Frame",
-      "description": "",
-      "flavor": "",
+      "description": "Increases the number of modifier slots, but removes one layer of protection.",
+      "flavor": "Energy savings have to come from somewhere.",
       "cost": "-15",
       "url": ""
     },
     "SLOW_ENERGY": {
       "name": "Split Process",
-      "description": "",
-      "flavor": "",
+      "description": "Increases the number of modifier slots, but energy recharges more slowly.",
+      "flavor": "More brain power means more hunger.",
       "cost": "-15",
       "url": ""
     },
     "DAREDEVIL": {
       "name": "Oath to Ember",
-      "description": "",
-      "flavor": "",
+      "description": "Increases the number of modifier slots, but the damage received in combat are doubled.",
+      "flavor": "They pledged to protect her while she ran away. They kept their word, but at what cost...",
       "cost": "-25",
       "url": ""
     },
     "GLASS_CANNON": {
       "name": "Defective Core",
-      "description": "",
-      "flavor": "",
+      "description": "Increases the number of modifier slots, but disables the Protective Coat entirely.",
+      "flavor": "\"Exposed\" and \"Free\" are two sides of the same coin.",
       "cost": "-25",
       "url": ""
     }
