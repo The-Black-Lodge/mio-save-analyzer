@@ -403,13 +403,13 @@
     }
   },
   "trinket_slots": {
-    "0": { "description": "#0 Mel (no req, 1 core 200 nacre)", "url": "" },
-    "1": { "description": "#1 Mel (Rescue Cos, 2 cores 450 nacre)", "url": "" },
-    "2": { "description": "#2 Slot 2", "url": "" },
-    "3": { "description": "#3 Slot 3", "url": "" },
-    "4": { "description": "#4 Mel (no req, 1 core 200 nacre)", "url": "" },
-    "5": { "description": "#5 Slot 5", "url": "" },
-    "6": { "description": "#6 Slot 6", "url": "" }
+    "0": { "description": "#0 Mel (no req, 1 core 200 nacre)", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264974" },
+    "1": { "description": "#1 Mel (Rescue Cos, 2 cores 450 nacre)", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264092" },
+    "2": { "description": "#2 Mel (Rescue Tan, 4 cores 700 nacre)", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263973" },
+    "3": { "description": "#3 Mel (Rescue Tan, 4 cores 700 nacre)", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263973" },
+    "4": { "description": "#4 Mel (no req, 1 core 200 nacre)", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264974" },
+    "5": { "description": "#5 Canopy, east of Network Gate in a hidden area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264482" },
+    "6": { "description": "#6 Foundations, lower area, use the wind jet to go up.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264016" }
   },
   "chest_keys": {
     "0": {

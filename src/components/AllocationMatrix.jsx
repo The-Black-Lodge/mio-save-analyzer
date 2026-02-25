@@ -34,7 +34,6 @@ const AllocationMatrix = () => {
           ({equipped}/{max})
         </span>
       </h3>
-      <p className="text-small">Equipped slots: {equipped}</p>
       <p className="text-small">Empty slots: {max - equipped}</p>
       <div className="allocation-matrix">{cells}</div>
     </div>
