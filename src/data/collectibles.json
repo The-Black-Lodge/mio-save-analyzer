@@ -349,18 +349,76 @@
     "CURIO_CEREAL_BAR": {
       "type": "Curio",
       "description": "Feral Undergrowth",
-      "url": ""
+      "url": "",
+      "capucinedName": "",
+      "capucinedDescription": ""
+    },
+    "CURIO_FLUTE": {
+      "type": "Curio",
+      "description": "",
+      "url": "",
+      "capucinedName": "",
+      "capucinedDescription": ""
     },
     "CURIO_JOURNAL": {
       "type": "Curio",
       "description": "Lura's room, locked door.",
+      "url": "",
+      "capucinedName": "",
+      "capucinedDescription": ""
+    },
+    "CURIO_MARBLES": {
+      "type": "Curio",
+      "description": "",
+      "url": "",
+      "capucinedName": "",
+      "capucinedDescription": ""
+    },
+    "CURIO_PENDANT": {
+      "type": "Curio",
+      "description": "",
+      "url": "",
+      "capucinedName": "",
+      "capucinedDescription": ""
+    },
+    "CURIO_PLUSHIE": {
+      "type": "Curio",
+      "description": "",
+      "url": "",
+      "capucinedName": "",
+      "capucinedDescription": ""
+    },
+    "CURIO_SHOE": {
+      "type": "Curio",
+      "description": "",
+      "url": "",
+      "capucinedName": "",
+      "capucinedDescription": ""
+    },
+    "LETTER_ACCELERATE": {
+      "type": "Letter from Tomo",
+      "flavor": "",
       "url": ""
     },
-    "MEM_PUPPET": {
-      "description": "Hidden path in starting area.",
-      "type": "Flash Memory",
-      "flavor": "-- Connection Lost --",
-      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263868"
+    "LETTER_FAREWELL": {
+      "type": "Letter from Tomo",
+      "flavor": "",
+      "url": ""
+    },
+    "LETTER_FIRST_CASE": {
+      "type": "Letter from Tomo",
+      "flavor": "",
+      "url": ""
+    },
+    "LETTER_LOVE": {
+      "type": "Letter from Tomo",
+      "flavor": "",
+      "url": ""
+    },
+    "LETTER_POISON": {
+      "type": "Letter from Tomo",
+      "flavor": "",
+      "url": ""
     },
     "LETTER_SPREAD": {
       "description": "Above Crow's room.",
@@ -373,10 +431,81 @@
       "flavor": "Flawed Assumptions",
       "url": ""
     },
+    "MEM_HORNFELL": {
+      "type": "Flash Memory",
+      "flavor": "",
+      "url": ""
+    },
+    "MEM_IMPY": {
+      "type": "Flash Memory",
+      "flavor": "",
+      "url": ""
+    },
+    "MEM_LIBRARIAN": {
+      "type": "Flash Memory",
+      "flavor": "",
+      "url": ""
+    },
+    "MEM_LIDAR": {
+      "type": "Flash Memory",
+      "flavor": "",
+      "url": ""
+    },
+    "MEM_LIDAR_2": {
+      "type": "Flash Memory",
+      "flavor": "",
+      "url": ""
+    },
+    "MEM_PUPPET": {
+      "description": "Hidden path in starting area.",
+      "type": "Flash Memory",
+      "flavor": "-- Connection Lost --",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263868"
+    },
+    "MEM_VOICEKEEPER": {
+      "type": "Flash Memory",
+      "flavor": "",
+      "url": ""
+    },
+    "PEARL_AMYTIS": {
+      "type": "Voice",
+      "flavor": "A voice that carries the weight of indifference.",
+      "url": ""
+    },
+    "PEARL_ASMA": {
+      "type": "Voice",
+      "flavor": "A voice that carries the weight of aging.",
+      "url": ""
+    },
+    "PEARL_HALYN": {
+      "type": "Voice",
+      "flavor": "A voice that carries the weight of ambition.",
+      "url": ""
+    },
+    "PEARL_KHLIA": {
+      "type": "Voice",
+      "flavor": "A voice that carries the weight of suffering.",
+      "url": ""
+    },
+    "PEARL_LIHO": {
+      "type": "Voice",
+      "flavor": "A voice that carries the weight of regret.",
+      "url": ""
+    },
+    "PEARL_NODEN": {
+      "type": "Voice",
+      "flavor": "A voice that carries the weight of choice.",
+      "url": ""
+    },
     "TXT_TRAVELLER_LOG1_TRANSLATED": {
       "description": "Feral Undergrowth",
       "type": "Traveller's Log",
       "flavor": "Stargazing",
+      "url": ""
+    },
+    "TXT_TRAVELLER_LOG2_TRANSLATED": {
+      "type": "Traveller's Log",
+      "flavor": "",
       "url": ""
     },
     "TXT_TRAVELLER_LOG3_TRANSLATED": {
@@ -390,16 +519,79 @@
       "type": "Traveller's Log",
       "flavor": "Grateful",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263938"
+    },
+    "TXT_TRAVELLER_LOG5_TRANSLATED": {
+      "type": "Traveller's Log",
+      "flavor": "",
+      "url": ""
+    },
+    "TXT_TRAVELLER_LOG6_TRANSLATED": {
+      "type": "Traveller's Log",
+      "flavor": "",
+      "url": ""
+    },
+    "TXT_TRAVELLER_LOG7_TRANSLATED": {
+      "type": "Traveller's Log",
+      "flavor": "",
+      "url": ""
     }
   },
   "keys": {
+    "BELL_TOWER_PASS_CITY": {
+      "name": "Bell Tower Visitor Pass (City)",
+      "description": "",
+      "flavor": "Come and witness the majestic toll of the last untouched relic of Earth, the Celestial Bell!"
+    },
+    "BELL_TOWER_PASS_GARDEN": {
+      "name": "Bell Tower Visitor Pass (Garden)",
+      "description": "",
+      "flavor": "Come and witness the majestic toll of the last untouched relic of Earth, the Celestial Bell!"
+    },
+    "BUNKER_KEY": {
+      "name": "Bunker Key",
+      "description": "",
+      "flavor": "You hereby declare that you are aware of the risks inherent to the Vaults' industrial environment, and that you can only blame yourself for any personal shortfall, injury or death. - Dr Halyn"
+    },
+    "CRUCIBLE_CRYSTAL": {
+      "name": "Crucible Report: Crystallisation Process",
+      "description": ""
+    },
+    "CRUCIBLE_GLOOMWATER": {
+      "name": "Crucible Report: Purified Catalyst Status",
+      "description": ""
+    },
+    "FINGER_WHEEL": {
+      "name": "Severed Fingertip",
+      "description": ""
+    },
     "GLASSHOUSE_KEY": {
       "name": "Aviaries Passepartout",
       "description": "Defeat Flora."
     },
+    "LURA": {
+      "name": "Lura's Seal",
+      "description": "",
+      "flavor": "Cast away your old shell. Forget your material desires. Cut all ties with your past. You are a Traveller no more, for you now give your Voice to the Vessel."
+    },
+    "MAINTENANCE_KEY": {
+      "name": "Old-fashioned Key",
+      "description": "",
+      "flavor": "This is what keys looked like in the olden times. Don't worry about how to use it, this replica is a fully functional electronic badge!"
+    },
     "ROOTS_CORRIDOR": {
       "name": "Silo Access Badge",
-      "description": "Above Mel's shop."
+      "description": "Above Mel's shop.",
+      "flavor": "For workers only. Do not lose your badge, it won't be reprinted!"
+    },
+    "SPIDY_KEY": {
+      "name": "Friendly Invitation",
+      "description": "",
+      "flavor": "join us join us join us join us join us join us join us join us join us join us join us join us"
+    },
+    "SPINE_FRAGMENT": {
+      "name": "Fragment of Ailen, the Spine",
+      "description": "",
+      "flavor": "Sharp edges and smooth surface. As broken as the bonds between the Pearls."
     }
   },
   "trinket_slots": {
