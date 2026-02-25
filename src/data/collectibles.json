@@ -1,8 +1,20 @@
 {
   "carcassDialog": {
     "TXT_GA_BOU_MINDYOURSTEP": {
-      "description": "Speak to Ollanty.",
+      "description": "Speak to Ollanty, in The Haven.",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264071"
+    },
+    "TXT_GA_ROOT_WRONGTURN": {
+      "description": "Speak to Arjuna, in Feral Undergrowth.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263996"
+    },
+    "TXT_GA_VIN_SUDDEN_PEARL": {
+      "description": "Speak to Harpagon, west of Promenade Tower, top floor.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264487"
+    },
+    "TXT_LQ_CITY_FOUNDATIONS": {
+      "description": "Speak to Poncia, below Hall of History.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263955"
     }
   },
   "carcasses": {
@@ -15,20 +27,20 @@
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264095"
     },
     "Carcass_GA_bou_crop_P2": {
-      "description": "Carcass_GA_bou_crop_P2",
+      "description": "Drop through the pot in Aviaries Passepartout.",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264408"
     },
     "Carcass_GA_bou_door_C1": {
-      "description": "Carcass_GA_bou_door_C1",
-      "url": ""
+      "description": "The Breath's Spring, southwest passage.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264267"
     },
     "Carcass_GA_bou_glide_P2": {
-      "description": "Carcass_GA_bou_glide_P2",
-      "url": ""
+      "description": "The Breath's Spring, bottom of the room.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264270"
     },
     "Carcass_GA_bou_intro_F6": {
       "description": "Carcass_GA_bou_intro_F6",
-      "url": ""
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264065"
     },
     "Carcass_GA_bou_up_F1": {
       "description": "Carcass_GA_bou_up_F1",
@@ -362,6 +374,12 @@
       "description": "Feral Undergrowth",
       "type": "Traveller's Log",
       "flavor": "Stargazing",
+      "url": ""
+    },
+    "TXT_TRAVELLER_LOG3_TRANSLATED": {
+      "description": "Jump down through the pot in Aviaries Passepartout.",
+      "type": "Traveller's Log",
+      "flavor": "No Promise",
       "url": ""
     },
     "TXT_TRAVELLER_LOG4_TRANSLATED": {

@@ -62,6 +62,12 @@ function computePlayerStats(gameData, collectibles) {
     .map(([key]) => key)
     .filter((key) => key in collectibles.carcasses)
 
+  const dialogObj = gameData?.Saved_entries?.DIALOG ?? {}
+  const carcassDialogs = Object.entries(dialogObj)
+    .filter(([, value]) => value?.flags?.includes("Acquired"))
+    .map(([key]) => key)
+    .filter((key) => key in collectibles.carcassDialog)
+
   const bossIds = Object.keys(collectibles.bosses)
   const bossObj = gameData?.Saved_entries?.BOSS ?? {}
   const bossMeetObj = gameData?.Saved_entries?.BOSS_MEET ?? {}
@@ -111,6 +117,7 @@ function computePlayerStats(gameData, collectibles) {
     chestKeysAcquired,
     attackPowerAcquired,
     carcasses,
+    carcassDialogs,
     bossesDefeated,
     bossAttempts,
     checkpointsAcquired,
