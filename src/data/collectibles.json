@@ -67,8 +67,8 @@
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264495"
     },
     "Carcass_GA_vin_bridge_S1": {
-      "description": "Carcass_GA_vin_bridge_S1",
-      "url": ""
+      "description": "The Breath's Spring, climb up the passage at bottom eastern section of the room.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264294"
     },
     "Carcass_GA_vin_dusk_S1": {
       "description": "Canopy Network Gate, upper eastern path.",
@@ -99,42 +99,45 @@
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264033"
     },
     "Carcass_LQ_under_chall_P3": {
-      "description": "Carcass_LQ_under_chall_P3",
-      "url": ""
+      "description": "Foundations, top eastern corner of the room after Atmos.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264031"
     },
     "Carcass_LQ_under_hub_P4": {
-      "description": "Carcass_LQ_under_hub_P4",
-      "url": ""
+      "description": "Foundations, western-most area by a secret passage to <redacted>.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264052"
     },
     "Carcass_LQ_under_tuto_C2": {
       "description": "Foundations via Metropolis air tunnel, east through the broken glass, Strider through an air tunnel.",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264026"
     },
     "Carcass_ST_pearl_lab_P3": {
-      "description": "Carcass_ST_pearl_lab_P3",
-      "url": ""
+      "description": "The Pit, west of Network Gate, downward path, further down where three rocks drop in quick succession.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264755"
     },
     "Carcass_ST_pearl_lab_P7": {
-      "description": "Carcass_ST_pearl_lab_P7",
-      "url": ""
+      "description": "The Pit, west of Network Gate, downward path.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264746"
     },
     "Carcass_ST_pearl_lab_S1": {
-      "description": "Carcass_ST_pearl_lab_S1",
-      "url": ""
+      "description": "The Pit, west of Network Gate, climb the upward eastern path.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264992"
     },
     "Carcass_ST_pearl_lab_sommet": {
-      "description": "Carcass_ST_pearl_lab_sommet",
-      "url": ""
+      "description": "The Pit, northeast of the Network Gate.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264750"
     },
     "Carcass_ST_tube_hub_P2": {
       "description": "Vaults tubes area, climb the wall near a pump.",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264315"
     },
     "Carcass_ST_tube_liquids_C4": {
-      "description": "Carcass_ST_tube_liquids_C4",
-      "url": ""
+      "description": "Vaults, Soothing Refuge, east of Goliath's room.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264171"
     },
-    "Carcass_ST_tube_top": { "description": "Carcass_ST_tube_top", "url": "" },
+    "Carcass_ST_tube_top": { 
+      "description": "Vaults, west of Soothing Refuge, drop down from a gap in the tubes.", 
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264199" 
+    },
     "Carcass_TW_common_right": {
       "description": "Celestial Bay, lower path.",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264381"
@@ -144,12 +147,12 @@
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264977"
     },
     "Carcass_security_glide_P1": {
-      "description": "Carcass_security_glide_P1",
-      "url": ""
+      "description": "<redacted> (Foundations), use the bombs to reach the upper path.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264976"
     },
     "Carcass_security_glide_P3": {
-      "description": "Carcass_security_glide_P3",
-      "url": ""
+      "description": "<redacted> (Foundations), at the end of a hallway.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264069"
     },
     "Carcass_trois_mouches": {
       "description": "Foundations, drop down the western elevator shaft to a broken passage on the left.",
@@ -400,13 +403,13 @@
     }
   },
   "trinket_slots": {
-    "0": { "description": "Mel (no req)", "url": "" },
-    "1": { "description": "Slot 1", "url": "" },
-    "2": { "description": "Slot 2", "url": "" },
-    "3": { "description": "Slot 3", "url": "" },
-    "4": { "description": "Mel (no req)", "url": "" },
-    "5": { "description": "Slot 5", "url": "" },
-    "6": { "description": "Slot 6", "url": "" }
+    "0": { "description": "#0 Mel (no req)", "url": "" },
+    "1": { "description": "#1 Slot 1", "url": "" },
+    "2": { "description": "#2 Slot 2", "url": "" },
+    "3": { "description": "#3 Slot 3", "url": "" },
+    "4": { "description": "#4 Mel (no req)", "url": "" },
+    "5": { "description": "#5 Slot 5", "url": "" },
+    "6": { "description": "#6 Slot 6", "url": "" }
   },
   "chest_keys": {
     "0": {
@@ -617,17 +620,17 @@
   },
   "shield_fragments": {
     "0": {
-      "description": "Purchase from Mel (no req, 1 core 300 nacre)",
+      "description": "#0 Purchase from Mel (no req, 1 core 300 nacre)",
       "url": ""
     },
     "1": {
-      "description": "Purchase from Mel (no req, 1 core 300 nacre)",
+      "description": "#1 Purchase from Mel (no req, 1 core 300 nacre)",
       "url": ""
     },
-    "2": { "description": "Purchase from Mel", "url": "" },
-    "3": { "description": "Purchase from Mel", "url": "" },
-    "4": { "description": "Purchase from Mel", "url": "" },
-    "5": { "description": "Purchase from Mel", "url": "" },
+    "2": { "description": "#2 Purchase from Mel", "url": "" },
+    "3": { "description": "#3 Purchase from Mel", "url": "" },
+    "4": { "description": "#4 Purchase from Mel", "url": "" },
+    "5": { "description": "#5 Purchase from Mel", "url": "" },
     "6": {
       "description": "#6 Top of Bell Tower in a platforming area.",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264231"
