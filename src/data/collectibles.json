@@ -403,11 +403,11 @@
     }
   },
   "trinket_slots": {
-    "0": { "description": "#0 Mel (no req)", "url": "" },
-    "1": { "description": "#1 Slot 1", "url": "" },
+    "0": { "description": "#0 Mel (no req, 1 core 200 nacre)", "url": "" },
+    "1": { "description": "#1 Mel (Rescue Cos, 2 cores 450 nacre)", "url": "" },
     "2": { "description": "#2 Slot 2", "url": "" },
     "3": { "description": "#3 Slot 3", "url": "" },
-    "4": { "description": "#4 Mel (no req)", "url": "" },
+    "4": { "description": "#4 Mel (no req, 1 core 200 nacre)", "url": "" },
     "5": { "description": "#5 Slot 5", "url": "" },
     "6": { "description": "#6 Slot 6", "url": "" }
   },

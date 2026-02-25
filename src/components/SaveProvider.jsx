@@ -4,6 +4,8 @@ import { useState, useMemo } from "react"
 import { parseSave } from "../saveParser"
 import { SaveContext } from "./SaveContext"
 
+const STARTING_TRINKET_SLOTS = 25
+
 const parsePlaytime = (totalSeconds) => {
   const hours = Math.floor(totalSeconds / 3600)
   const minutes = Math.floor((totalSeconds % 3600) / 60)
@@ -41,19 +43,29 @@ function computePlayerStats(gameData, collectibles) {
     .map(([key]) => key)
 
   const trinketSlotUpgradesAcquired = acquiredIntKeys(
-    gameData, "TRINKET_SLOT_UPGRADE", new Set(Object.keys(collectibles.trinket_slots)),
+    gameData,
+    "TRINKET_SLOT_UPGRADE",
+    new Set(Object.keys(collectibles.trinket_slots)),
   )
   const attackPowerAcquired = acquiredIntKeys(
-    gameData, "ATTACK_POWER", new Set(Object.keys(collectibles.attack_power)),
+    gameData,
+    "ATTACK_POWER",
+    new Set(Object.keys(collectibles.attack_power)),
   )
   const candlesAcquired = acquiredIntKeys(
-    gameData, "CANDLE", new Set(Object.keys(collectibles.candles)),
+    gameData,
+    "CANDLE",
+    new Set(Object.keys(collectibles.candles)),
   )
   const shieldFragmentsAcquired = acquiredIntKeys(
-    gameData, "SHIELD_FRAGMENT", new Set(Object.keys(collectibles.shield_fragments)),
+    gameData,
+    "SHIELD_FRAGMENT",
+    new Set(Object.keys(collectibles.shield_fragments)),
   )
   const chestKeysAcquired = acquiredIntKeys(
-    gameData, "CHEST_KEY", new Set(Object.keys(collectibles.chest_keys)),
+    gameData,
+    "CHEST_KEY",
+    new Set(Object.keys(collectibles.chest_keys)),
   )
 
   const carcassObj = gameData?.Saved_entries?.CARCASS ?? {}
@@ -97,6 +109,27 @@ function computePlayerStats(gameData, collectibles) {
       .map(([key]) => key),
   )
 
+  const trinketData = collectibles?.trinkets ?? {}
+  const unlockedSlots =
+    STARTING_TRINKET_SLOTS + trinketSlotUpgradesAcquired.length * 10
+
+  const negativeSlotBonus = equippedTrinkets.reduce((sum, key) => {
+    const cost = parseInt(trinketData[key]?.cost, 10) || 0
+    return cost < 0 ? sum + Math.abs(cost) : sum
+  }, 0)
+  const currentMaxSlots = unlockedSlots + negativeSlotBonus
+
+  const equippedSlotCost = equippedTrinkets.reduce((sum, key) => {
+    const cost = parseInt(trinketData[key]?.cost, 10) || 0
+    return cost > 0 ? sum + cost : sum
+  }, 0)
+
+  if (gameData) {
+    console.log(
+      `[Trinket Slots] unlocked: ${unlockedSlots}, max: ${currentMaxSlots}, equipped: ${equippedSlotCost}`,
+    )
+  }
+
   return {
     deaths: gameData?.Saved_entries?.STATS?.DEATH?.count ?? 0,
     playtime: parsePlaytime(gameData?.Saved_not_important?.playtime ?? 0),
@@ -122,6 +155,9 @@ function computePlayerStats(gameData, collectibles) {
     bossAttempts,
     checkpointsAcquired,
     overseersAcquired,
+    unlockedSlots,
+    currentMaxSlots,
+    equippedSlotCost,
   }
 }
 
