@@ -125,11 +125,6 @@
   margin: 0;
 }
 
-.trinkets-view-toggle {
-  display: flex;
-  gap: 0.25rem;
-}
-
 .view-toggle-btn {
   background: var(--accent-darker);
   border: var(--border-default);

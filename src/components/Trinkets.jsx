@@ -70,7 +70,7 @@ const Trinket = ({ label, cost, acquired, equipped, grid }) => {
       }`}
     >
       <p className="text-small text-accent">{label}</p>
-      {cost && <span className="corner-badge corner-badge--left">{cost}</span>}
+      {cost && <span className="corner-badge corner-badge--left">{cost} <i className="fa-solid fa-diamond" /></span>}
       {equipped && (
         <span className="corner-badge">
           <i className="fa-solid fa-gears" />
@@ -85,6 +85,8 @@ const EXCLUDED_TRINKETS = ["EMBEDDING_BLADE", "SMALL_ENERGY_DRAIN", "TANGLES"]
 const Trinkets = () => {
   const { playerStats, collectibles } = useSaveProvider()
   const [gridView, setGridView] = useState(true)
+  const [showEquipped, setShowEquipped] = useState(false)
+  const [showCost, setShowCost] = useState(false)
 
   const trinketData = collectibles?.trinkets ?? {}
   const acquiredTrinkets = playerStats?.trinkets ?? []
@@ -106,25 +108,30 @@ const Trinkets = () => {
         </span>
       </h3>
       <div className="trinkets-controls">
-        <div className="trinkets-view-toggle">
-          <button
-            className={`view-toggle-btn ${gridView ? "view-toggle-btn--active" : ""}`}
-            onClick={() => setGridView(true)}
-            title="Grid view"
-          >
-            <i className="fa-solid fa-grip" />
-          </button>
-          <button
-            className={`view-toggle-btn ${!gridView ? "view-toggle-btn--active" : ""}`}
-            onClick={() => setGridView(false)}
-            title="List view"
-          >
-            <i className="fa-solid fa-list" />
-          </button>
-        </div>
-        <p className="text-small legend legend--inline">
-          <i className="fa-solid fa-gears" /> = equipped
-        </p>
+        <button
+          className={`view-toggle-btn ${gridView ? "view-toggle-btn--active" : ""}`}
+          onClick={() => setGridView(true)}
+        >
+          <i className="fa-solid fa-grip" /> Grid
+        </button>
+        <button
+          className={`view-toggle-btn ${!gridView ? "view-toggle-btn--active" : ""}`}
+          onClick={() => setGridView(false)}
+        >
+          <i className="fa-solid fa-list" /> Alphabetical
+        </button>
+        <button
+          className={`view-toggle-btn ${showCost ? "view-toggle-btn--active" : ""}`}
+          onClick={() => setShowCost((v) => !v)}
+        >
+          <i className="fa-solid fa-diamond" /> Cost
+        </button>
+        <button
+          className={`view-toggle-btn ${showEquipped ? "view-toggle-btn--active" : ""}`}
+          onClick={() => setShowEquipped((v) => !v)}
+        >
+          <i className="fa-solid fa-gears" /> Equipped
+        </button>
       </div>
 
       {gridView ? (
@@ -138,9 +145,9 @@ const Trinkets = () => {
                 <Trinket
                   key={key}
                   label={getLabel(key)}
-                  cost={getCost(key)}
+                  cost={showCost ? getCost(key) : ""}
                   acquired={acquiredTrinkets.includes(key)}
-                  equipped={equippedTrinkets.includes(key)}
+                  equipped={showEquipped && equippedTrinkets.includes(key)}
                   grid
                 />
               )
@@ -151,9 +158,9 @@ const Trinkets = () => {
               <Trinket
                 key={key}
                 label={getLabel(key)}
-                cost={getCost(key)}
+                cost={showCost ? getCost(key) : ""}
                 acquired={acquiredTrinkets.includes(key)}
-                equipped={equippedTrinkets.includes(key)}
+                equipped={showEquipped && equippedTrinkets.includes(key)}
                 grid
               />
             ))}
@@ -165,9 +172,9 @@ const Trinkets = () => {
             <Trinket
               key={key}
               label={info.name ?? key}
-              cost={info.cost ?? ""}
+              cost={showCost ? (info.cost ?? "") : ""}
               acquired={acquiredTrinkets.includes(key)}
-              equipped={equippedTrinkets.includes(key)}
+              equipped={showEquipped && equippedTrinkets.includes(key)}
             />
           ))}
         </div>
