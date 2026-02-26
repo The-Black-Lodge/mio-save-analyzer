@@ -429,142 +429,169 @@
     },
     "LETTER_ACCELERATE": {
       "type": "Letter from Tomo",
-      "flavor": "",
+      "name": "It Might Be Too Late Already",
+      "flavor": "Samsk, my friend,\nI hate to be the bearer of bad news, but I think the decay is accelerating. \nThe younger units seem to be far more susceptible to it than the older ones. Most, if not all of them, are already deprecated. Maybe it's just that their thought protocols are more vulnerable... But it's concerning all the same. At this rate, we might face a shortage sooner or later, meaning that there will be less and less of us to take care of the Vessel.\n...You know, now that I think of it, it's been a while since I last saw a fresh unit from the Vaults. A few decades, at least. \nWhat is happening down there exactly?\nIt's time I go take a look.\nTomo",
       "url": ""
     },
     "LETTER_FAREWELL": {
       "type": "Letter from Tomo",
-      "flavor": "",
+      "name": "Farewell Letter",
+      "flavor": "My dear Samsk,\nHow are you? I hope this letter finds you well, considering the current state of the Vessel. It saddens me to see how rapidly she has declined after the Travellers departed...\nI've seen so many units go haywire since that fateful day. It breaks my core a little more each time I meet one of them in the corridors, without mind or purpose. So hostile. \nI still have some difficulty wrapping my mind around this... decay of their behaviour. Is their consciousness completely gone, or is it possible to restore it somehow? What is even causing all of this?\nI had hoped we could find these answers together, but I can't afford to wait for you. This place won't be safe much longer.\nI'm going to learn more about our inner workings. How we operate, and why. It's a shame I can't ask the Travellers who made us directly for those answers, but maybe I can recover some clues from their vestiges, too.\nI hope to bring you good news when we meet again. Maybe even a cure, who knows?\nTomo",
       "url": ""
     },
     "LETTER_FIRST_CASE": {
       "type": "Letter from Tomo",
-      "flavor": "",
+      "name": "First Case Study",
+      "flavor": "I was genuinely surprised (and a bit happy) when Liho asked me to take a look at this Engraver. The same Liho who never once showed any interest in machines, now invested in the well-being of one malfunctioning unit? How refreshing!\nI understand better now. This blind animosity, this apparent deprecation of the cognitive systems... It reminds me of Noden's take over, the one time machines rose against the Travellers. No wonder it caught his attention.\nExcept this is different. There's no motive, no objective behind it. No mastermind. I don't think Liho realised that, though... I fear he might take it personally. Paranoia would be even worse than his current apathy.\nI should act before it comes to this. Liho suffered enough already, and this time I can actually do something to prevent it. Maybe ask Samsk for his opinion, that would be a good first step. \nThat is, if I can find him first.",
       "url": ""
     },
     "LETTER_LOVE": {
       "type": "Letter from Tomo",
-      "flavor": "",
+      "name": "Belated Realisation",
+      "flavor": "Do you remember, Samsk?\nIt's you who told me that the Belltower was even older than the Vessel. It is one of the rare relics that the Travellers took with them when they embarked, to remind them of their homeworld. You wouldn't stop gushing about the craftsmanship and the attention to details that they poured into their work.\nToday, as I stand in its shadow, I can only agree. \nThe Travellers were more than just engineers. They knew how to build sturdy and durable structures, yes — they had to if they wished to cross the stars. But they also knew how to make it beautiful and welcoming.\nAnd it permeates through all their creations. \nI just have to look at the Vessel herself to realise that.\nI came here to uncover some deep secrets about the Travellers' crafting, hoping to find more hints about our inner working. Instead, what I learn is that we were cared for, deeply and unconditionally. \nI miss them.\nTomo",
       "url": ""
     },
     "LETTER_POISON": {
       "type": "Letter from Tomo",
-      "flavor": "",
+      "name": "It All Makes Sense Now",
+      "flavor": "Samsk,\nThere's gloomwater in our pearls. \nIt's what we're made of. \nDid you know about that? Did you know and not tell me?\nI feel like an utter fool, now. The things I learnt about ourselves, about the hows and whys of the Travellers designs for us... I'm not even sure it matters now. \nWe are made of refined poison. \nNo wonder our processes start degenerating after a while. \nThere may be no cure, after all. No hope of recovery. \nNot for us at least. But perhaps... Yes, perhaps there is still a chance for the future generations. Not a cure, then, but rather, a vaccine.\nI need to go back to the source, to the Crucible where our pearls are made.\nTomo",
       "url": ""
     },
     "LETTER_SPREAD": {
       "description": "Above Crow's room.",
       "type": "Letter from Tomo",
-      "flavor": "Hopeful Findings",
+      "name": "Hopeful Findings",
+      "flavor": "Samsk, good news! The decay is not communicable! \nI'm fairly certain of this. After having spent so much time among the farming units of the Haven, I dare say that if they were contagious, I wouldn't be able to write these words by now.\nFor once, we can thank the fall of the network, I think. Since it requires an old-fashioned, consensual wired connection to transmit data from unit to unit, we're pretty safe from any unwanted spreading. Even contact should be safe, as long as you keep your ports closed.\n(And no, before you ask, I'm not reckless enough to try that.)\nUnfortunately, that's all I can learn from the farmlings. They're too simplistic in design to teach me anything relevant. It comes from their task I suppose — keeping the Travellers fed. Not something to be distracted from by some form of sentience.\nI don't blame them, but it sure doesn't help my progress.\nTomo",
       "url": ""
     },
     "LETTER_TRIGGER": {
       "type": "Letter from Tomo",
-      "flavor": "Flawed Assumptions",
+      "name": "Flawed Assumptions",
+      "flavor": "Hello again, Samsk,\nI hope you don't mind me keeping on writing these letters to you. I don't even know how many of them might actually reach you one day. I just find that recording my thoughts helps me put them in order.\nAnyway, I'm making progress on what triggered the decay of those unfortunate units — or more accurately, on what didn't. Contrary to what I thought, the absence of the Travellers has nothing to do with it.\nI've observed a good variety of decayed units in the ruins now: they range from workers, to social pets, to any role in between, yet the personal assistants who were the closest to them (me included, even though I'm a special case) are wholly unaffected. \nWith the Travellers gone, you'd think they'd be the first to deprecate, but no. They are as chatty as ever. \nI find it a bit reassuring, don't you?\nTomo",
       "url": ""
     },
     "MEM_HORNFELL": {
       "type": "Flash Memory",
-      "flavor": "",
+      "name": "Embedding Duty",
+      "flavor": "Embedding status: Pending\nNew instruction set received:\n> The process must not be disturbed.\n> The process must not be interrupted.\n> The process must be protected at all cost until completion.\nNo visitors are authorised inside the facility for the duration of the event.\nAll intruders will be eliminated.",
       "url": ""
     },
     "MEM_IMPY": {
       "type": "Flash Memory",
-      "flavor": "",
+      "name": "Equivalent Exchange",
+      "flavor": "-- Warning: Hostile presence detected --\nNumber of units: 1\nDanger level: Not worthy of attention. Can be ignored safely.\nCommunication attempt...\nIgnored.\nCommunication attempt...\nIgnored.\nCommunication system overriden.\nOpening private channel:\n> Found you, thief! \n> Did you think you could block me off? \n> Ha! Mel taught me everything. You don't have a chance.\n> Now, give me back my hat. \n> Wait... where is it? What did you do with my precious hat?\n> ...\n> Oh well. Don't worry, we'll find a solution.\nPrivate channel closed.\n!! ALERT: DANGER LEVEL RISING !!\nRUN AWAY\nDO NOT ENGAGE\nESCAPE AT ALL COSTS",
       "url": ""
     },
     "MEM_LIBRARIAN": {
       "type": "Flash Memory",
-      "flavor": "",
+      "name": "Consultation Register",
+      "flavor": "Unusual request detected. Manual input required. \nRunning background check now...\n> USER NAME: Ember\n> ACCREDITATION: Traveller of the 28th generation\n> PAST HISTORY: [data corrupted]\nReviewing request...\n> NATURE OF THE REQUEST: Access to the Precious Samples\n> DURATION: Indefinite\n> ADDITIONAL COMMENT: \"Urgh... I don't have time for this. Listen, just... Don't trust the machines, except this little fellow here. When she comes back, it'll mean the dust has settled.\"\nSending details to the Breath...\nRequest granted.",
       "url": ""
     },
     "MEM_LIDAR": {
       "type": "Flash Memory",
-      "flavor": "",
+      "name": "INCOMING SIGNAL",
+      "flavor": "Origin of the signal: Unknown network of unregistered pearls. \nAttune?\n   no      > yes\nConversation protocol engaged.\n> Why were you cast here?\n> You are not like us!\nOBSERVATION #1: This is a disposal center for non-compliant pearls.\nOBSERVATION #2: This unit is not a broken or otherwise misshapen pearl. This unit is a fully functioning LiDAR. \nOBSERVATION #3: A LiDAR's task is to find a habitable planet. \nOBSERVATION #4: Planets found by this unit-- None.\nCONCLUSION: This unit is a failure.\n> How sad...\n> You shouldn't diminish yourself like that. \n> It sounds like a hard job. Almost impossible. You did your best, we're sure of it.\n> What are you going to do now? \nPROPOSITION: Nothing. \nCAUSE: This unit has no further instructions.\nConversation protocol ended.",
       "url": ""
     },
     "MEM_LIDAR_2": {
       "type": "Flash Memory",
-      "flavor": "",
+      "name": "Re: INCOMING SIGNAL",
+      "flavor": "Origin of the signal: Identified network of unregistered pearls.\nDescription attached: Interlocutor is nosy, chatty, intrusive\nAttune?\n   no      > yes\nConversation protocol engaged.\n> Oh, is that how you see us?\n> Then why did you take our call this time?\nERROR: Motive not found. There was no reason to answer. There was no reason not to answer.\n> So... in other words, you were bored. You ARE capable of initiative!\n> You know, we had a thought since last time. \n> Would you like to join us? We swear you wouldn't be bored anymore!\nOBSERVATION: This unit cannot move. This unit cannot act. \n> It's okay. Just upload your conscience to ours. \n> You don't need that shell anymore.\nSEARCHING DATABASE: Conscience... What is... A conscience?\nSearch complete. Vocabulary expanded.\nTHOUGHT: Maybe...\nConversation protocol ended.\nSystem migration initiated.",
       "url": ""
     },
     "MEM_PUPPET": {
       "description": "Hidden path in starting area.",
       "type": "Flash Memory",
-      "flavor": "-- Connection Lost --",
+      "name": "-- Connection Lost --",
+      "flavor": "!! ALERT: Connection to the Heart has been lost !!\nEnergy levels dropping.\nCore systems decaying.\nRecovery protocol failure: not enough power.\nThis unit will be permanently shut down. \nThis unit is not afraid.\nThis is just like\n                        going into\n                                         sleep\n                                                   mode.",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263868"
     },
     "MEM_VOICEKEEPER": {
       "type": "Flash Memory",
-      "flavor": "",
+      "name": "%$!#'%",
+      "flavor": "String of corrupted data detected.\nMalware eradication protocol initiated.\n-- ALERT: Firewall breached -- \nMalware eradication protocol revoked--\naccess authorised\ncore functions rewri%\n@|>>>>>>>>>\n....................\n..............\n........\n...Update complete.\nNEW OWNERSHIP: Noden\nNEW ASSIGNMENT ORDER: Destroy the coordinates. Do not let anything or anyone stop you.\nPRIORITY LEVEL: Maximum",
       "url": ""
     },
     "PEARL_AMYTIS": {
       "type": "Voice",
-      "flavor": "A voice that carries the weight of indifference.",
+      "name": "No Future",
+      "flavor": "Asma's Keeper came with that Traveller in tow, asking for refuge. I should have turned them down... Instead I opened the Library for them. They were meant to be safe within its walls. Even he, blinded by his current folly, should have recognised the sanctity of this place.\nHow naive of me. ",
       "url": ""
     },
     "PEARL_ASMA": {
       "type": "Voice",
-      "flavor": "A voice that carries the weight of aging.",
+      "name": "Positive Report",
+      "flavor": "Are my senses tricking me again? I've been looking out for so long. I don't know what is real and what is not anymore. Stars and corrupted spots on my sensors feel awfully similar. It's so hard to focus.\nAnd yet.\nAnd YET.\nI think this is it. I finally found it. I need to share the news.\nOur journey is over.",
       "url": ""
     },
     "PEARL_HALYN": {
       "type": "Voice",
-      "flavor": "A voice that carries the weight of ambition.",
+      "name": "Beginning of the End",
+      "flavor": "We are stuck.\nWhether by design, or by accident, we are now stuck in these motionless shells forever. Noden seems surprisingly calm about it, considering he's the first to be impacted, but he's nothing more than a fool. No one shall escape the consequences of these events.\nThe danger starts now, and it comes from ourselves. From the legacy of our fragile, frustrating and once mortal minds. We weren't meant to last more than a few centuries. Apathy, paranoia, dementia, frenzy... Those are symptoms our slow degeneration will spark, given time.\nI can delay them, however. The first step will be to gain the ability to move once again...",
       "url": ""
     },
     "PEARL_KHLIA": {
       "type": "Voice",
-      "flavor": "A voice that carries the weight of suffering.",
+      "name": "Final Instructions",
+      "flavor": "It had to be done.\nI'm sorry that this burden fell on you, Ati. But we couldn't continue like that.\nWith him gone, I feel blind now. Numb. I don't know where I am going. I can't hear the others. \nI'd be alone again, if not for you.\nTo be disconnected... It's so strange a sensation. One I haven't felt since my Embedding. Did I really use to live like that?\nIt is sort of scary. And sort of liberating.\nBut we cannot stay aimless forever.\nI have one final task for you, and this is, perhaps, the most important one I ever gave you.\nPlease, I need the coordinates. \nFind them.",
       "url": ""
     },
     "PEARL_LIHO": {
       "type": "Voice",
-      "flavor": "A voice that carries the weight of regret.",
+      "name": "Our Fault",
+      "flavor": "Our fault.\nEverything is-\nOur fault.\nLura was under our care, and we failed her.\nOur fault.\nWe couldn't protect the Travellers' dream from the machines.\nOur fault.\nWe are disconnected now, but it was too late already. They lost everything.\nOur fault.\nSoon the cold will be setting in. We can feel it building up behind our walls, and there is nothing we can do to stop it.\nOur fault.\nThey can't resist it. They won't resist it. Their despair is overwhelming. \nThey don't have the will to live anymore, and it is our fault.",
       "url": ""
     },
     "PEARL_NODEN": {
       "type": "Voice",
-      "flavor": "A voice that carries the weight of choice.",
+      "name": "Premature Conclusion",
+      "flavor": "We can't land. The Vessel can't land. She can't take it. Redundant systems would all die in favour of the Library. Including us Pearls, and most of the machines.\nYet the Travellers won't listen to my warnings. They would sacrifice all units in order to finally reach their Promised Land. Was it... Was it something they expected from the beginning? Were they always going to leave us behind while they get to have a new home, a future?\nWhy do the machines always have to be the expendable ones?\nI can accept my own demise. I was ready for it all these years ago, and I was denied it once already. But the death of the machines that carried the Vessel so far? The death of Shii, so ever patient, so ever caring towards even the smallest of the systems? It feels... so unjust.\nI cannot accept it.\nI can never accept it.\nI will protect them all.",
       "url": ""
     },
     "TXT_TRAVELLER_LOG1_TRANSLATED": {
       "description": "Feral Undergrowth",
       "type": "Traveller's Log",
-      "flavor": "Stargazing",
+      "name": "Stargazing",
+      "flavor": "I love stargazing. Everywhere around us, there's something to see. Light, colours, shapes, you name it. It made me realise how wrong things were back home. \nIt shouldn't have taken boarding a spaceship to be able to watch the stars for the first time. They are a precious spectacle, a reminder the universe is infinitely vast and we are but a tiny speck of dust. A comforting thought, at least to me.\nWhen we reach our new home, let's be sure to preserve a starry sky for our kids, alright?",
       "url": ""
     },
     "TXT_TRAVELLER_LOG2_TRANSLATED": {
       "type": "Traveller's Log",
-      "flavor": "",
+      "name": "So Boring",
+      "flavor": "You know how it's always sunny here? Always the right temperature, always the perfect summer weather? \nWell, it's  b o r i n g. \nI miss the rain. The ugly days. The cold and the dark. I miss that feeling you get with a hot cocoa, comfy plaid and soft music playing in the background while it pours like hell outside. \nCome on, tech guys. I know you read these logs. Give us a nice winter once in a while.",
       "url": ""
     },
     "TXT_TRAVELLER_LOG3_TRANSLATED": {
       "description": "Jump down through the pot in Aviaries Passepartout.",
       "type": "Traveller's Log",
-      "flavor": "No Promise",
+      "name": "No Promise",
+      "flavor": "Adults can't stop talking about the Promised Land and how there will be no walls \nand the ceiling will be empty\nand there will be lots of plants and even animals\nand everything will be so big that you can get lost and not find your way home.\nIt's scary!! \nI don't want the Promised Land. I never promised anything! There is already a garden here and it's beautiful and alive and I can always get back home whenever I want. Mom says it's where I was born. \nDo we really have to go?",
       "url": ""
     },
     "TXT_TRAVELLER_LOG4_TRANSLATED": {
       "description": "Foundations, eastern bottom area. Hairpin the enemy.",
       "type": "Traveller's Log",
-      "flavor": "Grateful",
+      "name": "Grateful",
+      "flavor": "To the six Voices, we are grateful.\nWe are grateful to the Blood, for the warmth he provides.\nWe are grateful to the Breath, for the air in our lungs.\nWe are grateful to the Eye, for the long watch over our Travel.\nWe are grateful to the Hand, for the tools she shapes.\nWe are grateful to the Spine, for the bonds we share through him.\nWe are grateful to the Heart, for the world around us.\nMay you keep on watching over us forever.",
       "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263938"
     },
     "TXT_TRAVELLER_LOG5_TRANSLATED": {
       "type": "Traveller's Log",
-      "flavor": "",
+      "name": "No more",
+      "flavor": "she isn't dead\nshe ISN'T dead\nthey say she is, but she's not\nI bet she would like to be dead, because now she \ncannot\nshe's stuck in-between\nmy love\nwhat did they do to you?\nwe cannot allow it to happen again\nno more sacrifice\nno more failures\nnot even to bring new voices\nthe ship can sail without them",
       "url": ""
     },
     "TXT_TRAVELLER_LOG6_TRANSLATED": {
       "type": "Traveller's Log",
-      "flavor": "",
+      "name": "The Word of the Voices",
+      "flavor": "Heed the Word of the Voices, but do not seek their contact, for an impure touch will anger them and they will trap your soul in their white shell.",
       "url": ""
     },
     "TXT_TRAVELLER_LOG7_TRANSLATED": {
       "type": "Traveller's Log",
-      "flavor": "",
+      "name": "Prayer to the Dead",
+      "flavor": "Your journey ends here.\nThe Voices deemed you ready. They sent you to the Promised Land ahead of us. There your spirit shines as a beacon, lighting our way to you. \nWe will now entrust your empty vessel to the eternal night, for you no longer need to be carried among the stars. \nWe shall meet you again in the Promised Land.",
       "url": ""
     }
   },
