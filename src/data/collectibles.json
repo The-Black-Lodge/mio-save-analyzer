@@ -350,8 +350,8 @@
       "type": "Curio",
       "name": "Cryptic Curio",
       "flavor": "A solid material encased in a thin plastic layer, displaying many cryptic texts.",
-      "description": "Feral Undergrowth",
-      "url": "",
+      "description": "Feral Undergrowth, near the beginning of the game.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264003",
       "capucinedName": "Standardised Biochemical Sample",
       "capucinedFlavor": "A solid material encased in a thin plastic layer, displaying many cryptic texts.\nThe matter inside the fabric seems to be of organic origin. The composition of biochemical constituents is diverse and the sample is preserved under aseptic atmosphere. This makes the content a top-grade reference material for the calibration of laboratory instruments in regard to exoplanet analysis."
     },
@@ -360,7 +360,7 @@
       "name": "Ancient Curio",
       "flavor": "Found on the grave of a Traveller named \"Lucy\", this inert item lacks any form of input and appears devoid of any function.",
       "description": "",
-      "url": "",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264802",
       "capucinedName": "Earthen Relic",
       "capucinedFlavor": "Found on the grave of a Traveller named Lucy, this inert item lacks any form of input and appears devoid of any function.\nAnalysis show that this item predates the Vessel herself. A legacy of a forgotten world for forgotten purposes."
     },
@@ -369,7 +369,7 @@
       "name": "Pristine Curio",
       "flavor": "Handcrafted note of the uttermost elegance.",
       "description": "Lura's room, locked door.",
-      "url": "",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264803",
       "capucinedName": "Pristine Journal",
       "capucinedFlavor": "Handcrafted note of the uttermost elegance.\nThe note reads:\n\"I am grateful to you, my friends, for everything you have brought me.\nI hope you will still address me in the same way.\nI am grateful to you, Shii, for seing me as an Incumbent.\nI hope to prove myself worthy. \nI am grateful to you, Noden, for guiding me during those last days.\nI hope you will find the rest you deserve.\nFarewell, and see you tomorrow,\nLura.\""
     },
@@ -378,7 +378,7 @@
       "name": "Disturbing Curio",
       "flavor": "A set of weird looking pearls with intricate patterns encased inside, their meaning lost in time.",
       "description": "",
-      "url": "",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263882",
       "capucinedName": "Miniature Pearls",
       "capucinedFlavor": "A set of weird looking pearls with intricate patterns encased inside, their meaning lost in time.\nMost likely used as tiny offerings, or maybe prayer vectors. Coins, in the worst case. Could you imagine being stripped of your pearl and turned into money? The absolute horror."
     },
@@ -387,7 +387,7 @@
       "name": "Metallic Curio",
       "flavor": "A metallic chain with two interlocking pieces, made out of steel and brass.",
       "description": "",
-      "url": "",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264406",
       "capucinedName": "Dual Pendant",
       "capucinedFlavor": "A metallic chain with two interlocking pieces, made out of steel and brass.\nRecords indicate these pendants were offered to newly manufactured Travellers. This one is made of two interlocking parts, bearing the names of Asma and Khlia. A small, hand-engraved inscription reads:\n\"At last, after all these years, I can finally join you.\""
     },
@@ -396,7 +396,7 @@
       "name": "Fluffy Curio",
       "flavor": "A small version of a quadrupedal unit, except for the fancy plushy material.",
       "description": "",
-      "url": "",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264944",
       "capucinedName": "Combat-training Target Practice",
       "capucinedFlavor": "A small version of a quadrupedal unit, except for the fanciful plushy material.\nConsidering its derelict state, this figurine was almost certainly used by a particularly small bot for combat training. The name \"Liho\" is written on the ribbon."
     },
@@ -405,7 +405,7 @@
       "name": "Weird Curio",
       "flavor": "This curio was found in the ravaged corridor below the Obervatory.",
       "description": "",
-      "url": "",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264385",
       "capucinedName": "Orphaned Shoe",
       "capucinedFlavor": "This curio was found in the ravaged corridor below the obervatory.\nThese kinds of exoskeletons were quite common among Travellers. However, in most instances, they came by pair, so the owner must have been either distracted or in a hurry. The name \"Ember\" is written on the inside."
     },
