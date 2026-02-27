@@ -1250,5 +1250,15 @@
       "cost": "-25",
       "url": ""
     }
+  },
+  "unlocks": {
+    "BLOCK": { "name": "Dodge", "description": "", "flavor": "" },
+    "GLIDE": { "name": "Sail", "description": "", "flavor": "" },
+    "HIT_RECHARGE": { "name": "Harvester", "description": "", "flavor": "" },
+    "HOOK": { "name": "Hairpin", "description": "", "flavor": "" },
+    "MAP": { "name": "Navigation Circuit", "description": "", "flavor": "Let me be your eyes." },
+    "ORB_SHOOT": { "name": "Slingshot", "description": "", "flavor": "" },
+    "SPIDER": { "name": "Striders", "description": "", "flavor": "" },
+    "SPIDER_GOO": { "name": "Flowing Steps", "description": "", "flavor": "" }
   }
 }

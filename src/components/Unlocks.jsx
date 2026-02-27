@@ -11,9 +11,9 @@ const Ability = ({ label, acquired }) => {
 }
 
 const Unlocks = () => {
-  const { playerStats, localization } = useSaveProvider()
+  const { playerStats, collectibles } = useSaveProvider()
 
-  const allUnlocks = localization?.ITEM_NAME_UNLOCK ?? {}
+  const unlockData = collectibles?.unlocks ?? {}
   const acquiredUnlocks = playerStats?.unlocks ?? []
 
   return (
@@ -21,14 +21,14 @@ const Unlocks = () => {
       <h3>
         Abilities{" "}
         <span className="count">
-          ({acquiredUnlocks.length}/{Object.keys(allUnlocks).length})
+          ({acquiredUnlocks.length}/{Object.keys(unlockData).length})
         </span>
       </h3>
       <div className="flex-grid">
-        {Object.entries(allUnlocks).map(([key, value]) => (
+        {Object.entries(unlockData).map(([key, info]) => (
           <Ability
             key={key}
-            label={value}
+            label={info.name ?? key}
             acquired={acquiredUnlocks.includes(key)}
           />
         ))}

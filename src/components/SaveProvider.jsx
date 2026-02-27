@@ -1,4 +1,3 @@
-import localization from "../data/localization.en.json"
 import collectibles from "../data/collectibles.json"
 import { useState, useMemo } from "react"
 import { parseSave } from "../saveParser"
@@ -189,7 +188,6 @@ const SaveProvider = ({ children }) => {
   const value = {
     uploadSave,
     playerStats,
-    localization,
     collectibles,
   }
 
