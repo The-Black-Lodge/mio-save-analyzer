@@ -248,6 +248,10 @@
   display: inline-block;
 }
 
+.card--unacquired .ability-icon {
+  filter: saturate(0) opacity(0.4);
+}
+
 .corner-badge--centered {
   top: 50%;
   bottom: auto;
