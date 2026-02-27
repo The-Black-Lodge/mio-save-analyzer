@@ -1,4 +1,5 @@
 import useSaveProvider from "../hooks/useSaveProvider"
+import skullIcon from "../assets/skull.png"
 
 const BossCard = ({ name, flavor, acquired, attempts }) => {
   return (
@@ -13,7 +14,7 @@ const BossCard = ({ name, flavor, acquired, attempts }) => {
       )}
       {attempts > 0 && (
         <span className="corner-badge">
-          {attempts} <i className="fa-solid fa-skull" />
+          {attempts} <img src={skullIcon} alt="" className="cost-icon" />
         </span>
       )}
     </div>
@@ -53,6 +54,7 @@ const Bosses = () => {
   return (
     <div className="section">
       <h3>
+        <img src={skullIcon} alt="" className="header-icon" />{" "}
         Bosses{" "}
         <span className="count">
           ({defeatedCount}/{bossesList.length})

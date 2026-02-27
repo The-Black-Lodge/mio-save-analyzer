@@ -1,5 +1,6 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 import CollectibleList from "./CollectibleList"
+import forebears from "../assets/forebears.png"
 
 const AttackPower = () => {
   const { playerStats, collectibles } = useSaveProvider()
@@ -8,7 +9,8 @@ const AttackPower = () => {
 
   return (
     <CollectibleList
-      title="Forbears Legacy"
+      title="Forebears Legacy"
+      icon={forebears}
       items={attackPower}
       acquiredKeys={new Set(attackPowerAcquired.map(String))}
       fallbackLabel={(key) => `Attack Power ${+key + 1}`}

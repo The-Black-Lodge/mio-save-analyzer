@@ -1,4 +1,5 @@
 import useSaveProvider from "../hooks/useSaveProvider"
+import tabModifiersIcon from "../assets/tab-modifiers.png"
 
 const MAX_SQUARES = 190
 const ROWS = 9
@@ -29,6 +30,7 @@ const AllocationMatrix = () => {
   return (
     <div className="section-top">
       <h3>
+        <img src={tabModifiersIcon} alt="" className="header-icon" />{" "}
         Allocation Matrix{" "}
         <span className="count">
           ({equipped}/{max})

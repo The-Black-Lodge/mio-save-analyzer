@@ -82,6 +82,12 @@
   padding: 1rem 0 0 0;
 }
 
+.section h3,
+.section-flex h3,
+.section-top h3 {
+  padding-bottom: 0.25rem;
+}
+
 /* Card components */
 .card {
   padding: 0.5rem;
@@ -222,6 +228,18 @@
 .corner-badge--left {
   left: 0.25rem;
   right: auto;
+}
+
+.cost-icon {
+  height: 1em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.header-icon {
+  height: 1.2em;
+  vertical-align: middle;
+  display: inline-block;
 }
 
 .corner-badge--centered {

@@ -22,11 +22,12 @@ const CollectibleCard = ({ label, flavor, acquired, url }) => (
   </div>
 )
 
-const CollectibleList = ({ title, items, acquiredKeys, fallbackLabel }) => {
+const CollectibleList = ({ title, icon, items, acquiredKeys, fallbackLabel }) => {
   const keys = Object.keys(items)
   return (
     <div className="section-flex">
       <h3>
+        {icon && <><img src={icon} alt="" className="header-icon" />{" "}</>}
         {title}{" "}
         <span className="count">
           ({acquiredKeys.size}/{keys.length})

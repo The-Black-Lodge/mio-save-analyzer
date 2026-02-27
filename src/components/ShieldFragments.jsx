@@ -1,5 +1,6 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 import CollectibleList from "./CollectibleList"
+import coatingIcon from "../assets/coating-alt2.png"
 
 const ShieldFragments = () => {
   const { playerStats, collectibles } = useSaveProvider()
@@ -9,6 +10,7 @@ const ShieldFragments = () => {
   return (
     <CollectibleList
       title="Coating Components"
+      icon={coatingIcon}
       items={shieldFragments}
       acquiredKeys={new Set(shieldFragmentsAcquired.map(String))}
       fallbackLabel={(key) => `Fragment ${key}`}

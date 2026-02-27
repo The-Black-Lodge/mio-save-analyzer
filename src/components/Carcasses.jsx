@@ -1,5 +1,6 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 import CollectibleList from "./CollectibleList"
+import oldCoreIcon from "../assets/old-core.png"
 
 const Carcasses = () => {
   const { playerStats, collectibles } = useSaveProvider()
@@ -14,6 +15,7 @@ const Carcasses = () => {
   return (
     <CollectibleList
       title="Old Cores"
+      icon={oldCoreIcon}
       items={allItems}
       acquiredKeys={allAcquired}
     />

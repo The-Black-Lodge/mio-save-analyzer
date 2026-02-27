@@ -1,4 +1,5 @@
 import useSaveProvider from "../hooks/useSaveProvider"
+import networkGateIcon from "../assets/map-network-gate.png"
 
 const NetworkGateCard = ({ name, checkpointAcquired, overseerAcquired }) => {
   return (
@@ -10,7 +11,7 @@ const NetworkGateCard = ({ name, checkpointAcquired, overseerAcquired }) => {
       <p className="text-left text-small text-accent">{name}</p>
       {overseerAcquired && (
         <span className="corner-badge">
-          <i className="fa-solid fa-water" />
+          <img src={networkGateIcon} alt="" className="cost-icon" />
         </span>
       )}
     </div>
@@ -47,13 +48,14 @@ const NetworkGates = () => {
   return (
     <div className="section">
       <h3>
+        <img src={networkGateIcon} alt="" className="header-icon" />{" "}
         Network Gates{" "}
         <span className="count">
           ({acquiredCount}/{checkpointIds.length})
         </span>
       </h3>
       <p className="text-small legend">
-        <i className="fa-solid fa-water" /> = Overseer found
+        <img src={networkGateIcon} alt="" className="cost-icon" /> = Overseer found
       </p>
       <div className="flex-column flex-column--spaced">
         <div className="flex-grid flex-grid--bosses">

@@ -1,5 +1,6 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 import CollectibleList from "./CollectibleList"
+import serialNumberIcon from "../assets/fragmented-serial-number.png"
 
 const ChestKey = () => {
   const { playerStats, collectibles } = useSaveProvider()
@@ -9,6 +10,7 @@ const ChestKey = () => {
   return (
     <CollectibleList
       title="Fragmented Serial Numbers"
+      icon={serialNumberIcon}
       items={chestKeys}
       acquiredKeys={new Set(chestKeysAcquired.map(String))}
       fallbackLabel={(key) => `Serial Code ${+key + 1}`}

@@ -2,6 +2,7 @@ import { useState } from "react"
 import useSaveProvider from "../hooks/useSaveProvider"
 import TrinketSlots from "./TrinketSlots"
 import AllocationMatrix from "./AllocationMatrix"
+import tabModifiersIcon from "../assets/tab-modifiers.png"
 
 // Custom grid order. null = empty gap cell.
 const GRID_ORDER = [
@@ -76,7 +77,7 @@ const Trinket = ({ label, description, cost, acquired, equipped, grid }) => {
       )}
       {cost && (
         <span className="corner-badge corner-badge--left">
-          {cost} <i className="fa-solid fa-diamond" />
+          {cost} <img src={tabModifiersIcon} alt="" className="cost-icon" />
         </span>
       )}
       {equipped && (
@@ -112,6 +113,7 @@ const Trinkets = () => {
   return (
     <div className="section">
       <h3>
+        <img src={tabModifiersIcon} alt="" className="header-icon" />{" "}
         Modifiers{" "}
         <span className="count">
           ({acquiredTrinkets.length}/{Object.keys(trinketData).length})
@@ -140,7 +142,7 @@ const Trinkets = () => {
           className={`view-toggle-btn ${showCost ? "view-toggle-btn--active" : ""}`}
           onClick={() => setShowCost((v) => !v)}
         >
-          <i className="fa-solid fa-diamond" /> Cost
+          <img src={tabModifiersIcon} alt="" className="cost-icon" /> Cost
         </button>
         <button
           className={`view-toggle-btn ${showEquipped ? "view-toggle-btn--active" : ""}`}
