@@ -1,11 +1,41 @@
 import useSaveProvider from "../hooks/useSaveProvider"
+import tabMapIcon from "../assets/tab-map.png"
+import dodgeIcon from "../assets/dodge.png"
+import sailIcon from "../assets/sail.png"
+import harvesterIcon from "../assets/harvester.png"
+import hairpinIcon from "../assets/hairpin.png"
+import slingshotIcon from "../assets/slingshot.png"
+import stridersIcon from "../assets/striders.png"
+import flowingStepsIcon from "../assets/flowing-steps.png"
 
-const Ability = ({ label, acquired }) => {
+const ABILITY_ICONS = {
+  MAP: tabMapIcon,
+  BLOCK: dodgeIcon,
+  GLIDE: sailIcon,
+  HIT_RECHARGE: harvesterIcon,
+  HOOK: hairpinIcon,
+  ORB_SHOOT: slingshotIcon,
+  SPIDER: stridersIcon,
+  SPIDER_GOO: flowingStepsIcon,
+}
+
+const DISPLAY_ORDER = [
+  "MAP",
+  "SPIDER_GOO",
+  "HOOK",
+  "BLOCK",
+  "HIT_RECHARGE",
+  "GLIDE",
+  "SPIDER",
+  "ORB_SHOOT",
+]
+
+const Ability = ({ label, icon, acquired }) => {
   return (
     <div
       className={`card ${acquired ? "card--acquired" : "card--unacquired"}`}
     >
-      <h4>{label}</h4>
+      <h4>{icon && <img src={icon} alt="" className="ability-icon" />} {label}</h4>
     </div>
   )
 }
@@ -25,10 +55,11 @@ const Unlocks = () => {
         </span>
       </h3>
       <div className="flex-grid">
-        {Object.entries(unlockData).map(([key, info]) => (
+        {DISPLAY_ORDER.filter((key) => key in unlockData).map((key) => (
           <Ability
             key={key}
-            label={info.name ?? key}
+            label={unlockData[key].name ?? key}
+            icon={ABILITY_ICONS[key]}
             acquired={acquiredUnlocks.includes(key)}
           />
         ))}

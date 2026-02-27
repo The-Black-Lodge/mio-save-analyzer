@@ -242,6 +242,12 @@
   display: inline-block;
 }
 
+.ability-icon {
+  height: 1.4em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
 .corner-badge--centered {
   top: 50%;
   bottom: auto;

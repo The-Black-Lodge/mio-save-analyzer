@@ -4,6 +4,56 @@ import TrinketSlots from "./TrinketSlots"
 import AllocationMatrix from "./AllocationMatrix"
 import tabModifiersIcon from "../assets/tab-modifiers.png"
 
+const iconModules = import.meta.glob("../assets/modifiers/*.png", { eager: true, import: "default" })
+function getModifierIcon(filename) {
+  return iconModules[`../assets/modifiers/${filename}.png`]
+}
+
+const MODIFIER_ICON_FILES = {
+  ANALYZER: "analyser",
+  MAINTENANCE_EXPERT: "maintenance-hack",
+  SHIELD_INC: "protective-overlay",
+  BIG_ENERGY_DRAIN: "energy-leecher",
+  ENERGY_EMPTY_ATTACK: "foolish-ideal",
+  DECOY: "afterimage",
+  CARLO_HOOK: "glitch-trail",
+  GLIDE_STATIC: "firefly",
+  FAST_RECOVERY: "reduced-latency",
+  MORE_SCRAPS: "effective-dismantlement",
+  COUNTER_ATTACK: "counter-measures",
+  HEAVY_ATTACK: "kinetic-thrust",
+  GOO_REVENGE: "defense-mechanism",
+  ORB_BLOCK: "splintering-dodge",
+  VAMPIRE: "extra-coating-processor",
+  HOOK_SLASH: "sharpened-hairpin",
+  HUD: "self-awareness",
+  LOOT_SUPER_SCRAPS: "portable-crystalliser",
+  STAGGER_ATTACK: "high-voltage-discharge",
+  BERSERKER: "the-hands-greed",
+  LAST_CHANCE: "makeshift-recovery",
+  ALEXANDERS_FATE: "alexanders-fate",
+  PACIFIC: "asmas-will",
+  HEAL_GROUND: "gratitude",
+  KINETIC_CONVERSION: "pain-conversion",
+  ORB_RECOVERY: "defragmentation",
+  BETTER_DODGE: "enhanced-dodge",
+  HOOK_BERSERKER: "wild-cat",
+  SPIDER_BERSERKER: "black-widow",
+  SCRAP_ATTACK: "nacre-overload",
+  QUICK_RECHARGE: "the-hearts-favourite",
+  FOUNTAIN_OVERLOAD: "high-risk-voucher",
+  DOUBLE_DAMAGES: "perfect-state",
+  GLIDE_BERSERKER: "bird-of-prey",
+  TURBO_GLIDE: "sunsail",
+  DRY_FOUNTAINS: "nacre-drought",
+  KURO_CHARM: "imperfect-focus",
+  LESS_SCRAPS: "resources-shortage",
+  SHIELD_DEC: "thinner-frame",
+  SLOW_ENERGY: "split-process",
+  DAREDEVIL: "oath-to-ember",
+  GLASS_CANNON: "defective-core",
+}
+
 // Custom grid order. null = empty gap cell.
 const GRID_ORDER = [
   // Row 1
@@ -64,14 +114,16 @@ const BOTTOM_ROW = [
   "GLASS_CANNON",
 ]
 
-const Trinket = ({ label, description, cost, acquired, equipped, grid }) => {
+const Trinket = ({ label, icon, description, cost, acquired, equipped, grid }) => {
   return (
     <div
       className={`card card--relative card--trinket ${grid ? "card--grid-trinket" : "card--wide"} ${
         acquired ? "card--acquired" : "card--unacquired"
       }`}
     >
-      <p className="text-left text-small text-accent">{label}</p>
+      <p className="text-left text-small text-accent">
+        {icon && <img src={icon} alt="" className="ability-icon" />} {label}
+      </p>
       {description && (
         <p className="text-left text-extra-small">{description}</p>
       )}
@@ -105,6 +157,7 @@ const Trinkets = () => {
   const getLabel = (key) => trinketData[key]?.name ?? key
   const getCost = (key) => trinketData[key]?.cost ?? ""
   const getDescription = (key) => trinketData[key]?.description ?? ""
+  const getIcon = (key) => getModifierIcon(MODIFIER_ICON_FILES[key])
 
   const sortedTrinkets = Object.entries(trinketData).sort(([, a], [, b]) =>
     (a.name ?? "").localeCompare(b.name ?? ""),
@@ -168,6 +221,7 @@ const Trinkets = () => {
                 <Trinket
                   key={key}
                   label={getLabel(key)}
+                  icon={getIcon(key)}
                   description={showDescription ? getDescription(key) : ""}
                   cost={showCost ? getCost(key) : ""}
                   acquired={acquiredTrinkets.includes(key)}
@@ -182,6 +236,7 @@ const Trinkets = () => {
               <Trinket
                 key={key}
                 label={getLabel(key)}
+                icon={getIcon(key)}
                 description={showDescription ? getDescription(key) : ""}
                 cost={showCost ? getCost(key) : ""}
                 acquired={acquiredTrinkets.includes(key)}
@@ -197,6 +252,7 @@ const Trinkets = () => {
             <Trinket
               key={key}
               label={info.name ?? key}
+              icon={getIcon(key)}
               description={showDescription ? (info.description ?? "") : ""}
               cost={showCost ? (info.cost ?? "") : ""}
               acquired={acquiredTrinkets.includes(key)}
