@@ -1,6 +1,6 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 import CollectibleList from "./CollectibleList"
-import candleIcon from "../assets/candle.png"
+import candleIcon from "../assets/CANDLE.png"
 
 const Candles = () => {
   const { playerStats, collectibles } = useSaveProvider()

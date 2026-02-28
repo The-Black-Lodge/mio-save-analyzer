@@ -1,6 +1,6 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 import CollectibleList from "./CollectibleList"
-import coatingIcon from "../assets/coating-alt2.png"
+import coatingIcon from "../assets/SHIELD_FRAGMENT.png"
 
 const ShieldFragments = () => {
   const { playerStats, collectibles } = useSaveProvider()

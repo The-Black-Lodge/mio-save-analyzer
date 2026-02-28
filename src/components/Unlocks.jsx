@@ -1,12 +1,12 @@
 import useSaveProvider from "../hooks/useSaveProvider"
-import tabMapIcon from "../assets/tab-map.png"
-import dodgeIcon from "../assets/dodge.png"
-import sailIcon from "../assets/sail.png"
-import harvesterIcon from "../assets/harvester.png"
-import hairpinIcon from "../assets/hairpin.png"
-import slingshotIcon from "../assets/slingshot.png"
-import stridersIcon from "../assets/striders.png"
-import flowingStepsIcon from "../assets/flowing-steps.png"
+import tabMapIcon from "../assets/tab_map.png"
+import dodgeIcon from "../assets/UNLOCK_BLOCK.png"
+import sailIcon from "../assets/UNLOCK_GLIDE.png"
+import harvesterIcon from "../assets/UNLOCK_HIT_RECHARGE.png"
+import hairpinIcon from "../assets/UNLOCK_HOOK.png"
+import slingshotIcon from "../assets/UNLOCK_ORB_SHOOT.png"
+import stridersIcon from "../assets/UNLOCK_SPIDER.png"
+import flowingStepsIcon from "../assets/UNLOCK_SPIDER_GOO.png"
 
 const ABILITY_ICONS = {
   MAP: tabMapIcon,

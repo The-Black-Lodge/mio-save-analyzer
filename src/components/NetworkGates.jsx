@@ -1,5 +1,5 @@
 import useSaveProvider from "../hooks/useSaveProvider"
-import networkGateIcon from "../assets/map-network-gate.png"
+import networkGateIcon from "../assets/MAP_CHECKPOINT.png"
 
 const NetworkGateCard = ({ name, checkpointAcquired, overseerAcquired }) => {
   return (

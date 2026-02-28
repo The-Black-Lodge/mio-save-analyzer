@@ -1,6 +1,6 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 import CollectibleList from "./CollectibleList"
-import forebears from "../assets/forebears.png"
+import forebears from "../assets/ATTACK_POWER.png"
 
 const AttackPower = () => {
   const { playerStats, collectibles } = useSaveProvider()

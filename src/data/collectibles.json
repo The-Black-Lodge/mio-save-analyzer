@@ -654,13 +654,34 @@
     }
   },
   "trinket_slots": {
-    "0": { "description": "#0 Mel (no req, 1 core 200 nacre)", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264974" },
-    "1": { "description": "#1 Mel (Rescue Cos, 2 cores 450 nacre)", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264092" },
-    "2": { "description": "#2 Mel (Rescue Tan, 4 cores 700 nacre)", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263973" },
-    "3": { "description": "#3 Mel (Rescue Tan, 4 cores 700 nacre)", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263973" },
-    "4": { "description": "#4 Mel (no req, 1 core 200 nacre)", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264974" },
-    "5": { "description": "#5 Canopy, east of Network Gate in a hidden area.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264482" },
-    "6": { "description": "#6 Foundations, lower area, use the wind jet to go up.", "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264016" }
+    "0": {
+      "description": "#0 Mel (no req, 1 core 200 nacre)",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264974"
+    },
+    "1": {
+      "description": "#1 Mel (Rescue Cos, 2 cores 450 nacre)",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264092"
+    },
+    "2": {
+      "description": "#2 Mel (Rescue Tan, 4 cores 700 nacre)",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263973"
+    },
+    "3": {
+      "description": "#3 Mel (Rescue Tan, 4 cores 700 nacre)",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=263973"
+    },
+    "4": {
+      "description": "#4 Mel (no req, 1 core 200 nacre)",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264974"
+    },
+    "5": {
+      "description": "#5 Canopy, east of Network Gate in a hidden area.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264482"
+    },
+    "6": {
+      "description": "#6 Foundations, lower area, use the wind jet to go up.",
+      "url": "https://www.gamerguides.com/mio-memories-in-orbit/maps/the-vessel?markerId=264016"
+    }
   },
   "chest_keys": {
     "0": {
@@ -1256,7 +1277,11 @@
     "GLIDE": { "name": "Sail", "description": "", "flavor": "" },
     "HIT_RECHARGE": { "name": "Harvester", "description": "", "flavor": "" },
     "HOOK": { "name": "Hairpin", "description": "", "flavor": "" },
-    "MAP": { "name": "Navigation Circuit", "description": "", "flavor": "Let me be your eyes." },
+    "MAP": {
+      "name": "Navigation Circuit",
+      "description": "",
+      "flavor": "Let me be your eyes."
+    },
     "ORB_SHOOT": { "name": "Slingshot", "description": "", "flavor": "" },
     "SPIDER": { "name": "Striders", "description": "", "flavor": "" },
     "SPIDER_GOO": { "name": "Flowing Steps", "description": "", "flavor": "" }

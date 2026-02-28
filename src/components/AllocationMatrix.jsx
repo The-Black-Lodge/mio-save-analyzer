@@ -1,5 +1,5 @@
 import useSaveProvider from "../hooks/useSaveProvider"
-import tabModifiersIcon from "../assets/tab-modifiers.png"
+import tabModifiersIcon from "../assets/tab_trinkets.png"
 
 const MAX_SQUARES = 190
 const ROWS = 9

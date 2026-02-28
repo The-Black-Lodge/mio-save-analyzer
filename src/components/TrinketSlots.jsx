@@ -1,6 +1,6 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 import CollectibleList from "./CollectibleList"
-import modifierExtIcon from "../assets/modifier-extension.png"
+import modifierExtIcon from "../assets/TRINKET_SLOT_UPGRADE.png"
 
 const TrinketSlots = () => {
   const { playerStats, collectibles } = useSaveProvider()

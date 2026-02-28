@@ -1,5 +1,5 @@
 import useSaveProvider from "../hooks/useSaveProvider"
-import skullIcon from "../assets/skull.png"
+import skullIcon from "../assets/MAP_MARK_4.png"
 
 const BossCard = ({ name, flavor, acquired, attempts }) => {
   return (

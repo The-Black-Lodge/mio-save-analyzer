@@ -1,6 +1,6 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 import CollectibleList from "./CollectibleList"
-import oldCoreIcon from "../assets/old-core.png"
+import oldCoreIcon from "../assets/RESOURCE_SUPER_SCRAP.png"
 
 const Carcasses = () => {
   const { playerStats, collectibles } = useSaveProvider()

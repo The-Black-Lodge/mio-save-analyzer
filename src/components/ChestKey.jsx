@@ -1,6 +1,6 @@
 import useSaveProvider from "../hooks/useSaveProvider"
 import CollectibleList from "./CollectibleList"
-import serialNumberIcon from "../assets/fragmented-serial-number.png"
+import serialNumberIcon from "../assets/CHEST_KEY.png"
 
 const ChestKey = () => {
   const { playerStats, collectibles } = useSaveProvider()
