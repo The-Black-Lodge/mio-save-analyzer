@@ -10,6 +10,7 @@ import Bosses from "./components/Bosses"
 import NetworkGates from "./components/NetworkGates"
 import AttackPower from "./components/AttackPower"
 import ChestKey from "./components/ChestKey"
+import TrinketSlots from "./components/TrinketSlots"
 import Candles from "./components/Candles"
 import ShieldFragments from "./components/ShieldFragments"
 import Datapads from "./components/Datapads"
@@ -58,6 +59,7 @@ function App() {
               <div className="cards-row">
                 <ChestKey />
                 <AttackPower />
+                <TrinketSlots />
               </div>
               <div className="cards-row">
                 <Candles />
