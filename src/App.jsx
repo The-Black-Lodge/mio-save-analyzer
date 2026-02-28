@@ -12,6 +12,7 @@ import ChestKey from "./components/ChestKey"
 import Candles from "./components/Candles"
 import ShieldFragments from "./components/ShieldFragments"
 import Datapads from "./components/Datapads"
+import Completion from "./components/Completion"
 import Footer from "./components/Footer"
 import ErrorBoundary from "./components/ErrorBoundary"
 import Todo from "./components/Todo"
@@ -26,6 +27,7 @@ function App() {
           <h2>Save Analyzer</h2>
           <SavePicker />
           <SaveStats />
+          <Completion />
           <Unlocks />
           <Trinkets />
           <Bosses />

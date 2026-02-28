@@ -5,9 +5,7 @@ const CollectibleCard = ({ label, flavor, acquired, url }) => (
     }`}
   >
     <p className="text-left text-small">{label}</p>
-    {flavor && (
-      <p className="text-left text-extra-small text-dim">{flavor}</p>
-    )}
+    {flavor && <p className="text-left text-extra-small text-dim">{flavor}</p>}
     {url ? (
       <a
         href={url}
@@ -16,18 +14,32 @@ const CollectibleCard = ({ label, flavor, acquired, url }) => (
         className="corner-badge"
         aria-label="View location"
       >
-        <i className="fa-solid fa-link" />
+        <i className="fa-solid fa-external-link" />
       </a>
     ) : null}
   </div>
 )
 
-const CollectibleList = ({ title, icon, items, acquiredKeys, fallbackLabel }) => {
+const CollectibleList = ({
+  title,
+  icon,
+  items,
+  acquiredKeys,
+  fallbackLabel,
+}) => {
   const keys = Object.keys(items)
   return (
     <div className="section-flex">
       <h3>
-        {icon && <><img src={icon} alt="" className="header-icon" />{" "}</>}
+        {icon && (
+          <>
+            <img
+              src={icon}
+              alt=""
+              className="header-icon"
+            />{" "}
+          </>
+        )}
         {title}{" "}
         <span className="count">
           ({acquiredKeys.size}/{keys.length})

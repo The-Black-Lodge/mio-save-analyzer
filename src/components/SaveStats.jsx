@@ -15,30 +15,11 @@ const SaveStats = () => {
 
   return (
     <div className="flex-grid">
-      <Stat
-        label="Deaths"
-        value={playerStats.deaths}
-      />
-      <Stat
-        label="Playtime"
-        value={playerStats.playtime}
-      />
-      <Stat
-        label="Last Save Time"
-        value={playerStats.lastSaveTime}
-      />
-      <Stat
-        label="Nacre"
-        value={playerStats.liquidNacresCount}
-      />
-      <Stat
-        label="Solidified Nacre"
-        value={playerStats.solidifyNacreCount}
-      />
-      <Stat
-        label="Nacre Lost"
-        value={playerStats.nacreLost}
-      />
+      <Stat label="Deaths" value={playerStats.deaths} />
+      <Stat label="Playtime" value={playerStats.playtime} />
+      <Stat label="Last Save Time" value={playerStats.lastSaveTime} />
+      <Stat label="Nacre" value={playerStats.liquidNacresCount} />
+      <Stat label="Solidified Nacre" value={playerStats.solidifyNacreCount} />
     </div>
   )
 }
