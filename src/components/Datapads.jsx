@@ -142,7 +142,8 @@ const SECTIONS = [
     title: "Keys",
     items: [
       { key: "ROOTS_CORRIDOR",       icon: "KEY_ROOTS_CORRIDOR" },
-      { key: "BELL_TOWER_PASS_CITY", icon: "KEY_BELL_TOWER_PASS_CITY" },
+      { key: "BELL_TOWER_PASS_CITY",   icon: "KEY_BELL_TOWER_PASS_CITY" },
+      { key: "BELL_TOWER_PASS_GARDEN", icon: "KEY_BELL_TOWER_PASS_GARDEN" },
       { key: "MAINTENANCE_KEY",      icon: "KEY_MAINTENANCE_KEY" },
       { key: "BUNKER_KEY",           icon: "KEY_BUNKER_ACCESS" },
       { key: "GLASSHOUSE_KEY",       icon: "KEY_GLASSHOUSE_KEY" },
