@@ -11,6 +11,7 @@ import AttackPower from "./components/AttackPower"
 import ChestKey from "./components/ChestKey"
 import Candles from "./components/Candles"
 import ShieldFragments from "./components/ShieldFragments"
+import Datapads from "./components/Datapads"
 import Footer from "./components/Footer"
 import ErrorBoundary from "./components/ErrorBoundary"
 import Todo from "./components/Todo"
@@ -29,6 +30,7 @@ function App() {
           <Trinkets />
           <Bosses />
           <NetworkGates />
+          <Datapads />
           <div className="cards-row">
             <ChestKey />
             <AttackPower />

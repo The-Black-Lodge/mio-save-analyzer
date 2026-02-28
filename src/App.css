@@ -365,6 +365,73 @@
   background: var(--color-bg);
 }
 
+/* Datapads */
+.datapad-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.datapad-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.datapad-section-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--color-border-muted);
+}
+
+.datapad-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.datapad-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.datapad-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.datapad-item--unacquired .datapad-icon {
+  filter: saturate(0) opacity(0.3);
+}
+
+.datapad-item--unacquired .datapad-label {
+  opacity: 0.35;
+}
+
+.datapad-label {
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+.datapad-original-name {
+  opacity: 0.45;
+}
+
+.datapad-divider {
+  border: none;
+  border-top: 1px solid var(--color-border-muted);
+  margin: 0.3rem 0;
+  opacity: 0.4;
+}
+
 .error-boundary {
   display: flex;
   flex-direction: column;

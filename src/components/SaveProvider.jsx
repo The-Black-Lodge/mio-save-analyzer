@@ -67,6 +67,27 @@ function computePlayerStats(gameData, collectibles) {
     new Set(Object.keys(collectibles.chest_keys)),
   )
 
+  const datapadObj = gameData?.Saved_entries?.DATAPAD ?? {}
+  const datapadsAcquired = new Set(
+    Object.entries(datapadObj)
+      .filter(([, value]) => value?.flags?.includes("Acquired"))
+      .map(([key]) => key),
+  )
+
+  const keyObj = gameData?.Saved_entries?.KEY ?? {}
+  const keysAcquired = new Set(
+    Object.entries(keyObj)
+      .filter(([, value]) => value?.flags?.includes("Acquired"))
+      .map(([key]) => key),
+  )
+
+  const voiceDiscoveredObj = gameData?.Saved_entries?.ITEM_DISCOVERED?.VOICE ?? {}
+  const voicesAcquired = new Set(
+    Object.entries(voiceDiscoveredObj)
+      .filter(([, value]) => value?.flags?.includes("Acquired"))
+      .map(([key]) => key),
+  )
+
   const carcassObj = gameData?.Saved_entries?.CARCASS ?? {}
   const carcasses = Object.entries(carcassObj)
     .filter(([, value]) => value?.flags?.includes("Acquired"))
@@ -148,6 +169,9 @@ function computePlayerStats(gameData, collectibles) {
     shieldFragmentsAcquired,
     chestKeysAcquired,
     attackPowerAcquired,
+    datapadsAcquired,
+    keysAcquired,
+    voicesAcquired,
     carcasses,
     carcassDialogs,
     bossesDefeated,

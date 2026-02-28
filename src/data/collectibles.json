@@ -1272,6 +1272,13 @@
       "url": ""
     }
   },
+  "voices": {
+    "LIHO":   { "name": "Liho's Voice",   "description": "A voice that carries the weight of regret.",      "flavor": "" },
+    "HALYN":  { "name": "Halyn's Voice",  "description": "A voice that carries the weight of ambition.",    "flavor": "" },
+    "ASMA":   { "name": "Asma's Voice",   "description": "A voice that carries the weight of aging.",       "flavor": "" },
+    "NODEN":  { "name": "Noden's Voice",  "description": "A voice that carries the weight of choice.",      "flavor": "" },
+    "AMYTIS": { "name": "Amytis' Voice",  "description": "A voice that carries the weight of indifference.", "flavor": "" }
+  },
   "unlocks": {
     "BLOCK": { "name": "Dodge", "description": "", "flavor": "" },
     "GLIDE": { "name": "Sail", "description": "", "flavor": "" },
