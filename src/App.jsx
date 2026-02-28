@@ -43,11 +43,11 @@ function App() {
           <SectionToggles visible={visible} onToggle={toggle} onToggleAll={toggleAll} />
           <SavePicker />
           {visible.stats && (
-            <>
+            <div className="stats-row">
               <SaveStats />
-              <Completion />
               <Unlocks />
-            </>
+              <Completion />
+            </div>
           )}
           {visible.modifiers && <Trinkets />}
           {visible.bosses && <Bosses />}

@@ -33,7 +33,7 @@ const DISPLAY_ORDER = [
 const Ability = ({ label, icon, acquired }) => {
   return (
     <div
-      className={`card ${acquired ? "card--acquired" : "card--unacquired"}`}
+      className={`card card--left ${acquired ? "card--acquired" : "card--unacquired"}`}
     >
       <h4>{icon && <img src={icon} alt="" className="ability-icon" />} {label}</h4>
     </div>
@@ -54,7 +54,7 @@ const Unlocks = () => {
           ({acquiredUnlocks.length}/{Object.keys(unlockData).length})
         </span>
       </h3>
-      <div className="flex-grid">
+      <div className="flex-column">
         {DISPLAY_ORDER.filter((key) => key in unlockData).map((key) => (
           <Ability
             key={key}

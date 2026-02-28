@@ -67,6 +67,16 @@
   gap: 1.5rem;
 }
 
+/* Stats row */
+.stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
 /* Sections */
 .section {
   padding: 1rem;
@@ -95,6 +105,11 @@
   text-align: center;
 }
 
+.card--left,
+.card--left h4 {
+  text-align: left;
+}
+
 .card--relative {
   position: relative;
 }
@@ -111,7 +126,6 @@
 
 .card--stat {
   border: var(--border-muted);
-  margin-top: 1rem;
 }
 
 .card--wide {
