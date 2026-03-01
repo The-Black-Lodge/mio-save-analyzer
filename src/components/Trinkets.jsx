@@ -114,17 +114,23 @@ const BOTTOM_ROW = [
   "GLASS_CANNON",
 ]
 
-const Trinket = ({ label, icon, description, cost, acquired, equipped, grid }) => {
+const Trinket = ({ label, icon, description, cost, acquired, equipped, grid, iconOnly, onMouseEnter, onMouseLeave }) => {
   return (
     <div
       className={`card card--relative card--trinket ${grid ? "card--grid-trinket" : "card--wide"} ${
         acquired ? "card--acquired" : "card--unacquired"
-      }`}
+      } ${iconOnly ? "card--trinket-icon-only" : ""}`}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
     >
-      <p className="text-left text-small text-accent">
-        {icon && <img src={icon} alt="" className="ability-icon" />} {label}
-      </p>
-      {description && (
+      {iconOnly ? (
+        icon && <img src={icon} alt={label} className="trinket-icon-only-img" />
+      ) : (
+        <p className="text-left text-small text-accent">
+          {icon && <img src={icon} alt="" className="ability-icon" />} {label}
+        </p>
+      )}
+      {!iconOnly && description && (
         <p className="text-left text-extra-small">{description}</p>
       )}
       {cost && (
@@ -143,12 +149,14 @@ const Trinket = ({ label, icon, description, cost, acquired, equipped, grid }) =
 
 const EXCLUDED_TRINKETS = ["EMBEDDING_BLADE", "SMALL_ENERGY_DRAIN", "TANGLES"]
 
+
 const Trinkets = () => {
   const { playerStats, collectibles } = useSaveProvider()
-  const [gridView, setGridView] = useState(true)
+  const [view, setView] = useState("grid")
   const [showEquipped, setShowEquipped] = useState(false)
   const [showCost, setShowCost] = useState(false)
   const [showDescription, setShowDescription] = useState(false)
+  const [hovered, setHovered] = useState(null)
 
   const trinketData = collectibles?.trinkets ?? {}
   const acquiredTrinkets = playerStats?.trinkets ?? []
@@ -157,6 +165,7 @@ const Trinkets = () => {
   const getLabel = (key) => trinketData[key]?.name ?? key
   const getCost = (key) => trinketData[key]?.cost ?? ""
   const getDescription = (key) => trinketData[key]?.description ?? ""
+  const getFlavor = (key) => trinketData[key]?.flavor ?? ""
   const getIcon = (key) => getModifierIcon(MODIFIER_ICON_FILES[key])
 
   const sortedTrinkets = Object.entries(trinketData).sort(([, a], [, b]) =>
@@ -174,17 +183,25 @@ const Trinkets = () => {
       </h3>
       <div className="trinkets-controls">
         <button
-          className={`view-toggle-btn ${gridView ? "view-toggle-btn--active" : ""}`}
-          onClick={() => setGridView(true)}
+          className={`view-toggle-btn ${view === "grid" ? "view-toggle-btn--active" : ""}`}
+          onClick={() => setView("grid")}
         >
           <i className="fa-solid fa-grip" /> Grid
         </button>
         <button
-          className={`view-toggle-btn ${!gridView ? "view-toggle-btn--active" : ""}`}
-          onClick={() => setGridView(false)}
+          className={`view-toggle-btn ${view === "alpha" ? "view-toggle-btn--active" : ""}`}
+          onClick={() => setView("alpha")}
         >
           <i className="fa-solid fa-list" /> Alphabetical
         </button>
+        {import.meta.env.DEV && (
+          <button
+            className={`view-toggle-btn ${view === "icon" ? "view-toggle-btn--active" : ""}`}
+            onClick={() => setView("icon")}
+          >
+            <i className="fa-solid fa-icons" /> Icon
+          </button>
+        )}
         <button
           className={`view-toggle-btn ${showDescription ? "view-toggle-btn--active" : ""}`}
           onClick={() => setShowDescription((v) => !v)}
@@ -205,17 +222,12 @@ const Trinkets = () => {
         </button>
       </div>
 
-      {gridView ? (
+      {view === "grid" && (
         <>
           <div className="trinket-grid">
             {GRID_ORDER.map((key, i) => {
               if (key === null) {
-                return (
-                  <div
-                    key={`gap-${i}`}
-                    className="trinket-grid-gap"
-                  />
-                )
+                return <div key={`gap-${i}`} className="trinket-grid-gap" />
               }
               return (
                 <Trinket
@@ -246,7 +258,9 @@ const Trinkets = () => {
             ))}
           </div>
         </>
-      ) : (
+      )}
+
+      {view === "alpha" && (
         <div className="flex-grid">
           {sortedTrinkets.map(([key, info]) => (
             <Trinket
@@ -259,6 +273,76 @@ const Trinkets = () => {
               equipped={showEquipped && equippedTrinkets.includes(key)}
             />
           ))}
+        </div>
+      )}
+
+      {import.meta.env.DEV && view === "icon" && (
+        <div className="trinket-icon-view">
+          <div className="trinket-icon-detail">
+            {hovered ? (
+              <>
+                <div className="trinket-icon-detail-header">
+                  <span className="text-small text-accent">{getLabel(hovered)}</span>
+                  {getCost(hovered) && (
+                    <span className="text-extra-small trinket-icon-detail-cost">
+                      {getCost(hovered)}{" "}
+                      <img src={tabModifiersIcon} alt="" className="cost-icon" />
+                    </span>
+                  )}
+                </div>
+                {getIcon(hovered) && (
+                  <img src={getIcon(hovered)} alt="" className="trinket-icon-detail-img" />
+                )}
+                {getDescription(hovered) && (
+                  <p className="text-extra-small">{getDescription(hovered)}</p>
+                )}
+                {getFlavor(hovered) && (
+                  <p className="text-extra-small text-dim">{getFlavor(hovered)}</p>
+                )}
+              </>
+            ) : (
+              <p className="text-extra-small text-dim">Hover an icon</p>
+            )}
+          </div>
+          <div className="trinket-icon-grids">
+            <div className="trinket-grid">
+              {GRID_ORDER.map((key, i) => {
+                if (key === null) {
+                  return <div key={`gap-${i}`} className="trinket-grid-gap" />
+                }
+                return (
+                  <Trinket
+                    key={key}
+                    label={getLabel(key)}
+                    icon={getIcon(key)}
+                    cost={showCost ? getCost(key) : ""}
+                    acquired={acquiredTrinkets.includes(key)}
+                    equipped={showEquipped && equippedTrinkets.includes(key)}
+                    grid
+                    iconOnly
+                    onMouseEnter={() => setHovered(key)}
+                    onMouseLeave={() => setHovered(null)}
+                  />
+                )
+              })}
+            </div>
+            <div className="trinket-grid-bottom">
+              {BOTTOM_ROW.map((key) => (
+                <Trinket
+                  key={key}
+                  label={getLabel(key)}
+                  icon={getIcon(key)}
+                  cost={showCost ? getCost(key) : ""}
+                  acquired={acquiredTrinkets.includes(key)}
+                  equipped={showEquipped && equippedTrinkets.includes(key)}
+                  grid
+                  iconOnly
+                  onMouseEnter={() => setHovered(key)}
+                  onMouseLeave={() => setHovered(null)}
+                />
+              ))}
+            </div>
+          </div>
         </div>
       )}
 

@@ -195,6 +195,82 @@
   pointer-events: none;
 }
 
+.card--trinket-icon-only {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  background: transparent;
+  padding: 0.05rem;
+  min-height: unset;
+}
+
+.trinket-icon-only-img {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+
+.card--unacquired.card--trinket-icon-only .trinket-icon-only-img {
+  filter: saturate(0) opacity(0.25);
+}
+
+.trinket-icon-view {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.trinket-icon-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 14rem;
+  flex-shrink: 0;
+  padding: 0.6rem 0.75rem;
+  border: var(--border-muted);
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+}
+
+.trinket-icon-detail .text-extra-small {
+  font-size: 0.75rem;
+}
+
+.trinket-icon-detail-header {
+  position: relative;
+  padding-right: 3rem;
+}
+
+.trinket-icon-detail-cost {
+  position: absolute;
+  top: 0;
+  right: 0;
+  white-space: nowrap;
+}
+
+.trinket-icon-detail-img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  align-self: center;
+}
+
+.trinket-icon-grids {
+  flex: 1;
+  min-width: 0;
+}
+
+.trinket-icon-grids .trinket-grid {
+  gap: 0.15rem;
+}
+
+.trinket-icon-grids .trinket-grid-bottom {
+  gap: 0.15rem;
+  margin-top: 0.15rem;
+}
+
 .trinket-grid-bottom {
   margin-top: 1.5rem;
   display: flex;
