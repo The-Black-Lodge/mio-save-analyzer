@@ -46,6 +46,7 @@ const MEM_KEYS = [
   "MEM_LIDAR",
   "MEM_LIDAR_2",
   "MEM_IMPY",
+  "MEM_HORNFELL",
 ]
 
 const KEY_KEYS = [

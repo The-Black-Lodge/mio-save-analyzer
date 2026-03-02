@@ -133,6 +133,7 @@ const SECTIONS = [
       { key: "MEM_LIDAR", icon: "DATAPAD_MEM_LIDAR" },
       { key: "MEM_LIDAR_2", icon: "DATAPAD_MEM_LIDAR_2" },
       { key: "MEM_IMPY", icon: "DATAPAD_MEM_IMPY" },
+      { key: "MEM_HORNFELL", icon: "DATAPAD_MEM_HORNFELL" },
     ],
     acquired: (ps) => ps?.datapadsAcquired ?? new Set(),
     total: (col) => col?.datapads,
