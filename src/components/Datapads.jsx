@@ -127,13 +127,13 @@ const SECTIONS = [
     id: "memories",
     title: "Flash Memory",
     items: [
-      { key: "MEM_VOICEKEEPER", icon: "DATAPAD_MEM_VOICEKEEPER" },
-      { key: "MEM_LIBRARIAN", icon: "DATAPAD_MEM_LIBRARIAN" },
-      { key: "MEM_PUPPET", icon: "DATAPAD_MEM_PUPPET" },
-      { key: "MEM_LIDAR", icon: "DATAPAD_MEM_LIDAR" },
-      { key: "MEM_LIDAR_2", icon: "DATAPAD_MEM_LIDAR_2" },
-      { key: "MEM_IMPY", icon: "DATAPAD_MEM_IMPY" },
-      { key: "MEM_HORNFELL", icon: "DATAPAD_MEM_HORNFELL" },
+      { key: "MEM_HORNFELL", icon: "DATAPAD_MEM_HORNFELL" },     // Embedding Duty
+      { key: "MEM_VOICEKEEPER", icon: "DATAPAD_MEM_VOICEKEEPER" }, // %$!#'%ù°[
+      { key: "MEM_LIBRARIAN", icon: "DATAPAD_MEM_LIBRARIAN" },   // Consultation Register
+      { key: "MEM_PUPPET", icon: "DATAPAD_MEM_PUPPET" },         // Connection Lost
+      { key: "MEM_LIDAR", icon: "DATAPAD_MEM_LIDAR" },           // Incoming Signal
+      { key: "MEM_LIDAR_2", icon: "DATAPAD_MEM_LIDAR_2" },       // Re: Incoming Signal
+      { key: "MEM_IMPY", icon: "DATAPAD_MEM_IMPY" },             // Equivalent Exchange
     ],
     acquired: (ps) => ps?.datapadsAcquired ?? new Set(),
     total: (col) => col?.datapads,

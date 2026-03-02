@@ -40,13 +40,13 @@ const LOG_KEYS = [
 ]
 
 const MEM_KEYS = [
-  "MEM_VOICEKEEPER",
-  "MEM_LIBRARIAN",
-  "MEM_PUPPET",
-  "MEM_LIDAR",
-  "MEM_LIDAR_2",
-  "MEM_IMPY",
-  "MEM_HORNFELL",
+  "MEM_HORNFELL",    // Embedding Duty
+  "MEM_VOICEKEEPER", // %$!#'%ù°[
+  "MEM_LIBRARIAN",   // Consultation Register
+  "MEM_PUPPET",      // Connection Lost
+  "MEM_LIDAR",       // Incoming Signal
+  "MEM_LIDAR_2",     // Re: Incoming Signal
+  "MEM_IMPY",        // Equivalent Exchange
 ]
 
 const KEY_KEYS = [
