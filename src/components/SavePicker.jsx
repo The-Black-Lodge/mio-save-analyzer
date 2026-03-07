@@ -50,7 +50,13 @@ const SavePicker = () => {
           <p className="save-path-tooltip-content">
             Save files are usually stored in
             <br />
+            Windows/Steam:
+            <br />
             C:\Users\(Username)\AppData\Local\MIO\Saves\Steam\(Steam64ID)\slot_(0-2).save
+            <br />
+            Windows/Xbox Game Pass:
+            <br />
+            C:\Users\(Username)\AppData\Local\Packages\FocusHomeInteractiveSA.MioMemoriesInOrbit_(hash)/SystemAppData\wgs(User ID)(Save Slot Id)
           </p>
         </span>
       </div>
