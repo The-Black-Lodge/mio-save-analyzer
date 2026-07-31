@@ -365,12 +365,25 @@
   text-align: center;
 }
 
+.footer-text,
+.footer-separator,
+.footer-icon-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-separator {
+  margin: 0 0.35rem;
+}
+
 .footer a {
   color: var(--color-accent);
 }
 
 .footer i {
   font-size: 1.5rem;
+  line-height: 1;
+  transform: translateY(2px);
 }
 
 .legend {
