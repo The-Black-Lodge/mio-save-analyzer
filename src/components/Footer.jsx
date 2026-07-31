@@ -2,7 +2,14 @@ const Footer = () => {
   return (
     <footer className="footer">
       <span className="footer-text">
-        © {new Date().getFullYear()} &nbsp; <a href="https://southpawgeek.com/" target="_blank" rel="noopener noreferrer">J. A. Guerra</a>
+        © {new Date().getFullYear()} &nbsp;{" "}
+        <a
+          href="https://southpawgeek.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          J. A. Guerra
+        </a>
       </span>
       <span className="footer-separator">·</span>
       <a
@@ -14,8 +21,16 @@ const Footer = () => {
       >
         <i className="fa-brands fa-github" />
       </a>
-            <span className="footer-separator">·</span>
-<span className="footer-text"><a href="https://diatomravine.com/games" target="_blank" rel="noopener noreferrer">Diatom Ravine</a></span>
+      <span className="footer-separator">·</span>
+      <span className="footer-text">
+        <a
+          href="https://diatomravine.com/games"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Diatom Ravine
+        </a>
+      </span>
     </footer>
   )
 }
