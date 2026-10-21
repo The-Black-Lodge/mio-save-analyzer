@@ -15,7 +15,6 @@ import Candles from "./components/Candles"
 import ShieldFragments from "./components/ShieldFragments"
 import Datapads from "./components/Datapads"
 import Completion from "./components/Completion"
-import Footer from "./components/Footer"
 import ErrorBoundary from "./components/ErrorBoundary"
 import Todo from "./components/Todo"
 import SectionToggles from "./components/SectionToggles"
@@ -60,7 +59,6 @@ function App() {
               </div>
             </>
           )}
-          <Footer />
         </div>
       </ErrorBoundary>
     </SaveProvider>
