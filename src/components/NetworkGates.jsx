@@ -47,13 +47,13 @@ const NetworkGates = () => {
 
   return (
     <div className="section">
-      <h3>
+      <h2>
         <img src={networkGateIcon} alt="" className="header-icon" />{" "}
         Network Gates{" "}
         <span className="count">
           ({acquiredCount}/{checkpointIds.length})
         </span>
-      </h3>
+      </h2>
       <p className="text-small legend">
         <img src={networkGateIcon} alt="" className="cost-icon" /> = Overseer found
       </p>

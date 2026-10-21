@@ -53,13 +53,13 @@ const Bosses = () => {
 
   return (
     <div className="section">
-      <h3>
+      <h2>
         <img src={skullIcon} alt="" className="header-icon" />{" "}
         Bosses{" "}
         <span className="count">
           ({defeatedCount}/{bossesList.length})
         </span>
-      </h3>
+      </h2>
       <div className="flex-grid flex-grid--bosses">
         {bossesList.map(renderCard)}
       </div>

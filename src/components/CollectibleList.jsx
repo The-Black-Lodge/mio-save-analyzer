@@ -30,7 +30,7 @@ const CollectibleList = ({
   const keys = Object.keys(items)
   return (
     <div className="section-flex">
-      <h3>
+      <h2>
         {icon && (
           <>
             <img
@@ -44,7 +44,7 @@ const CollectibleList = ({
         <span className="count">
           ({acquiredKeys.size}/{keys.length})
         </span>
-      </h3>
+      </h2>
       <div className="flex-column">
         {keys.map((key) => {
           const info = items[key] ?? {}

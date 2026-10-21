@@ -174,13 +174,13 @@ const Trinkets = () => {
 
   return (
     <div className="section">
-      <h3>
+      <h2>
         <img src={tabModifiersIcon} alt="" className="header-icon" />{" "}
         Modifiers{" "}
         <span className="count">
           ({acquiredTrinkets.length}/{Object.keys(trinketData).length})
         </span>
-      </h3>
+      </h2>
       <div className="trinkets-controls">
         <button
           className={`view-toggle-btn ${view === "grid" ? "view-toggle-btn--active" : ""}`}

@@ -35,7 +35,7 @@ const Ability = ({ label, icon, acquired }) => {
     <div
       className={`card card--left ${acquired ? "card--acquired" : "card--unacquired"}`}
     >
-      <h4>{icon && <img src={icon} alt="" className="ability-icon" />} {label}</h4>
+      <h3>{icon && <img src={icon} alt="" className="ability-icon" />} {label}</h3>
     </div>
   )
 }
@@ -48,12 +48,12 @@ const Unlocks = () => {
 
   return (
     <div className="section">
-      <h3>
+      <h2>
         Abilities{" "}
         <span className="count">
           ({acquiredUnlocks.length}/{Object.keys(unlockData).length})
         </span>
-      </h3>
+      </h2>
       <div className="flex-column">
         {DISPLAY_ORDER.filter((key) => key in unlockData).map((key) => (
           <Ability

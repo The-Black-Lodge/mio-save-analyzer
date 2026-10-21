@@ -29,13 +29,13 @@ const AllocationMatrix = () => {
 
   return (
     <div className="section-top">
-      <h3>
+      <h2>
         <img src={tabModifiersIcon} alt="" className="header-icon" />{" "}
         Allocation Matrix{" "}
         <span className="count">
           ({equipped}/{max})
         </span>
-      </h3>
+      </h2>
       <p className="text-small">Empty slots: {max - equipped}</p>
       <div className="allocation-matrix">{cells}</div>
     </div>

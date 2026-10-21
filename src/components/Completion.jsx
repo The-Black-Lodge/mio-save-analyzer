@@ -228,9 +228,9 @@ const Completion = () => {
 
   return (
     <div className="section">
-      <h3>
+      <h2>
         Completion <span className="count">({overallPct}%)</span>
-      </h3>
+      </h2>
       <p className="text-small text-dim text-center">
         as defined by speedrun.com 100% category rules{" "}
         <a

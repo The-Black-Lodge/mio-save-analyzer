@@ -10,7 +10,7 @@ const Stat = ({ label, icon, value }) => {
 
   return (
     <div className="card card--stat card--left">
-      <h4>{iconEl} {label}</h4>
+      <h3>{iconEl} {label}</h3>
       <hr className="divider" />
       <p className="text-small">{value}</p>
     </div>
@@ -22,7 +22,7 @@ const SaveStats = () => {
 
   return (
     <div className="section-top">
-      <h3>General Stats</h3>
+      <h2>General Stats</h2>
       <div className="flex-column">
         <Stat label="Deaths" icon={deathIcon} value={playerStats.deaths} />
         <Stat label="Playtime" icon={<i className="fa-regular fa-clock" />} value={playerStats.playtime} />

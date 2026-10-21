@@ -33,8 +33,6 @@ function App() {
       {import.meta.env.DEV && <Todo />}
       <ErrorBoundary>
         <div className="app-content">
-          <h1>MIO: Memories in Orbit</h1>
-          <h2>Save Analyzer</h2>
           <SectionToggles active={active} onSelect={setActive} />
           <SavePicker />
           {visible.stats && (

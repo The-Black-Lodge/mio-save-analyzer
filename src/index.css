@@ -104,6 +104,15 @@ h2, h3, h4 {
   color: var(--color-accent);
 }
 
+/* Section headings moved up a level under the shared header's h1; keep their sizes. */
+h2 {
+  font-size: 1.17em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
 ul {
   list-style: none;
   padding: 0 0.5rem;

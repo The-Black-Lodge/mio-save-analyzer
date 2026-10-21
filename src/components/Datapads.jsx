@@ -248,12 +248,12 @@ const DatapadSection = ({ section, playerStats, collectibles }) => {
 
   return (
     <div className="datapad-section">
-      <h4 className="datapad-section-title">
+      <h3 className="datapad-section-title">
         {section.title}{" "}
         <span className="count">
           ({acquiredCount}/{section.items.length})
         </span>
-      </h4>
+      </h3>
       <div className="datapad-items">
         {section.items.map(({ key, icon, root }) => {
           const info = dataSource[key] ?? {}
@@ -291,7 +291,7 @@ const Datapads = () => {
 
   return (
     <div className="section">
-      <h3>Inventory</h3>
+      <h2>Inventory</h2>
       <div className="datapad-columns">
         {SECTIONS.map((section) => (
           <DatapadSection
@@ -302,7 +302,7 @@ const Datapads = () => {
           />
         ))}
         <div className="datapad-section">
-          <h4 className="datapad-section-title">Upgrades</h4>
+          <h3 className="datapad-section-title">Upgrades</h3>
           <div className="datapad-items">
             {UPGRADES.map((u) => (
               <UpgradeItem

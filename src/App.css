@@ -1,5 +1,5 @@
 .todo-fixed {
-  position: fixed;
+  position: absolute;
   top: 1rem;
   left: 1rem;
   padding: 0.5rem 1rem;
@@ -24,7 +24,9 @@
   margin-bottom: 0;
 }
 
+/* Anchors .upload-section / .todo-fixed below the shared Diatom header. */
 #root {
+  position: relative;
   width: 100%;
   max-width: 1280px;
   padding: 2rem;
@@ -39,6 +41,8 @@
   align-items: center;
   width: 100%;
   min-height: 100vh;
+  /* Room for the absolutely positioned .upload-section above the section toggles. */
+  padding-top: 4rem;
 }
 
 /* Layout */
@@ -92,9 +96,9 @@
   padding: 1rem 0 0 0;
 }
 
-.section h3,
-.section-flex h3,
-.section-top h3 {
+.section h2,
+.section-flex h2,
+.section-top h2 {
   padding-bottom: 0.25rem;
 }
 
@@ -106,7 +110,7 @@
 }
 
 .card--left,
-.card--left h4 {
+.card--left h3 {
   text-align: left;
 }
 
